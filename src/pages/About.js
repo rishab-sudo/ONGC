@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import ScrolLinks from '../components/ScrolLinks';
 import PolicyCards from '../components/PolicyCards';
 import './About.css';
+import QuerySection from '../components/QuerySection';
 
 const About = () => {
   // --- Separate rotating image groups for each section
@@ -153,6 +154,7 @@ const About = () => {
       </Container>
 
       <PolicyCards />
+      <QuerySection/>
     </>
   );
 };
