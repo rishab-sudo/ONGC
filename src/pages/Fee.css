@@ -59,8 +59,11 @@
 
 /* Table heading */
 .custom-fee-table thead th {
-  background: linear-gradient(135deg, #902724 0%, #000 100%);
-  /* background-color: #902724; */
+/* background: linear-gradient(90deg, #902724, #000); */
+
+
+  /* background: linear-gradient(135deg, #902724 0%, #000 100%); */
+  background-color: #902724;
   color: #fff;
   padding: 14px 12px;
   text-align: center;
