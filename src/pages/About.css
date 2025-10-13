@@ -1,0 +1,132 @@
+.about-fluid{
+    margin-top: 5%;
+}
+.about-container1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about-content-section1{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    
+}
+/*  */
+.about-container-fluid2{
+margin-top: 5%;
+padding: 0;
+gap:"0px";
+background-color: rgba(211, 211, 211, 0.112);
+}
+.about-content-section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5px;
+}
+.about-section2-left-side{
+    max-width: 25% !important; 
+}
+.about-section2-left-side img{
+    width: 100%;
+}
+.about-section2-right-side{
+    width: 65%;
+       text-align: justify;
+}
+
+/* section mission vision value */
+.about-container-fluid3{
+margin-top: 2.5%;
+padding: 0;
+gap:"0px";
+/* background-color: aqua; */
+
+}
+.about-content-section3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5px;
+}
+.about-section3-left-side{
+    max-width: 35% !important; 
+}
+.about-section3-left-side img{
+    width: 100%;
+}
+.about-section3-right-side{
+    text-align: justify;
+    width: 45%;
+}
+@media (max-width: 768px) {
+
+    .about-fluid{
+    margin-top: 5%;
+}
+.about-container1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.about-content-section1{
+  min-width: 100%;
+     text-align: justify;  
+}
+.about-heading{
+    text-align: left !important;
+}
+/*  */
+.about-container-fluid2{
+margin-top: 5%;
+padding: 0;
+gap:"0px";
+background-color: lightgrey;
+}
+.about-content-section2{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5px;
+}
+.about-section2-left-side{
+    min-width: 95% !important; 
+}
+.about-section2-left-side img{
+    min-width: 100%;
+}
+.about-section2-right-side{
+    min-width: 95%;
+       text-align: justify;
+}
+
+/* section mission vision value */
+.about-container-fluid3{
+margin-top: 2.5%;
+padding: 0;
+gap:"0px";
+/* background-color: aqua; */
+
+}
+.about-content-section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5px;
+}
+.about-section3-left-side{
+    min-width: 95% !important; 
+}
+.about-section3-left-side img{
+    min-width: 100%;
+}
+.about-section3-right-side{
+    text-align: justify;
+    min-width: 95%;
+}
+}

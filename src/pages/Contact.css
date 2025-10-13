@@ -1,0 +1,132 @@
+/* Page Wrapper */
+.contact-page {
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+
+.contact-content-container {
+  max-width: 80%;
+  margin: auto;
+  /* background-color: #000; */
+  margin-top: 5%;
+}
+
+/* Tag + Heading */
+.contact-tag-heading-div {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 2px 15px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-tag-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.contact-page-heading-div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-heading {
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+/* top-sec */
+.info-main-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #fff; */
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+}
+.info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); 
+  padding: 10px 25px;
+  border-radius: 8px;
+  width: 285px;
+  height: 195px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom-in on hover */
+.info-div:hover {
+  transform: scale(1.05); /* slight zoom */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.info-icon{
+font-size: 32px;
+margin-bottom: 15px;
+color: #902724;
+}
+/*  */
+.contact-main-section{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3.5%;
+}
+/* left section */
+.contact-left-img-div{
+    width: 45%;
+    height: 100%;
+}
+.contact-left-img{
+    width: 100%;
+    height: 100%;
+}
+/* =======================
+   RIGHT SECTION (Form)
+   ======================= */
+.form-container {
+  flex: 2;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* =======================
+   MAP SECTION
+   ======================= */
+.map-section {
+  margin-top: 50px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+   ======================= */
+@media (max-width: 992px) {
+  .contact-main-section {
+    flex-direction: column;
+  }
+
+  .contact-info-section,
+  .form-container {
+    width: 100%;
+  }
+
+  .contact-image-half {
+    height: 250px;
+  }
+
+  .contact-info-box {
+    height: auto;
+  }
+}

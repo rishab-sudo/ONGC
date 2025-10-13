@@ -1,0 +1,68 @@
+.calendar-container {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.month-buttons-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(144, 39, 36, 0.15); /* soft shadow with #902724 tone */
+}
+
+
+.month-btn {
+  border: 1px solid #902724;
+  background: transparent;
+  color: #902724;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.month-btn:hover {
+  background-color: #902724;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.month-btn.active {
+  background-color: #902724;
+  color: #fff;
+}
+
+.calendar-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .month-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .calendar-img {
+    width: 95%;
+  }
+}

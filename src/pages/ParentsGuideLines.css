@@ -1,0 +1,127 @@
+.pg-fluid{
+margin-top: 6.5% !important;
+}
+
+.pg-container{
+}
+
+.instructions-container {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 35px;
+  margin-top: 5%;
+  /* background: #f9f9f9; */
+  flex-wrap: wrap;
+}
+.scrollable-box {
+  max-height: 700px;  /* adjust height */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.view-moree-btn {
+  display: block;
+  margin: 15px 0 0 auto;
+  padding: 10px 20px;
+  background-color: #902724;;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view-moree-btn:hover {
+  background-color: #902724;;
+}
+
+.instructions-box {
+  flex: 1;
+  min-width: 100%;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  line-height: 1.6;
+
+}
+
+.instructions-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instructions-box li {
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  padding-left: 18px;
+}
+
+.circle-number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+  background-color: #902724;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.sub-points {
+  margin-top: 15px !important;
+  margin-left: 25px;   /* ← creates left spacing for sub-points */
+  list-style: none;
+  padding: 0;
+}
+
+.sub-points li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #444;
+  padding-left: 15px;
+  position: relative;
+}
+
+.sub-points li::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  margin-top: -9px;
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .instructions-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .instructions-box {
+    min-width: 100%;
+  }
+   .pg-banner-box {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pg-banner-right a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

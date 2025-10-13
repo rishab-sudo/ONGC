@@ -1,0 +1,72 @@
+.punishment-policy {
+  padding: 60px 10%;
+  background: #fff;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.punishment-heading {
+  text-align: center;
+  color: #902724;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.punishment-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #902724, #000);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.punishment-card {
+  background: #f9f9f9;
+  border-left: 6px solid #902724;
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.punishment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.punishment-card h3 {
+  color: #902724;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.punishment-card p {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.punishment-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .punishment-policy {
+    padding: 40px 20px;
+  }
+
+  .punishment-card {
+    padding: 20px;
+  }
+
+  .punishment-heading {
+    font-size: 1.6rem;
+  }
+}

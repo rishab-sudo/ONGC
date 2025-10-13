@@ -1,0 +1,77 @@
+.scroll-links-section {
+  margin-top: 5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ensures arrows + buttons are centered as one group */
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  gap: 20px;
+  position: relative;
+
+}
+
+.scroll-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 15px;
+  width: 70%;
+  /* adjust width for nice balance */
+  scroll-behavior: smooth;
+  padding: 10px 0;
+
+}
+
+.info-btn {
+  flex: 0 0 auto;
+  background-color: #e0e0e05f;
+  /* light grey */
+  border: none;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px 25px;
+  height: 55px;
+  width: 150px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, outline 0.2s;
+  white-space: nowrap;
+}
+
+.info-btn:hover {
+  transform: scale(1.05);
+  outline: 1px solid #902724;
+}
+
+.scroll-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #c0392b;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.scroll-btn:hover {
+  background-color: #902724;
+}
+
+.scrol-icon {
+  font-size: 35px !important;
+
+}
+
+/* Hide scrollbar */
+.scroll-buttons-container::-webkit-scrollbar {
+  display: none;
+}

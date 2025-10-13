@@ -1,0 +1,34 @@
+.scrolling-header {
+  width: 100%;
+  overflow: hidden;
+  background: #902724;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding: 8px 0;
+}
+
+.scrolling-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 15s linear infinite;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  font-size: 15px;
+  color: #fff;
+  padding-right: 50px;
+  /* space between two loops */
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

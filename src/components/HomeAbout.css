@@ -1,0 +1,56 @@
+.homeAbout-fluid {
+    margin-top: 7%;
+}
+
+.homeAbout-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeabout-img-div {
+    max-width: 45%;
+}
+
+.homeabout-img {
+    width: 100%;
+}
+
+.homeabout-text-div {
+    width: 45%;
+}
+
+.aboutus-btn-div {}
+
+.aboutus-btn-div button {
+    border: none;
+    background-color: #902724;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 8px !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+.homeAbout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.homeabout-img-div {
+    min-width: 100%;
+}
+
+.homeabout-img {
+    width: 100%;
+}
+
+.homeabout-text-div {
+    min-width: 100%;
+}
+
+}
