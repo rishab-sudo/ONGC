@@ -16,8 +16,8 @@ const Separate = () => {
                 <div className='bottom-sec-div'>
 
                     <div className='icon-text-div'>
-                        <div>
-                            <img src={require("../assets/sep-icon-1.png")} alt="" />
+                        <div className='sep-icon-div'>
+                            <img src={require("../assets/campur_life_1.jpg")} alt="" />
                         </div>
                         <div>
                             <p>Economics</p>
@@ -25,16 +25,7 @@ const Separate = () => {
                     </div>
                     <div className='icon-text-div'>
                         <div className='sep-icon-div'>
-                            <img src={require("../assets/sep-icon-1.png")} alt="" />
-                        </div>
-                        <div>
-                            <p>Economics</p>
-                        </div>
-                    </div>
-
-                    <div className='icon-text-div'>
-                        <div className='sep-icon-div'>
-                            <img src={require("../assets/sep-icon-1.png")} alt="" />
+                            <img src={require("../assets/campur_life_1.jpg")} alt="" />
                         </div>
                         <div>
                             <p>Economics</p>
@@ -43,7 +34,16 @@ const Separate = () => {
 
                     <div className='icon-text-div'>
                         <div className='sep-icon-div'>
-                            <img src={require("../assets/sep-icon-1.png")} alt="" />
+                            <img src={require("../assets/campur_life_1.jpg")} alt="" />
+                        </div>
+                        <div>
+                            <p>Economics</p>
+                        </div>
+                    </div>
+
+                    <div className='icon-text-div'>
+                        <div className='sep-icon-div'>
+                            <img src={require("../assets/campur_life_1.jpg")} alt="" />
                         </div>
                         <div>
                             <p>Economics</p>

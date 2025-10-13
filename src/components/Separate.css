@@ -12,11 +12,12 @@
 
 .bottom-sec-div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around !important;
+  justify-content: center !important;
   align-items: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
+  margin: auto ;
+  gap: 26px;
 }
 
 .icon-text-div {
@@ -24,14 +25,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
 .sep-icon-div {
+  display: flex;
+  justify-content: center;
   background: none !important;
   background-color: transparent !important;
 }
 
-.sep-icon-div img {}
+.sep-icon-div img {
+  max-width: 350px;
+}
 @media (max-width: 768px) {
 
   .sep-fluid {
