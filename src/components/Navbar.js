@@ -25,6 +25,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
+            <img className="logo" src={require("../assets/ongc-logo1.jpg")} alt="Logo" />
           <ul className="nav-links">
             <li><a href="/home">Home</a></li>
 

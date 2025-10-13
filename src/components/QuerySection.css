@@ -1,121 +1,104 @@
-.queryform-container {
-  margin-top: 2.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 5%;
-  background: #f9f9f9;
-  flex-wrap: wrap;
-  gap: 40px;
+.admission-form-section {
+  background-image: url("../assets//campur_life_1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  position: relative;
 }
 
-/* Left Section - Image */
-.queryform-left {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.queryform-left img {
-  width: 100%;
-  height: auto;
+.form-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Right Section - Form */
-.queryform-right {
-  width: 35%;
-  /* background: #fff; */
-  padding: 30px 35px;
-  border-radius: 12px;
-  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+.form-heading {
+  text-align: center;
+  color: #902724;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
-.queryform-right h2 {
-  text-align: left;
-  margin-bottom: 25px;
-  color: #333;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-/* Input Fields */
-.form-group {
-  width: 100%;
+.admission-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 18px;
+  gap: 20px;
 }
 
-.form-group label {
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #333;
+.form-row {
+  display: flex;
+  gap: 20px;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 8px;
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 15px;
-  transition: all 0.3s ease;
-
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #007bff;
+  font-size: 16px;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
-/* Submit Button */
+.form-row input:focus,
+.form-row select:focus {
+  border-color: #902724;
+}
+
+.form-bottom {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.checkbox-label {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+  font-size: 15px;
+  color: #000;
+}
+.checkbox{
+  width: 20px;
+  height: 20px;
+}
 .submit-btn {
-  background: #902724;
+  background-color: #902724;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
   transition: 0.3s ease;
-  align-self: flex-end;
-  display: block;
-  margin-left: auto;
 }
 
 .submit-btn:hover {
-  background: #902724;
+  background-color: #b12e34;
 }
 
-/* Responsive Layout */
-@media (max-width: 992px) {
-  .queryform-container {
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-row {
     flex-direction: column;
-    text-align: left;
-    padding: 25px !important;
   }
 
-  .queryform-left,
-  .queryform-right {
-    min-width: 100%;
+  .form-row input,
+  .form-row select {
+    width: 100%;
   }
-  .form-group input,
-.form-group textarea {
-  min-width: 100%;
-}
 
-
-  .queryform-right h2 {
-    text-align: center;
+  .form-overlay {
+    padding: 25px;
   }
 
   .submit-btn {
-    margin: 0 auto;
+    width: 100%;
   }
 }

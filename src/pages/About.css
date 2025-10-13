@@ -14,7 +14,7 @@
     text-align: center;  
     
 }
-/*  */
+/* section - chairman */
 .about-container-fluid2{
 margin-top: 5%;
 padding: 0;
@@ -37,12 +37,13 @@ background-color: rgba(211, 211, 211, 0.112);
     width: 65%;
        text-align: justify;
 }
-
+/* sec- 3 fade  */
 /* section mission vision value */
 .about-container-fluid3{
 margin-top: 2.5%;
 padding: 0;
 gap:"0px";
+background-color: #ffffff !important;
 /* background-color: aqua; */
 
 }
@@ -59,9 +60,32 @@ gap:"0px";
     width: 100%;
 }
 .about-section3-right-side{
+    
     text-align: justify;
     width: 45%;
 }
+/* Smooth fading animation for all section images */
+/* Soft and subtle fade animation */
+.fade-image img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  animation: lightFade 4s ease-in-out infinite alternate;
+}
+
+@keyframes lightFade {
+  0% {
+    opacity: 0.92;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.92;
+  }
+}
+/* --------------------------------- */
 @media (max-width: 768px) {
 
     .about-fluid{

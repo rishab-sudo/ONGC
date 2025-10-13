@@ -20,10 +20,9 @@
 }
 
 .logo {
-  width: 120px;
-  /* Set proper size */
+  width: auto !important;
   height: auto;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .nav-links {
@@ -133,7 +132,7 @@
 
 /* Side Menu */
 .side-menu {
-
+margin-top: 7.8rem !important;
   position: fixed;
   top: 0;
   left: -100%;
@@ -241,6 +240,16 @@
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  /* ✅ Smaller logo for mobile screens */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 150px !important;
+    height: 100%;
+  }
+
+
+}
+
   .dealer-btn {
     display: none;
   }

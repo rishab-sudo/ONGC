@@ -7,7 +7,9 @@
     justify-content: space-around;
     align-items: center;
 }
-
+.home-about-heading{
+    text-align: left !important;
+}
 .homeabout-img-div {
     max-width: 45%;
 }
@@ -18,6 +20,7 @@
 
 .homeabout-text-div {
     width: 45%;
+    text-align: left;
 }
 
 .aboutus-btn-div {}

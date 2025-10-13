@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Left Column */}
           <Col lg={4} md={12} sm={12} className="footer-column-wrapper">
             <div className="footer-left">
-              {/* <img src={require("..")} alt="logo" className="footer-logo" /> */}
+              <img src={require("../assets/ongc-logo1.jpg")} alt="logo" className="footer-logo" />
               <div className="trust-text">
                 <h2>Building Excellence Through Innovation, Quality, and Community Focus</h2>
                 <p>

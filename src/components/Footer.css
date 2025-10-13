@@ -1,5 +1,5 @@
 .footer-section {
-  margin-top: 5%;
+  margin-top: 2.6%;
   background-color: #000;
   width: 100%;
   padding: 0;
@@ -33,7 +33,7 @@
   justify-content: flex-start !important;
   text-align: left !important;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 4.2rem;
   /* background-color: #902724; */
 }
 
@@ -56,7 +56,7 @@
 }
 
 .footer-logo {
-  width: 120px;
+  width: auto;
   margin-bottom: 15px;
 }
 
