@@ -11,7 +11,7 @@ const HomeAbout = () => {
         </div>
 
         <div className='homeabout-text-div'>
-          <p>ABOUT US</p>
+          <p className='special-heading'>ABOUT US</p>
           <p className='page-heading home-about-heading'>The largest & Most Diverse Universities in the United Emirates</p>
 
           <p>Far far away, behind the word mountains, far from the Consonantia, there live the blind texts.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import "./Footer.css";
 
 const Footer = () => {
@@ -16,14 +16,15 @@ const Footer = () => {
               <div className="trust-text">
                 <h2>Building Excellence Through Innovation, Quality, and Community Focus</h2>
                 <p>
-ONGC School fosters trust, innovation, and excellence. Through modern practices and a community-driven approach,
- we empower students and teachers, providing a nurturing environment and quality resources to shape confident, future-ready learners.
+                  ONGC School fosters trust, innovation, and excellence. Through modern practices and a community-driven approach,
+                  we empower students and teachers, providing a nurturing environment and quality resources to shape confident, future-ready learners.
                 </p>
               </div>
               <div className="social-icons">
                 <a href="https://www.facebook.com/profile.php?id=61578129710470"><FaFacebook /></a>
-                <a href="https://www.linkedin.com/company/alutuff/"><FaLinkedin /></a>
                 <a href="https://www.instagram.com/alutuff.panels/"><FaInstagram /></a>
+                <a href="https://wa.me/918009244441" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+                <a href="https://www.linkedin.com/company/alutuff/"><FaLinkedin /></a>
               </div>
             </div>
           </Col>
@@ -40,6 +41,7 @@ ONGC School fosters trust, innovation, and excellence. Through modern practices 
                   <a href="/AcademicsCalendar">Academics Calendar</a>
                   <a href="/Gallery">Gallery</a>
                   <a href="/contact">Contact Us</a>
+
                 </div>
               </div>
             </div>
@@ -51,12 +53,12 @@ ONGC School fosters trust, innovation, and excellence. Through modern practices 
               <div className="col-text-div">
                 <h4>Contact Info</h4>
                 <div className="footer-contact-info">
-                  <p><strong>Address:</strong><br />Alutuff International,<br />Choupla Road, Civil Lines, Bareilly.</p>
+                  <p><strong>Address:</strong><br />xxxxx International,<br />xxxxx Road, xxxxxx xxxxx, Bareilly.</p>
                   <p><strong>Phone:</strong><br />
-                    <a href="tel:+916396854974">+91 63968 54974</a>
+                    <a href="tel:+916396854974">+91 xxxxx xxxxx</a>
                   </p>
                   <p><strong>Email:</strong><br />
-                    <a href="mailto:sales@alutuff.in">sales@alutuff.in</a>
+                    <a href="mailto:xxxxx@alutuff.in">sales@xxxxx.in</a>
                   </p>
                 </div>
               </div>

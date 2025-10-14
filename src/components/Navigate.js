@@ -13,18 +13,23 @@ const Navigate = () => {
       <Container className='navigate-container'>
 
         {/* LEFT SECTION */}
-        <div className='navigate-left-sec'>
-          <p className='page-heading'>Navigate</p>
-          <p>
-            Far far away, behind the word mountains, far from the Consonantia,
-            there live the blind texts. Separated they marks grove right at the coast of the Semantics.
-          </p>
-          <p>
-            Far far away, behind the word mountains, far from the Consonantia,
-            there live the blind texts. Separated they marks grove right at the coast of the Semantics.
-          </p>
-          <button className='view-more-btn'>View More</button>
-        </div>
+    <div className='navigate-left-sec'>
+  <p className='page-heading' style={{color:"#fff"}}>Navigate</p>
+  <p>
+    Far far away, behind the word mountains, far from the Consonantia,
+    there live the blind texts. Separated they marks grove right at the coast of the Semantics.
+  </p>
+  <p>
+    Far far away, behind the word mountains, far from the Consonantia,
+    there live the blind texts. Separated they marks grove right at the coast of the Semantics.
+  </p>
+
+  {/* ✅ Add curved arrow container here */}
+  <div className="curved-arrow"></div>
+
+  <button className='view-more-btn'>View More</button>
+</div>
+
 
         {/* RIGHT SECTION */}
         <div className='navigate-right-section'>

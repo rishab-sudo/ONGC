@@ -30,7 +30,19 @@
 .navigate-left-sec p {
   line-height: 1.6;
 }
-
+/* .navigate-arrow-img-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  height: auto;
+  background-color: #000;
+}
+.navigate-arrow-img-div img{
+  width: auto;
+  height: 500px;
+  margin: auto;
+} */
 
 /* View More Button */
 .view-more-btn {
@@ -162,6 +174,48 @@
   margin-top: -12px;
   margin-left: 25px;
 }
+/* ✅ Curved Arrow Styling */
+/* ✅ Curved Arrow Styling */
+/* ✅ Curved Arrow Styling */
+/* ✅ Curved Arrow Styling */
+/* ✅ Curved Arrow Styling */
+.navigate-left-sec {
+  position: relative;
+}
+
+.curved-arrow {
+  position: absolute;
+  width: 220px;
+  height: 340px; /* ⬆️ +80 px taller for deeper curve */
+  top: 35%;       /* slight upward shift to balance the new height */
+  left: 42%;
+  background: none;
+  pointer-events: none;
+  transform: rotate(6deg); /* slight clockwise tilt */
+  transform-origin: top left;
+}
+
+.curved-arrow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+
+  /* 🌀 Updated SVG path for a longer, smoother downward curve */
+  mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 220 340' xmlns='http://www.w3.org/2000/svg'><path d='M20,10 Q20,280 200,300' stroke='white' stroke-width='3' fill='transparent' marker-end='url(%23arrowhead)'/><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='10' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='white'/></marker></defs></svg>");
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox='0 0 220 340' xmlns='http://www.w3.org/2000/svg'><path d='M20,10 Q20,280 200,300' stroke='white' stroke-width='3' fill='transparent' marker-end='url(%23arrowhead)'/><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='10' refY='3.5' orient='auto'><polygon points='0 0, 10 3.5, 0 7' fill='white'/></marker></defs></svg>");
+  background-color: white;
+}
+
+/* ✅ Hide arrow on mobile */
+@media (max-width: 768px) {
+  .curved-arrow {
+    display: none;
+  }
+}
+
+
 
 /* ✅ MOBILE VIEW */
 @media (max-width: 768px) {

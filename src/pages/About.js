@@ -90,24 +90,20 @@ const About = () => {
           </div>
         </Container>
 
-        {/* ===== Section 1 ===== */}
   
-
-        {/* ===== Section 2 ===== */}
+      {/* ===== Section 2 ===== */}
               <Container fluid className="about-container-fluid3 g-0">
           <Container className="about-content-section3">
             <div className="about-section2-left-side fade-image">
               <img src={section1Images[index1]} alt="About section 1" />
             </div>
             <div className="about-section3-right-side">
-              <p>Ms. Vrinda Sarup</p>
+              <p className='page-heading mvc-heading'>Mission</p>
               <p>
-                       Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
+To nurture every child with sensitivity, care, and a deeper understanding, 
+fostering their holistic development. ONGC Community School aims to provide 
+an education that combines academic excellence with social responsibility, 
+environmental awareness, and a spirit of community service.
               </p>
             </div>
           </Container>
@@ -116,14 +112,11 @@ const About = () => {
         <Container fluid className="about-container-fluid3 g-0">
           <Container className="about-content-section3">
             <div className="about-section3-right-side">
-              <p>Mr. Rajesh Sharma</p>
+              <p className='page-heading mvc-heading'>Vision</p>
               <p>
-                Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
+To be a pioneering institution that embodies vibrancy, innovation, and
+ inclusivity in education, shaping future-ready individuals who contribute 
+ positively to society, uphold secular values, and promote international peace and brotherhood.
               </p>
             </div>
             <div className="about-section3-left-side fade-image">
@@ -132,21 +125,22 @@ const About = () => {
           </Container>
         </Container>
 
-        {/* ===== Section 3 ===== */}
+  
         <Container fluid className="about-container-fluid3 g-0">
           <Container className="about-content-section3">
             <div className="about-section3-left-side fade-image">
               <img src={section3Images[index3]} alt="About section 3" />
             </div>
             <div className="about-section3-right-side">
-              <p>Ms. Ritu Malhotra</p>
+              <p className='page-heading mvc-heading'>Values</p>
               <p>
-                     Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
-                   Mr. Rajesh Sharma is a senior educationist and has worked in several
-                prestigious institutions...
+       Excellence in Learning: Encouraging curiosity, critical thinking, and lifelong learning.
+
+Integrity and Respect: Upholding honesty, ethical behavior, and mutual respect.
+
+Community and Environment: Promoting social responsibility, environmental consciousness, and active community engagement.
+
+Inclusivity and Diversity: Celebrating secularism, diversity, and equal opportunities for all students.
               </p>
             </div>
           </Container>

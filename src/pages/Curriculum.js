@@ -17,12 +17,12 @@ const Curriculum = () => {
 
             <div className="curriculum-table-container">
       {/* ================= CLASS I TABLE ================= */}
-      <h2 className="table-heading page-heading">Class I - Academic Syllabus 2025-26</h2>
+      <p className="table-heading page-heading">Class I - Academic Syllabus 2025-26</p>
       <Container className="table-scroll">
         <table className="curriculum-table">
           <thead>
             <tr>
-              <th>Subject</th>
+              <th >Subject</th>
               <th>Book Name</th>
               <th>Periodic Assessment - I</th>
               <th>Summative Assessment - I</th>
@@ -92,7 +92,7 @@ const Curriculum = () => {
       </Container>
 
       {/* ================= CLASS IV TABLE ================= */}
-      <h2 className="table-heading page-heading">Class IV - Academic Syllabus 2025-26</h2>
+      <p className="table-heading page-heading">Class IV - Academic Syllabus 2025-26</p>
       <Container className="table-scroll">
         <table className="curriculum-table">
           <thead>

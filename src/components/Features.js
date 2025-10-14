@@ -13,7 +13,7 @@ const Features = () => {
             <div className='feature-right-section'>
 
                <div className='features-heading-div'>
-                  <p>CAMPUS</p>
+                  <p className='special-heading ' style={{textAlign:"left"}}> CAMPUS</p>
                   <p className='page-heading'>Campus is your Dream Lifestyle</p>
                </div>
 

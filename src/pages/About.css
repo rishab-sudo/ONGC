@@ -47,6 +47,9 @@ background-color: #ffffff !important;
 /* background-color: aqua; */
 
 }
+.mvc-heading{
+    text-align: left !important;
+}
 .about-content-section3{
     display: flex;
     justify-content: space-between;

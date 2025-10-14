@@ -49,7 +49,7 @@ const [formData, setFormData] = useState({
   return (
     <section className="admission-form-section">
       <div className="form-overlay">
-        <h2 className="form-heading"> Enquiry Form</h2>
+        <h2 className="form-heading"> ENQUIRY FORM</h2>
 
         <form className="admission-form" onSubmit={handleSubmit}>
           {/* Row 1 */}

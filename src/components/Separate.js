@@ -7,7 +7,7 @@ const Separate = () => {
         <Container fluid className='sep-fluid'>
             <Container className='sep-container'>
                 <div className=''>
-                    <p>Departments</p>
+                    <p className='special-heading'>Departments</p>
                     <p className='page-heading'>Popular Departments</p>
                     <p>Far far away, behind the word mountains, far from the Consonantia, there live <br />
                         the blind texts. Separated they marks grove right at the coast</p>

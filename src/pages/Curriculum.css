@@ -8,7 +8,8 @@
   color: #902724;
   text-transform: uppercase;
   position: relative;
-  margin-top: 3.5%;
+  margin-top: 3.5%; 
+
 }
 
 .table-heading::after {
