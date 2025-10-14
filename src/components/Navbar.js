@@ -13,6 +13,7 @@ const Navbar = () => {
   const [mobileAcademicsOpen, setMobileAcademicsOpen] = useState(false);
   const [mobileStudentLifeOpen, setMobileStudentLifeOpen] = useState(false);
   const [mobileAdmissionOpen, setMobileAdmissionOpen] = useState(false);
+    const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
   const [mobileDisclosureOpen, setMobileDisclosureOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -84,6 +85,19 @@ const Navbar = () => {
               </ul>
             </li>
 
+     {/* Policy Dropdown */}
+            <li
+              className="dropdown"
+              onMouseEnter={() => setOpenDropdown("policy")}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <span className="dropdown-toggle">School Policy</span>
+              <ul className={`dropdown-menu ${openDropdown === "policy" ? 'show' : ''}`}>
+                <li><a href="/GeneralPolicy">General Policy</a></li>
+                   <li><a href="/AbsencePolicy">Absence Policy </a></li>
+                      <li><a href="/Punishment">Punishment Policy</a></li>
+              </ul>
+            </li>
             {/* Disclosures Dropdown */}
             <li
               className="dropdown"
@@ -176,6 +190,22 @@ const Navbar = () => {
                 <ul className="side-dropdown-menu">
                   <li><a href="/AdmissionPolicy" onClick={toggleMenu}>Admission Policy</a></li>
                   <li><a href="/tc" onClick={toggleMenu}>TC Verification</a></li>
+                </ul>
+              )}
+            </li>
+             {/* Policy */}
+            <li className="side-dropdown">
+              <span
+                className="side-about-title"
+                onClick={() => setMobilePolicyOpen(!mobilePolicyOpen)}
+              >
+                School Policy {mobileDisclosureOpen ? <FaChevronUp /> : <FaChevronDown />}
+              </span>
+              {mobileDisclosureOpen && (
+                <ul className="side-dropdown-menu">
+                  <li><a href="/GeneralPolicy" onClick={toggleMenu}>General Policy</a></li>
+                       <li><a href="/AbsencePolicy" onClick={toggleMenu}>Absence Policy</a></li>
+                            <li><a href="/Punishment" onClick={toggleMenu}>Punishment Policy</a></li>
                 </ul>
               )}
             </li>

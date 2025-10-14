@@ -37,7 +37,7 @@ const PolicyCards = () => {
             </div>
             <div className='policy-card-content'>
               <h4>{card.title}</h4>
-              <p>{card.desc}</p>
+              <p className='page-text'>{card.desc}</p>
               <div className='aboutus-btn-div'>
                 <button onClick={() => navigate(card.link)}>Know More </button>
               </div>

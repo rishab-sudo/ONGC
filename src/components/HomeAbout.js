@@ -14,17 +14,17 @@ const HomeAbout = () => {
           <p className='special-heading'>ABOUT US</p>
           <p className='page-heading home-about-heading'>The largest & Most Diverse Universities in the United Emirates</p>
 
-          <p>Far far away, behind the word mountains, far from the Consonantia, there live the blind texts.
+          <p className='page-text'>Far far away, behind the word mountains, far from the Consonantia, there live the blind texts.
             Separated they marks grove right at the coast of the Semantics a large language ocean</p>
 
           <p className='sub-heading'>Graduate Program</p>
-          <p>Browse the Undergraduate Degrees</p>
+          <p className='page-text'>Browse the Undergraduate Degrees</p>
 
           <p className='sub-heading'>Graduate Program</p>
-          <p>Browse the Undergraduate Degrees</p>
+          <p className='page-text'>Browse the Undergraduate Degrees</p>
 
   <p className='sub-heading'>Graduate Program</p>
-          <p>Browse the Undergraduate Degrees</p>
+          <p className='page-text'>Browse the Undergraduate Degrees</p>
 
           <div className='aboutus-btn-div'>
             <button>More About Us</button>

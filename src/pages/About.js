@@ -68,20 +68,20 @@ const About = () => {
         <Container className="about-container1">
           <div className="about-content-section1">
             <p className="page-heading about-heading">About ONGC Community</p>
-            <p>
+            <p className='page-text'>
               “Making Tomorrow Brighter” is the motto of ONGC Community School.
               ONGC Community School is the first of its kind in India. Launched by
               ONGC with SDMC Trust-as its COM Partner. Our aim was to start a school
               that had sensitivity and a deeper understanding of the child.
             </p>
-            <p>
+            <p className='page-text'>
               ONGC CS epitomises vibrancy and freshness, dovetailing much of the ethos
               of the new post-independence India into its educational program and
               philosophy. The school is a secular co-educational one integrating into
               its curriculum concern for the environment, the spirit of community
               service and international peace and brotherhood.
             </p>
-            <p>
+            <p className='page-text'>
               Besides spacious classrooms and playgrounds, we have fully developed
               facilities for each department, with Maths and Science laboratories, a
               Computer Resource Center, well stocked libraries, an auditorium and
@@ -99,7 +99,7 @@ const About = () => {
             </div>
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Mission</p>
-              <p>
+              <p className='page-text'>
 To nurture every child with sensitivity, care, and a deeper understanding, 
 fostering their holistic development. ONGC Community School aims to provide 
 an education that combines academic excellence with social responsibility, 
@@ -113,7 +113,7 @@ environmental awareness, and a spirit of community service.
           <Container className="about-content-section3">
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Vision</p>
-              <p>
+              <p className='page-text'>
 To be a pioneering institution that embodies vibrancy, innovation, and
  inclusivity in education, shaping future-ready individuals who contribute 
  positively to society, uphold secular values, and promote international peace and brotherhood.
@@ -133,7 +133,7 @@ To be a pioneering institution that embodies vibrancy, innovation, and
             </div>
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Values</p>
-              <p>
+              <p className='page-text'>
        Excellence in Learning: Encouraging curiosity, critical thinking, and lifelong learning.
 
 Integrity and Respect: Upholding honesty, ethical behavior, and mutual respect.
