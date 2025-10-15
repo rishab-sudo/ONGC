@@ -213,9 +213,6 @@
     display: none;
   }
 }
-
-
-
 /* ✅ MOBILE VIEW */
 @media (max-width: 768px) {
   .navigate-container {
@@ -241,6 +238,7 @@
   .navigate-row {
     flex-direction: column;
     gap: 20px;
+    
   }
 
   .navigate-img-text-div {

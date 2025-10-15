@@ -30,7 +30,6 @@ const Navigate = () => {
   <button className='view-more-btn'>View More</button>
 </div>
 
-
         {/* RIGHT SECTION */}
         <div className='navigate-right-section'>
           <div className='navigate-row'>

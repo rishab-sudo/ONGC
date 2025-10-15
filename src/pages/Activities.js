@@ -60,7 +60,7 @@ const Activities = () => {
             </tr>
           </thead>
           <tbody>
-            {calendarData.map((row, idx) => (
+            {calendarData.map((row, idx) => ( 
               <tr key={idx}>
                 <td className="month-cell">{row.month}</td>
                 <td>

@@ -58,6 +58,7 @@ const Gallery = () => {
             pauseOnMouseEnter: true,
           }}
         >
+          
           {images.map((img, index) => (
             <SwiperSlide key={index} className="straight-slide">
               <img
@@ -67,11 +68,12 @@ const Gallery = () => {
               />
             </SwiperSlide>
           ))}
+
         </Swiper>
 
         {/* Popup full view */}
         {selectedIndex !== null && (
-          <div className="image-popup">
+          <div className=" image-popup ">
             <span className="close-btn" onClick={() => setSelectedIndex(null)}>
               ✕
             </span>
@@ -90,6 +92,7 @@ const Gallery = () => {
         )}
       </Container>
     </section>
+
       </>
   );
 };
