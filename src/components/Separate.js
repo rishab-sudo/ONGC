@@ -26,6 +26,10 @@ const Separate = () => {
         breakpoint: 992, // tablets
         settings: { slidesToShow: 2 },
       },
+        {
+        breakpoint: 768, // tablets
+        settings: { slidesToShow: 2 },
+      },
       {
         breakpoint: 576, // mobile
         settings: { slidesToShow: 1 },

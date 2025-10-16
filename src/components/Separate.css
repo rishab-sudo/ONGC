@@ -49,6 +49,11 @@ margin: auto ;
 }
 
 @media (max-width: 768px) {
+  .card-div {
+  margin: auto;
+  min-width: 95%;
+
+}
   .sep-icon-div img {
     height: 180px;
   }
