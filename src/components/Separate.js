@@ -5,11 +5,24 @@ import "./Separate.css";
 
 const Separate = () => {
   const departments = [
-    { id: 1, title: "Economics", img: require("../assets/campur_life_1.jpg") },
-    { id: 2, title: "Mathematics", img: require("../assets/campur_life_1.jpg") },
-    { id: 3, title: "Computer Science", img: require("../assets/campur_life_1.jpg") },
-    { id: 4, title: "Psychology", img: require("../assets/campur_life_1.jpg") },
-    { id: 5, title: "Biology", img: require("../assets/campur_life_1.jpg") },
+    {
+      id: 1,
+      title: "Science Department",
+      desc: "Offering Physics, Chemistry, Biology, and Mathematics  nurturing future engineers, doctors, and researchers.",
+      img: require("../assets/campur_life_1.jpg"),
+    },
+    {
+      id: 2,
+      title: "Commerce Department",
+      desc: "Focused on Accountancy, Business Studies, and Economics preparing students for finance careers.",
+      img: require("../assets/campur_life_1.jpg"),
+    },
+    {
+      id: 3,
+      title: "Humanities Department",
+      desc: "Encouraging creativity and critical thinking through subjects like History, Political Science, and Psychology.",
+      img: require("../assets/campur_life_1.jpg"),
+    },
   ];
 
   const settings = {
@@ -19,21 +32,11 @@ const Separate = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 992, // tablets
-        settings: { slidesToShow: 2 },
-      },
-        {
-        breakpoint: 768, // tablets
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 576, // mobile
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -42,10 +45,10 @@ const Separate = () => {
       <Container className="sep-container">
         <div>
           <p className="special-heading">Departments</p>
-          <p className="page-heading">Popular Departments</p>
+          <p className="page-heading">Our Academic Streams</p>
           <p>
-            Far far away, behind the word mountains, far from the Consonantia,
-            there live the blind texts. Separated they mark grove right at the coast.
+            ONGC School offers diverse academic departments under the CBSE curriculum,
+            helping students choose paths that align with their interests and future aspirations.
           </p>
         </div>
 
@@ -58,7 +61,8 @@ const Separate = () => {
                     <img src={dept.img} alt={dept.title} />
                   </div>
                   <div className="sep-card-text">
-                    <p>{dept.title}</p>
+                    <h5>{dept.title}</h5>
+                    <p>{dept.desc}</p>
                   </div>
                 </div>
               </div>

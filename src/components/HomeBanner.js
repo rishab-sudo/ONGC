@@ -7,20 +7,21 @@ import "./HomeBanner.css";
 const slides = [
   {
     img: require("../assets/Banner/ongc-bn-1.jpg"),
-    title: "Educve - The Best Place to Invest in your Knowledge",
-    desc: "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    title: "Nurturing Minds, Shaping Futures",
+    desc: "A CBSE-affiliated institution committed to academic excellence and holistic development from Kindergarten to Class 12."
   },
   {
     img: require("../assets/Banner/ongc-bn-2.jpg"),
-    title: "Educve - The Best Place to Invest in your Knowledge",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    title: "Empowering Students Through Quality Education",
+    desc: "We inspire curiosity, creativity, and character — preparing students to succeed in a rapidly changing world."
   },
   {
     img: require("../assets/Banner/ongc-bn-3.jpg"),
-    title: "Educve - The Best Place to Invest in your Knowledge",
-    desc: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    title: "Where Learning Meets Values",
+    desc: "Beyond textbooks and classrooms, we focus on discipline, innovation, and integrity to build responsible global citizens."
   },
 ];
+
 
 const HomeBanner = () => {
   return (
