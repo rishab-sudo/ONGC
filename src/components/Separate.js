@@ -9,19 +9,19 @@ const Separate = () => {
       id: 1,
       title: "Science Department",
       desc: "Offering Physics, Chemistry, Biology, and Mathematics  nurturing future engineers, doctors, and researchers.",
-      img: require("../assets/campur_life_1.jpg"),
+      img: require("../assets/ongc-dep-1.avif"),
     },
     {
       id: 2,
       title: "Commerce Department",
       desc: "Focused on Accountancy, Business Studies, and Economics preparing students for finance careers.",
-      img: require("../assets/campur_life_1.jpg"),
+      img: require("../assets/ongc-dep-2.jpg"),
     },
     {
       id: 3,
       title: "Humanities Department",
       desc: "Encouraging creativity and critical thinking through subjects like History, Political Science, and Psychology.",
-      img: require("../assets/campur_life_1.jpg"),
+      img: require("../assets/ongc-dep-3.jpeg"),
     },
   ];
 
