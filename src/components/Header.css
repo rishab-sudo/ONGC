@@ -10,24 +10,22 @@
 }
 
 .scrolling-track {
-  display: flex;
-  width: max-content;
-  animation: scrollLoop 15s linear infinite;
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollLoop 25s linear infinite;
 }
 
 .scrolling-text {
-  white-space: nowrap;
   font-size: 15px;
   color: #fff;
-  padding-right: 50px;
-  /* space between two loops */
+  padding: 0 80px;
 }
 
+/* True continuous flow — no jerk */
 @keyframes scrollLoop {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
