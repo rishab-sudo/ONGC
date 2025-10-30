@@ -40,7 +40,10 @@
 .sep-card-text {
   padding: 15px 0;
 }
-
+.sep-card-text h5{
+  text-transform: uppercase;
+  color: #902724;
+}
 .sep-card-text p {
   font-weight: 600;
   font-size: 16px;
