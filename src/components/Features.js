@@ -7,18 +7,22 @@ const Features = () => {
     {
       title: "Smart Classrooms",
       desc: "Digitally equipped classrooms with interactive learning tools that make lessons engaging and effective for every student.",
+      icon: require("../assets/woman-standing-children-sitting-desks.jpg"),
     },
     {
       title: "Science & Computer Labs",
       desc: "Well-equipped laboratories that encourage hands-on learning in Physics, Chemistry, Biology, and Computer Science.",
+      icon: require("../assets/innovative-futuristic-classroom-students.jpg"),
     },
     {
       title: "Sports & Physical Education",
       desc: "Spacious playgrounds and expert coaches promoting fitness, teamwork, and discipline through various indoor and outdoor sports.",
+           icon: require("../assets/woman-standing-children-sitting-desks.jpg"),
     },
     {
       title: "Library & Reading Room",
       desc: "A peaceful and resourceful space with a vast collection of books, journals, and digital materials to enhance knowledge and curiosity.",
+      icon: require("../assets/book-library-with-open-textbook.jpg"),
     },
   ];
 
@@ -44,7 +48,7 @@ const Features = () => {
           {facilities.map((item, index) => (
             <div className='features-point-div' key={index}>
               <div className='feature-icon-div'>
-                {/* Optional: Add icon later */}
+                <img  className="facility-icons"src={item.icon} alt={item.title} />
               </div>
               <div className='feature-text-div'>
                 <p className='h2'>{item.title}</p>

@@ -11,18 +11,7 @@ const Header = () => {
         <div className="scrolling-text">
           (CBSE Affiliation No. 2132671) | Email: info@ongcschool.com | Phone: +91 8009244441
         </div>
-        <div className="scrolling-text">
-          (CBSE Affiliation No. 2132671) | Email: info@ongcschool.com | Phone: +91 8009244441
-        </div>
-        <div className="scrolling-text">
-          (CBSE Affiliation No. 2132671) | Email: info@ongcschool.com | Phone: +91 8009244441
-        </div>
-        <div className="scrolling-text">
-          (CBSE Affiliation No. 2132671) | Email: info@ongcschool.com | Phone: +91 8009244441
-        </div>
-        <div className="scrolling-text">
-          (CBSE Affiliation No. 2132671) | Email: info@ongcschool.com | Phone: +91 8009244441
-        </div>
+       
       </div>
     </div>
   );

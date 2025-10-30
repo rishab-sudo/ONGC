@@ -29,6 +29,9 @@ const PolicyCards = () => {
 
   return (
     <Container fluid className='policy-card-fluid'>
+          <div className="d-flex justify-content-center align-item-center">
+            <p className='page-heading'>General Policies</p>
+          </div>
       <Container className='policy-card-container'>
         {cards.map((card, index) => (
           <div className='policy-card' key={index}>

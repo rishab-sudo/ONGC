@@ -12,9 +12,9 @@ const HomeAbout = () => {
 
      <div className='homeabout-text-div'>
   <p className='special-heading'>ABOUT US</p>
-  <p className='page-heading home-about-heading'>
+  <h1 className='page-heading home-about-heading'>
     Building Bright Futures Through Quality Education
-  </p>
+  </h1>
 
   <p className='page-text'>
     ONGC School is a CBSE-affiliated institution dedicated to nurturing young minds from Kindergarten to Class 12.

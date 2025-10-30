@@ -45,7 +45,7 @@ const Separate = () => {
       <Container className="sep-container">
         <div>
           <p className="special-heading">Departments</p>
-          <p className="page-heading">Our Academic Streams</p>
+          <h1 className="page-heading">Our Academic Streams</h1>
           <p>
             ONGC School offers diverse academic departments under the CBSE curriculum,
             helping students choose paths that align with their interests and future aspirations.

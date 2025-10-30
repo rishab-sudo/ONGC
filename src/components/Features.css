@@ -76,11 +76,14 @@
 .features-point-div {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 25px;
   margin-top: 1.2rem;
 }
-
+.facility-icons{
+  height: 60px;
+  width: 60px;
+}
 /* ==== MOBILE VIEW (Image as background + white box centered) ==== */
 @media (max-width: 768px) {
   .features-container {
@@ -130,10 +133,10 @@
     gap: 12px;
   }
 
-  .feature-icon-div img {
-    width: 40px;
-    height: 40px;
-  }
+ .facility-icons{
+  height: 60px;
+  width: 60px;
+}
 
   .h2 {
     font-size: 20px !important;

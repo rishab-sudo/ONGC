@@ -14,7 +14,7 @@ const Navigate = () => {
 
         {/* LEFT SECTION */}
     <div className='navigate-left-sec'>
-  <p className='page-heading' style={{color:"#fff"}}>Navigate</p>
+  <h1 className='page-heading' style={{color:"#fff"}}>Navigate</h1>
   <p className='page-text'>
     Far far away, behind the word mountains, far from the Consonantia,
     there live the blind texts. Separated they marks grove right at the coast of the Semantics.

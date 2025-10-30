@@ -10,7 +10,7 @@
 .bottom-sec-div {
   width: 100%;
   margin-top: 2rem !important;
-margin: auto ;
+  margin: auto;
   /* background-color: #333; */
 }
 
@@ -43,17 +43,18 @@ margin: auto ;
 
 .sep-card-text p {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
   margin: 0;
 }
 
 @media (max-width: 768px) {
   .card-div {
-  margin: auto;
-  min-width: 95%;
+    margin: auto;
+    min-width: 95%;
 
-}
+  }
+
   .sep-icon-div img {
     height: 180px;
   }

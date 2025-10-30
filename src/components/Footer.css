@@ -181,12 +181,10 @@ a:hover {
   .footer-links-column a {
     font-size: 14px;
   }
-
   .social-icons {
     font-size: 20px;
-  }
+   }
 }
-
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .footer-content-wrapper {
@@ -196,7 +194,6 @@ a:hover {
   .footer-column {
     margin-top: 0px !important;
   }
-
   .footer-left {
     display: flex;
     flex-direction: column;

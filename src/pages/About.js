@@ -7,7 +7,6 @@ import './About.css';
 import QuerySection from '../components/QuerySection';
 
 const About = () => {
-  // --- Separate rotating image groups for each section
   const section1Images = [
     require('../assets/campur_life_1.jpg'),
     require('../assets/ongc-school-img.jpg'),
@@ -26,12 +25,10 @@ const About = () => {
     require('../assets/testimonial_img.png'),
   ];
 
-  // --- Separate indexes for each section
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
 
-  // --- Rotations for each section
   useEffect(() => {
     const interval1 = setInterval(() => {
       setIndex1((prev) => (prev + 1) % section1Images.length);
@@ -64,46 +61,60 @@ const About = () => {
       />
       <ScrolLinks />
 
+      {/* ===== Section 1 ===== */}
       <Container fluid className="about-fluid">
-        <Container className="about-container1">
-          <div className="about-content-section1">
-            <p className="page-heading about-heading">About ONGC Community</p>
-            <p className='page-text'>
-              “Making Tomorrow Brighter” is the motto of ONGC Community School.
-              ONGC Community School is the first of its kind in India. Launched by
-              ONGC with SDMC Trust-as its COM Partner. Our aim was to start a school
-              that had sensitivity and a deeper understanding of the child.
-            </p>
-            <p className='page-text'>
-              ONGC CS epitomises vibrancy and freshness, dovetailing much of the ethos
-              of the new post-independence India into its educational program and
-              philosophy. The school is a secular co-educational one integrating into
-              its curriculum concern for the environment, the spirit of community
-              service and international peace and brotherhood.
-            </p>
-            <p className='page-text'>
-              Besides spacious classrooms and playgrounds, we have fully developed
-              facilities for each department, with Maths and Science laboratories, a
-              Computer Resource Center, well stocked libraries, an auditorium and
-              open-air stage, and a Teachers’ Learning Center.
-            </p>
-          </div>
-        </Container>
+      <Container className="about-container1">
+  <div className="about-content-section1">
+    <p className="page-heading about-heading">About ONGC Community</p>
+    <p className="page-text">
+      <span className="highlight">“Making Tomorrow Brighter”</span> is the motto of 
+      <span className="highlight"> ONGC Community School</span>. 
+      <span className="highlight"> ONGC Community School</span> is the 
+      <span className="highlight"> first of its kind in India</span>. Launched by 
+      <span className="highlight"> ONGC</span> with 
+      <span className="highlight"> SDMC Trust</span> as its 
+      <span className="highlight"> COM Partner</span>. Our aim was to start a school
+      that had <span className="highlight"> sensitivity and a deeper understanding of the child</span>.
+    </p>
 
-  
-      {/* ===== Section 2 ===== */}
-              <Container fluid className="about-container-fluid3 g-0">
+    <p className="page-text">
+      <span className="highlight">ONGC CS</span> epitomises 
+      <span className="highlight"> vibrancy and freshness</span>, dovetailing much of the 
+      <span className="highlight"> ethos of the new post-independence India</span> into its 
+      <span className="highlight"> educational program and philosophy</span>. The school is a 
+      <span className="highlight"> secular co-educational institution</span>, integrating into
+      its curriculum <span className="highlight"> concern for the environment</span>, the 
+      <span className="highlight"> spirit of community service</span>, and 
+      <span className="highlight"> international peace and brotherhood</span>.
+    </p>
+
+    <p className="page-text">
+      Besides <span className="highlight"> spacious classrooms</span> and 
+      <span className="highlight"> playgrounds</span>, we have fully developed
+      facilities for each department, including 
+      <span className="highlight"> Maths and Science laboratories</span>, a 
+      <span className="highlight"> Computer Resource Center</span>, 
+      <span className="highlight"> well-stocked libraries</span>, an 
+      <span className="highlight"> auditorium and open-air stage</span>, and a 
+      <span className="highlight"> Teachers’ Learning Center</span>.
+    </p>
+  </div>
+</Container>
+
+
+        {/* ===== Section 2 ===== */}
+        <Container fluid className="about-container-fluid3 g-0">
           <Container className="about-content-section3">
-            <div className="about-section2-left-side fade-image">
+            <div className="about-section3-left-side fade-image uniform-image">
               <img src={section1Images[index1]} alt="About section 1" />
             </div>
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Mission</p>
               <p className='page-text'>
-To nurture every child with sensitivity, care, and a deeper understanding, 
-fostering their holistic development. ONGC Community School aims to provide 
-an education that combines academic excellence with social responsibility, 
-environmental awareness, and a spirit of community service.
+                To nurture every child with sensitivity, care, and a deeper understanding, 
+                fostering their holistic development. ONGC Community School aims to provide 
+                an education that combines academic excellence with social responsibility, 
+                environmental awareness, and a spirit of community service.
               </p>
             </div>
           </Container>
@@ -114,33 +125,29 @@ environmental awareness, and a spirit of community service.
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Vision</p>
               <p className='page-text'>
-To be a pioneering institution that embodies vibrancy, innovation, and
- inclusivity in education, shaping future-ready individuals who contribute 
- positively to society, uphold secular values, and promote international peace and brotherhood.
+                To be a pioneering institution that embodies vibrancy, innovation, and
+                inclusivity in education, shaping future-ready individuals who contribute 
+                positively to society, uphold secular values, and promote international peace and brotherhood.
               </p>
             </div>
-            <div className="about-section3-left-side fade-image">
+            <div className="about-section3-left-side fade-image uniform-image">
               <img src={section2Images[index2]} alt="About section 2" />
             </div>
           </Container>
         </Container>
 
-  
         <Container fluid className="about-container-fluid3 g-0">
           <Container className="about-content-section3">
-            <div className="about-section3-left-side fade-image">
+            <div className="about-section3-left-side fade-image uniform-image">
               <img src={section3Images[index3]} alt="About section 3" />
             </div>
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Values</p>
               <p className='page-text'>
-       Excellence in Learning: Encouraging curiosity, critical thinking, and lifelong learning.
-
-Integrity and Respect: Upholding honesty, ethical behavior, and mutual respect.
-
-Community and Environment: Promoting social responsibility, environmental consciousness, and active community engagement.
-
-Inclusivity and Diversity: Celebrating secularism, diversity, and equal opportunities for all students.
+                Excellence in Learning: Encouraging curiosity, critical thinking, and lifelong learning.<br /><br />
+                Integrity and Respect: Upholding honesty, ethical behavior, and mutual respect.<br /><br />
+                Community and Environment: Promoting social responsibility, environmental consciousness, and active community engagement.<br /><br />
+                Inclusivity and Diversity: Celebrating secularism, diversity, and equal opportunities for all students.
               </p>
             </div>
           </Container>
@@ -148,7 +155,7 @@ Inclusivity and Diversity: Celebrating secularism, diversity, and equal opportun
       </Container>
 
       <PolicyCards />
-      <QuerySection/>
+      <QuerySection />
     </>
   );
 };

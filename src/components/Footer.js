@@ -54,7 +54,7 @@ const Footer = () => {
                 <h4>Contact Info</h4>
                 <div className="footer-contact-info">
                   <p><strong>Address:</strong><br />xxxxx International,<br />xxxxx Road, xxxxxx xxxxx, Bareilly.</p>
-                  <p><strong>Phone:</strong><br />
+                  <p><strong>Phone:</strong> <br />
                     <a href="tel:+916396854974">+91 xxxxx xxxxx</a>
                   </p>
                   <p><strong>Email:</strong><br />
