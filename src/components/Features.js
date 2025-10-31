@@ -28,7 +28,7 @@ const Features = () => {
 
   return (
     <Container fluid className='features-fluid'>
-      <Container className='features-container'>
+      <Container  className='features-container'>
         {/* Left Image Section */}
         <div className='feature-left-section'>
           <img src={require("../assets/ongc-school-children.jpg")} alt="Campus View" />

@@ -9,11 +9,12 @@
 
 .features-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   /* prevent both items from aligning vertically centered */
   position: relative;
-  flex-wrap: wrap;
+ overflow: hidden;
+ /* background-color: black; */
 }
 
 /* Left Section */
@@ -40,16 +41,16 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
   background: #fff;
-  padding: 35px 35px;
+  padding: 35px ;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   /* overlap effect */
   position: relative;
-  left: -8%;
+  left: -5%;
   margin-top: 5%;
   z-index: 2;
 }

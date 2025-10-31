@@ -29,9 +29,9 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 35px;
+  gap: 27px;
   margin-left: auto;
-  margin-right: 5%;
+  margin-right: 3.5%;
   width: 100%;
   font-weight: 600;
 }

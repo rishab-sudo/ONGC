@@ -1,7 +1,7 @@
 .test-fluid {
   margin-top: 5%;
   /* background-color: #f8f9fa; */
-  background-color: #00001b;
+  /* background-color: #00001b; */
 
   padding: 60px 0;
 }
@@ -23,11 +23,11 @@
 .test-top-sec .test-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .test-top-sec .test-desc {
-  color: #fff !important;
+  color: #000 !important;
   margin-top: 10px;
   line-height: 1.6;
 }
