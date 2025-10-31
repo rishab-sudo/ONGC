@@ -14,6 +14,7 @@
   /* prevent both items from aligning vertically centered */
   position: relative;
  overflow: hidden;
+ padding: 15px 0px;
  /* background-color: black; */
 }
 
