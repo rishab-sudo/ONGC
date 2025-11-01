@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -25,63 +24,67 @@ import Punishment from "./pages/Punishment";
 import Gallery from "./pages/Gallery";
 import AbsencePolicy from "./pages/AbsencePolicy";
 
-
 function App() {
-const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const hasLoaded = sessionStorage.getItem("hasLoaded");
 
-useEffect(() => {
-const timer = setTimeout(() => setLoading(false), 2500); // Show loader for 2.5 seconds
-return () => clearTimeout(timer);
-}, []);
+    if (!hasLoaded) {
+      setLoading(true);
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem("hasLoaded", "true");
+      }, 2500); // Show loader for 2.5s
 
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
-if (loading) {
-return (
-<div className="loader-wrapper">
-<div className="dots">
-<span className="dot dot-1" />
-<span className="dot dot-2" />
-<span className="dot dot-3" />
-</div>
-</div>
-);
+  if (loading) {
+    return (
+      <div className="loader-wrapper">
+        <div className="dots">
+          <span className="dot dot-1" />
+          <span className="dot dot-2" />
+          <span className="dot dot-3" />
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <Router>
+      <div className="App">
+        <Header className="mt-0" />
+        <div style={{ marginTop: '2rem' }}>
+          <Navbar />
+        </div>
+
+        <Routes>
+          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/feeStructure" element={<Fee />} />
+          <Route path="/ParentsGuideLines" element={<ParentsGuideLines />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/DressCode" element={<DressCode />} />
+          <Route path="/Curriculum" element={<Curriculum />} />
+          <Route path="/AcademicsCalendar" element={<AcademicsCalendar />} />
+          <Route path="/AdmissionPolicy" element={<AdmissionPolicy />} />
+          <Route path="/Activities" element={<Activities />} />
+          <Route path="/Mandatory" element={<Mandatory />} />
+          <Route path="/GeneralPolicy" element={<GeneralPolicy />} />
+          <Route path="/AbsencePolicy" element={<AbsencePolicy />} />
+          <Route path="/Punishment" element={<Punishment />} />
+          <Route path="/Gallery" element={<Gallery />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
+  );
 }
-
-
-return (
-<Router>
-<div className="App">
-<Header className="mt-0" />
-<div style={{ marginTop: '2rem' }}><Navbar /></div>
-
-
-<Routes>
-<Route path="*" element={<Home />} />
-<Route path="/" element={<Home />} />
-<Route path="/home" element={<Home />} />
-<Route path="/about" element={<About />} />
-<Route path="/feeStructure" element={<Fee />} />
-<Route path="/ParentsGuideLines" element={<ParentsGuideLines />} />
-<Route path="/contact" element={<Contact />} />
-<Route path="/DressCode" element={<DressCode />} />
-<Route path="/Curriculum" element={<Curriculum />} />
-<Route path="/AcademicsCalendar" element={<AcademicsCalendar />} />
-<Route path="/AdmissionPolicy" element={<AdmissionPolicy />} />
-<Route path="/Activities" element={<Activities />} />
-<Route path="/Mandatory" element={<Mandatory />} />
-<Route path="/GeneralPolicy" element={<GeneralPolicy />} />
-<Route path="/AbsencePolicy" element={<AbsencePolicy />} />
-<Route path="/Punishment" element={<Punishment />} />
-<Route path="/Gallery" element={<Gallery />} />
-</Routes>
-
-
-<Footer />
-</div>
-</Router>
-);
-}
-
 
 export default App;
