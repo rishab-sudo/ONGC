@@ -173,11 +173,7 @@
   margin-top: -12px;
   margin-left: 25px;
 }
-/* ✅ Curved Arrow Styling */
-/* ✅ Curved Arrow Styling */
-/* ✅ Curved Arrow Styling */
-/* ✅ Curved Arrow Styling */
-/* ✅ Curved Arrow Styling */
+
 /* ----------------------------------- */
 .navigate-left-sec {
   position: relative;
@@ -222,12 +218,13 @@
 
   .navigate-left-sec {
     width: 100%;
-    text-align: center;
+    text-align: justify;
   }
 
   .view-more-btn {
     transform: rotate(0deg) !important;
     margin: 0px !important;
+    display: none !important;
   }
 
   .navigate-right-section {

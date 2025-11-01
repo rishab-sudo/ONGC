@@ -82,9 +82,18 @@
   gap: 25px;
   margin-top: 1.2rem;
 }
+.feature-icon-div {
+  padding: 7px;
+  width: fit-content;
+  height: 100%;
+  background-color:rgba(211, 211, 211, 0.162);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
 .facility-icons{
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 45px;
 }
 /* ==== MOBILE VIEW (Image as background + white box centered) ==== */
 @media (max-width: 768px) {

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import { MdOutlineArrowOutward } from 'react-icons/md';
+import { Link } from "react-router-dom";
 import "./HomeBanner.css";
 
 const slides = [
@@ -49,9 +50,17 @@ const HomeBanner = () => {
                 </div>
 
                 <div className="slide-boxes">
-                  <div className="box">Apply Now <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} /></div>
-                  <div className="box">Admission <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} /></div>
-                  <div className="box">Chat With Us <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} /></div>
+                       <Link to="/apply" className="box">
+        Apply Now <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
+      </Link>
+
+      <Link to="/AdmissionPolicy" className="box">
+        Admission <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
+      </Link>
+
+      <Link to="/contact" className="box">
+        Contact Us <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
+      </Link>
                 </div>
               </div>
             </Carousel.Caption>

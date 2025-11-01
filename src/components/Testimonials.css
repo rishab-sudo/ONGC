@@ -149,6 +149,11 @@
 
 /* Responsive Design */
 @media (max-width: 992px) {
+  .test-top-sec {
+  width: 95% !important;
+  text-align: left;
+
+}
   .test-bottom-sec {
     flex-direction: column;
     gap: 30px;
@@ -156,14 +161,17 @@
 
   .test-left-img-div,
   .test-right-box-div {
-    width: 90%;
+    width: 100% !important;
   }
 
   .test-right-box-div {
     margin-top: 10px;
+    height: auto !important;
   }
 
   .test-box {
-    text-align: left;
+    min-width: 100% !important;
+    text-align: justify;
+    height: auto !important;
   }
 }

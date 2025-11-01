@@ -79,8 +79,7 @@ const [formData, setFormData] = useState({
           </div>
           
           {/* Row 2 */}
-          
-          <div className="form-row">
+             <div className="form-row">
             <div className="form-group">
               <label>Parent Email Address</label>
               <input

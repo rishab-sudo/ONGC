@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import "./HomeAbout.css"
 
 const HomeAbout = () => {
@@ -40,7 +41,7 @@ const HomeAbout = () => {
   </p>
 
   <div className='aboutus-btn-div'>
-    <button>More About Us</button>
+      <Link to="/about" ><button>More About Us</button></Link>
   </div>
 </div>
 

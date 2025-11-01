@@ -5,12 +5,11 @@
 
 
 .homeBanner-img {
-  width: 100vw;
+  width: 100% !important;
   height: 75vh;
   object-fit: cover;
   display: block;
 }
-
 /* 🔥 Black Overlay */
 .banner-overlay {
   position: absolute;
@@ -95,6 +94,9 @@
   border-radius: 8px;
   font-weight: bold;
   color: #fff;
+}
+.box:hover{
+  color: #ffffff !important;
 }
 
 .arrow {
