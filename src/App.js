@@ -57,7 +57,7 @@ function App() {
     <Router>
       <div className="App">
         <Header className="mt-0" />
-        <div style={{ marginTop: '2rem' }}>
+        <div >
           <Navbar />
         </div>
 

@@ -41,7 +41,7 @@ const Testimonials = () => {
     <Container fluid className="test-fluid">
       <Container className="test-container">
         <div className="test-top-sec">
-          <h1 className="test-title">Start your journey With Us</h1>
+          <h1 className="test-title">Testimonials</h1>
           <p className="test-desc">
             Education is a dynamic and evolving field that plays a crucial role
             in shaping individuals and societies. While significant challenges

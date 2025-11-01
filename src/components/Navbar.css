@@ -20,7 +20,7 @@
 }
 
 .logo {
-  width: auto !important;
+  width: 150px !important;
   height: auto;
   /* background-color: #000; */
 }
@@ -31,9 +31,10 @@
   align-items: center;
   gap: 27px;
   margin-left: auto;
-  margin-right: 3.5%;
-  width: 100%;
+  margin-right: 2.5%;
+  width: 100% !important;
   font-weight: 600;
+  /* background-color: #f0f0f0; */
 }
 
 .nav-links li {
@@ -113,7 +114,8 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin-left: auto;
+  margin-left: auto !important;
+  width: fit-content !important;
 }
 
 .dealer-btn:hover {
@@ -237,18 +239,31 @@ margin-top: 7.8rem !important;
 .side-about-title svg {
   margin-left: 10px;
 }
+/* Responsive  */
+/* Fix Contact Us alignment at medium screens (like 1200px) */
+@media screen and (max-width: 1300px) and (min-width: 992px) {
+  .nav-links {
+    gap: 20px; /* reduce gap between items */
+  }
+
+ .nav-links a,
+.dropdown-toggle {
+    font-size: 17px; /* slightly smaller text to fit */
+  }
+
+  .dealer-btn {
+    padding: 8px 12px; /* adjust padding to prevent wrapping */
+    font-size: 15px;
+  }
+}
 
 /* Responsive */
 @media screen and (max-width: 768px) {
   /* ✅ Smaller logo for mobile screens */
-@media screen and (max-width: 768px) {
   .logo {
     width: 150px !important;
     height: 100%;
   }
-
-
-}
 
   .dealer-btn {
     display: none;

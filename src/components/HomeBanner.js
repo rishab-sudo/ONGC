@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import { MdOutlineArrowOutward } from 'react-icons/md';
-import { Link } from "react-router-dom";
 import "./HomeBanner.css";
+import BannerButtons from './BannerButtons';
 
 const slides = [
   {
@@ -22,7 +21,6 @@ const slides = [
     desc: "Beyond textbooks and classrooms, we focus on discipline, innovation, and integrity to build responsible global citizens."
   },
 ];
-
 
 const HomeBanner = () => {
   return (
@@ -43,30 +41,13 @@ const HomeBanner = () => {
                 <div className="slide-text">
                   <h3 className='homebanner-title'>{slide.title}</h3>
                   <p>{slide.desc}</p>
-                  <div>
-
-                    <button className='banner-btn'> View Our Program</button>
-                  </div>
-                </div>
-
-                <div className="slide-boxes">
-                       <Link to="/apply" className="box">
-        Apply Now <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
-      </Link>
-
-      <Link to="/AdmissionPolicy" className="box">
-        Admission <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
-      </Link>
-
-      <Link to="/contact" className="box">
-        Contact Us <MdOutlineArrowOutward className="arrow" style={{ marginTop: "0px" }} />
-      </Link>
                 </div>
               </div>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
       </Carousel>
+      <BannerButtons/>
     </Container>
   );
 };
