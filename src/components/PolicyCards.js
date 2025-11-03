@@ -8,19 +8,19 @@ const PolicyCards = () => {
 
   const cards = [
     {
-      img: require("../assets/parents-guide-img.jpg"),
+      img: require("../assets/cards/policies-and-procedures.png"),
       title: "General Policy",
       desc: "We respect your privacy and ensure your data is protected with industry-leading standards.",
       link: "/general-policy"
     },
     {
-      img: require("../assets/parents-guide-img.jpg"),
+      img: require("../assets/cards/office-software-attendance-management-business-concept-infographics-web-banner-calendar.jpg"),
       title: "Absence Policy",
       desc: "Our refund process is simple and transparent for a hassle-free experience.",
       link: "/absence-policy"
     },
     {
-      img: require("../assets/parents-guide-img.jpg"),
+      img: require("../assets/cards/177330215-rechtsgerechtigkeit-mit-waage.jpg"),
       title: "Conviction",
       desc: "Learn more about the rules and policies that guide our platform operations.",
       link: "/conviction-conditions"
