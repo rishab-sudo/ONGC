@@ -8,6 +8,8 @@ import QuerySection from '../components/QuerySection'
 import  Navigate  from '../components/Navigate'
 import { motion } from "framer-motion";
 import ScrolLinks from '../components/ScrolLinks'
+import PrincipalMessage from '../components/PrincipalMessage'
+import Facilities from '../components/Facilities'
 
 const Home = () => {
   return (
@@ -23,7 +25,25 @@ const Home = () => {
       >
    <HomeAbout/>
       </motion.div>
+
+               <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+   <PrincipalMessage/>
+      </motion.div>
   
+       <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >   
+        <Facilities/>
+        </motion.div>
+        
        <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -33,14 +53,16 @@ const Home = () => {
       <Separate/>
       </motion.div>
      
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >   
         <Features/>
-        </motion.div>
+        </motion.div> */}
+
+     
 
 
  <motion.div

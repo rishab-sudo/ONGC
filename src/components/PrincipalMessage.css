@@ -1,0 +1,64 @@
+.principal-message {
+  background-image: url("../assets/Banner/mssg-bg.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 25px 0px;
+  color: #000;
+  margin-top: 3.5%;
+}
+/* Overlay for text readability */
+.principal-message::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.45); */
+  z-index: 0;
+}
+
+.principal-message .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* View More Button */
+.view-btn {
+  background-color: #902724;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #b7312e;
+  transform: scale(1.05);
+}
+
+/* Smooth text expansion */
+.extra-text {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .principal-message {
+    text-align: center;
+  }
+
+  .view-btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .principal-message img {
+    margin-top: 20px;
+  }
+}

@@ -10,12 +10,18 @@ import "./Gallery.css";
 
 const Gallery = () => {
   const images = [
-    require("../assets/campur_life_1.jpg"),
-    require("../assets/ongc-school-img.jpg"),
-    require("../assets/testimonial_img.png"),
-    require("../assets/campur_life_1.jpg"),
-    require("../assets/ongc-school-img.jpg"),
-    require("../assets/testimonial_img.png"),
+    require("../assets/gallery/1-1024x576.jpg"),
+    require("../assets/gallery/10-1024x576.jpg"),
+    require("../assets/gallery/11-1024x576.jpg"),
+    require("../assets/gallery/13-1024x576.jpg"),
+    require("../assets/gallery/144.jpg"),
+    require("../assets/gallery/15-1024x576.jpg"),
+        require("../assets/gallery/16-1024x576.jpg"),
+            require("../assets/gallery/17-1024x576.jpg"),
+                require("../assets/gallery/19-1024x576.jpg"),
+                    require("../assets/gallery/2-1024x576.jpg"),
+                        require("../assets/gallery/4-1024x576.jpg"),
+                                                require("../assets/gallery/6-1024x576.jpg")
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);

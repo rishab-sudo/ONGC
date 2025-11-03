@@ -1,7 +1,7 @@
 .admission-form-section {
   background-image: url("../assets/Banner/mssg-bg.jpg");
   /* background-color: #000; */
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 80px 20px;
   position: relative;

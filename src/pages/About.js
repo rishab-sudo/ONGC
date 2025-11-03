@@ -111,10 +111,8 @@ const About = () => {
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Mission</p>
               <p className='page-text'>
-                To nurture every child with sensitivity, care, and a deeper understanding, 
-                fostering their holistic development. ONGC Community School aims to provide 
-                an education that combines academic excellence with social responsibility, 
-                environmental awareness, and a spirit of community service.
+         ONGC Community School aims to nurture the holistic development of every child—physically, emotionally, mentally, and spiritually. Our mission is to awaken each student’s unique potential through meaningful learning experiences, fostering creativity, compassion, and resilience. 
+         We strive to cultivate lifelong learners who contribute responsibly to society, uphold global harmony, and lead with integrity and purpose.
               </p>
             </div>
           </Container>
@@ -125,9 +123,8 @@ const About = () => {
             <div className="about-section3-right-side">
               <p className='page-heading mvc-heading'>Vision</p>
               <p className='page-text'>
-                To be a pioneering institution that embodies vibrancy, innovation, and
-                inclusivity in education, shaping future-ready individuals who contribute 
-                positively to society, uphold secular values, and promote international peace and brotherhood.
+               To build a dynamic centre of excellence that nurtures intellectual curiosity, moral integrity, and social responsibility. ONGC Community School envisions an inclusive learning community where every student is inspired to realize their full potential,
+                become a lifelong learner, and emerge as a compassionate global citizen contributing positively to the world.
               </p>
             </div>
             <div className="about-section3-left-side fade-image uniform-image">

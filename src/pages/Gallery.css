@@ -24,7 +24,7 @@
 
 /* Slide base */
 .straight-slide {
-  display: flex;
+    display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.8s ease, opacity 0.8s ease;
@@ -32,8 +32,9 @@
 
 .straight-slide img {
   width: 385px;
-  height: 350px;
-  object-fit: cover;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
   border-radius: 15px;
   cursor: pointer;
   opacity: 0.6;
