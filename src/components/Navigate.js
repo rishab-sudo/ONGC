@@ -35,7 +35,7 @@ const Navigate = () => {
           <div className='navigate-row'>
             <div className='navigate-img-text-div' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/gallery/sports/co-1.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Campus Student Life</p>
@@ -45,7 +45,7 @@ const Navigate = () => {
 
             <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/gallery/anualFest/Afn-6.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Campus Events</p>
@@ -57,7 +57,7 @@ const Navigate = () => {
           <div className='navigate-row'>
             <div className='navigate-img-text-div' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/campur_life_1.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Facilities</p>
@@ -67,7 +67,7 @@ const Navigate = () => {
 
             <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/campur_life_1.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Student Resources</p>
