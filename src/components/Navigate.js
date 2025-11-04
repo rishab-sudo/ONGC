@@ -57,7 +57,7 @@ const Navigate = () => {
           <div className='navigate-row'>
             <div className='navigate-img-text-div' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img className='right-img' src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/gallery/sports/co-7.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Facilities</p>

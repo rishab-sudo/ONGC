@@ -4,18 +4,18 @@ import Banner from "../components/Banner";
 import "./AcademicsCalendar.css";
 
 const monthImages = {
-  April: require("../assets/calendar.jpeg"),
-  May: require("../assets/calendar.jpeg"),
-  June: require("../assets/calendar.jpeg"),
-  July: require("../assets/calendar.jpeg"),
-  August: require("../assets/calendar.jpeg"),
-  September: require("../assets/calendar.jpeg"),
-  October: require("../assets/calendar.jpeg"),
-  November: require("../assets/calendar.jpeg"),
-  December: require("../assets/calendar.jpeg"),
-  January: require("../assets/calendar.jpeg"),
-  February: require("../assets/calendar.jpeg"),
-  March: require("../assets/calendar.jpeg"),
+  // April: require("../assets/calendar.jpeg"),
+  // May: require("../assets/calendar.jpeg"),
+  // June: require("../assets/calendar.jpeg"),
+  // July: require("../assets/calendar.jpeg"),
+  // August: require("../assets/calendar.jpeg"),
+  // September: require("../assets/calendar.jpeg"),
+  October: require("../assets/calendar/calendar-1.png"),
+  November: require("../assets/calendar/calendar-2.png"),
+  December: require("../assets/calendar/calendar-3.png"),
+  // January: require("../assets/calendar.jpeg"),
+  // February: require("../assets/calendar.jpeg"),
+  // March: require("../assets/calendar.jpeg"),
 };
 
 const AcademicsCalendar = () => {

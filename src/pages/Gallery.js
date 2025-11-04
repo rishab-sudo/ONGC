@@ -71,25 +71,30 @@ const Gallery = () => {
           <h2>{title}</h2>
         </div>
 
-        <Swiper
-          modules={[Autoplay, Navigation]}
-          className="straight-gallery-swiper"
-          centeredSlides={true}
-          slidesPerView={isMobile ? 1 : 3} // ✅ Fix slider on mobile
-          loop={true}
-          loopedSlides={images.length}
-          spaceBetween={0}
-          speed={1500}
-          grabCursor={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
-        >
+     <Swiper
+  modules={[Autoplay, Navigation]}
+  className="straight-gallery-swiper"
+  centeredSlides={true}
+  loop={true}
+  loopedSlides={images.length}
+  spaceBetween={0}
+  speed={1500}
+  grabCursor={true}
+  autoplay={{
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  breakpoints={{
+    0: { slidesPerView: 1 },       // 📱 Mobile
+    768: { slidesPerView: 1 },     // 💻 Tablet / Small Laptop
+    1280: { slidesPerView: 3 },    // 🖥️ Large Screens
+  }}
+>
           {images.map((img, index) => (
             <SwiperSlide key={index} className="straight-slide">
               <img
+              className="slider-img"
                 src={img}
                 alt={`${title} ${index + 1}`}
                 onClick={() => {
