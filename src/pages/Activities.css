@@ -1,8 +1,8 @@
 .calendar-table-section {
   padding: 60px 20px;
-  /* background: linear-gradient(90deg, #902724, #000); */
   color: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
 }
 
 .calendar-heading {
@@ -29,14 +29,14 @@
   background: #fff;
   border-radius: 10px;
   overflow-x: auto;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Table */
 .calendar-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 100%;
+  min-width: 600px; /* ensures scroll instead of cramped layout */
 }
 
 .calendar-table th,
@@ -49,7 +49,6 @@
 
 .calendar-table th {
   background-color: #902724;
-  /* background: linear-gradient(135deg, #902724 0%, #000 100%); */
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -65,9 +64,7 @@
 }
 
 .month-cell {
-  /* background-color: #902724; */
-  /* background: linear-gradient(135deg, #902724 0%, #000 100%); */
-   background-color: #902724;
+  background-color: #902724;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -92,16 +89,62 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+/* 📱 Mobile Optimization */
 @media (max-width: 768px) {
   .calendar-heading {
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
+
   .calendar-table-container {
     border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-  .calendar-table th, .calendar-table td {
-    font-size: 14px;
+
+  .calendar-table {
+    font-size: 13px;
+    min-width: 500px; /* allows horizontal scroll */
+  }
+
+  .calendar-table th,
+  .calendar-table td {
     padding: 10px;
+  }
+
+  .month-cell {
+    width: 80px;
+    font-size: 13px;
+  }
+
+  /* Add horizontal scroll hint */
+  .calendar-table-container::after {
+    content: "← Swipe →";
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #902724;
+    margin-top: 6px;
+    opacity: 0.7;
+  }
+}
+
+/* 📱 Extra small devices (<=480px) */
+@media (max-width: 480px) {
+  .calendar-table {
+    font-size: 12px;
+    min-width: 450px;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    padding: 8px;
+  }
+
+  .calendar-heading {
+    font-size: 20px;
+  }
+
+  .calendar-table ul {
+    padding-left: 16px;
   }
 }
