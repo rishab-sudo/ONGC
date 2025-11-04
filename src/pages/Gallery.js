@@ -9,43 +9,60 @@ import "swiper/css/navigation";
 import "./Gallery.css";
 
 const Gallery = () => {
-  const images = [
-    require("../assets/gallery/1-1024x576.jpg"),
-    require("../assets/gallery/10-1024x576.jpg"),
-    require("../assets/gallery/11-1024x576.jpg"),
-    require("../assets/gallery/13-1024x576.jpg"),
-    require("../assets/gallery/144.jpg"),
-    require("../assets/gallery/15-1024x576.jpg"),
-        require("../assets/gallery/16-1024x576.jpg"),
-            require("../assets/gallery/17-1024x576.jpg"),
-                require("../assets/gallery/19-1024x576.jpg"),
-                    require("../assets/gallery/2-1024x576.jpg"),
-                        require("../assets/gallery/4-1024x576.jpg"),
-                                                require("../assets/gallery/6-1024x576.jpg")
+  // 1️⃣ Co-Curricular Activities Images
+  const coCurricularImages = [
+    require("../assets/gallery/sports/co-1.jpg"),
+    require("../assets/gallery/sports/co-2.jpg"),
+    require("../assets/gallery/sports/co-3.jpg"),
+    require("../assets/gallery/sports/co-4.jpg"),
+    require("../assets/gallery/sports/co-5.jpg"),
+    require("../assets/gallery/sports/co-6.jpg"),
+    require("../assets/gallery/sports/co-7.jpg"),
+    require("../assets/gallery/sports/co-8.jpg"),
+    require("../assets/gallery/sports/co-9.jpg"),
+    require("../assets/gallery/sports/co-10.jpg"),
+    require("../assets/gallery/sports/co-11.jpg"),
+    require("../assets/gallery/sports/co-12.jpg"),
+    require("../assets/gallery/sports/co-13.jpg"),
+    require("../assets/gallery/sports/co-14.jpg"),
+  ];
+
+  // 2️⃣ College Fest Images
+  const festImages = [
+    require("../assets/gallery/anualFest/Afn-3.jpg"),
+    require("../assets/gallery/anualFest/Afn-4.jpg"),
+    require("../assets/gallery/anualFest/Afn-5.jpg"),
+    require("../assets/gallery/anualFest/Afn-6.jpg"),
+    require("../assets/gallery/anualFest/Afn-7.jpg"),
+    require("../assets/gallery/anualFest/Afn-8.jpg"),
+    require("../assets/gallery/anualFest/Afn-9.jpg"),
+    require("../assets/gallery/anualFest/Afn-10.jpg"),
+    require("../assets/gallery/anualFest/Afn-11.jpg"),
+    require("../assets/gallery/anualFest/Afn-12.jpg"),
+    require("../assets/gallery/anualFest/Afn-13.jpg"),
+    require("../assets/gallery/anualFest/Afn-14.jpg"),
+    require("../assets/gallery/anualFest/Afn-15.jpg"),
+    require("../assets/gallery/anualFest/Afn-16.jpg"),
+    require("../assets/gallery/anualFest/Afn-17.jpg"),
+    require("../assets/gallery/anualFest/Afn-18.jpg"),
+    require("../assets/gallery/anualFest/Afn-19.jpg"),
+    require("../assets/gallery/anualFest/Afn-20.jpg"),
+    require("../assets/gallery/anualFest/Afn-21.jpg"),
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [activeGallery, setActiveGallery] = useState(null);
 
-  const handleNext = () => setSelectedIndex((prev) => (prev + 1) % images.length);
-  const handlePrev = () =>
+  const handleNext = (images) =>
+    setSelectedIndex((prev) => (prev + 1) % images.length);
+  const handlePrev = (images) =>
     setSelectedIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
-  return (
-    <>
-        <Banner
-            title="Gallery"
-            image={require("../assets/parents-guide-img.jpg")}
-            breadcrumbs={[
-              { label: "Gallery", link: "/Gallery" },
-              { label: "Gallery", link: "/Gallery" },
-            ]}
-          />
-  
-    <section className="modern-gallery-section">
+  const renderGallery = (title, images, id) => (
+    <section className="modern-gallery-section" key={id}>
       <Container fluid>
         <div className="gallery-header">
-          <h2>Campus Life Moments</h2>
-          <p>Capturing the spirit, energy, and joy of our students</p>
+          <h2>{title}</h2>
         </div>
 
         <Swiper
@@ -64,26 +81,33 @@ const Gallery = () => {
             pauseOnMouseEnter: true,
           }}
         >
-          
           {images.map((img, index) => (
             <SwiperSlide key={index} className="straight-slide">
               <img
                 src={img}
-                alt={`Gallery ${index + 1}`}
-                onClick={() => setSelectedIndex(index)}
+                alt={`${title} ${index + 1}`}
+                onClick={() => {
+                  setSelectedIndex(index);
+                  setActiveGallery(id);
+                }}
               />
             </SwiperSlide>
           ))}
-
         </Swiper>
 
-        {/* Popup full view */}
-        {selectedIndex !== null && (
-          <div className=" image-popup ">
-            <span className="close-btn" onClick={() => setSelectedIndex(null)}>
+        {/* Fullscreen Image Popup */}
+        {selectedIndex !== null && activeGallery === id && (
+          <div className="image-popup">
+            <span
+              className="close-btn"
+              onClick={() => {
+                setSelectedIndex(null);
+                setActiveGallery(null);
+              }}
+            >
               ✕
             </span>
-            <button className="nav-btn left" onClick={handlePrev}>
+            <button className="nav-btn left" onClick={() => handlePrev(images)}>
               ‹
             </button>
             <img
@@ -91,15 +115,32 @@ const Gallery = () => {
               alt="Full View"
               className="popup-img"
             />
-            <button className="nav-btn right" onClick={handleNext}>
+            <button className="nav-btn right" onClick={() => handleNext(images)}>
               ›
             </button>
           </div>
         )}
       </Container>
     </section>
+  );
 
-      </>
+  return (
+    <>
+      <Banner
+        title="Gallery"
+        image={require("../assets/parents-guide-img.jpg")}
+        breadcrumbs={[
+          { label: "Gallery", link: "/Gallery" },
+          { label: "Gallery", link: "/Gallery" },
+        ]}
+      />
+
+      {/* Section 1 — Co-Curricular Activities */}
+      {renderGallery("Co-Curricular Activities", coCurricularImages, "co-curricular")}
+
+      {/* Section 2 — College Fest */}
+      {renderGallery("College Fest", festImages, "fest")}
+    </>
   );
 };
 
