@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ScrolLinks.css";
 
@@ -7,7 +7,7 @@ const ScrolLinks = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = 150; // adjust how much to scroll
+      const scrollAmount = 200; // scroll step
       if (direction === "left") {
         scrollRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
       } else {
@@ -16,6 +16,24 @@ const ScrolLinks = () => {
     }
   };
 
+  // Start showing buttons 3–6 initially
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = 350;
+    }
+  }, []);
+
+  const buttons = [
+    { to: "/link1", text: "Admission Policy" },
+    { to: "/link2", text: "Fee Structure" },
+    { to: "/link3", text: "Academics Calendar" },
+    { to: "/link4", text: "Activities" },
+    { to: "/link5", text: "Gallery" },
+    { to: "/link6", text: "General Policies" },
+    { to: "/link7", text: "Mandatory PD" },
+    { to: "/link8", text: "Contact Us" },
+  ];
+
   return (
     <div className="scroll-links-section">
       <button className="scroll-btn left" onClick={() => scroll("left")}>
@@ -23,23 +41,15 @@ const ScrolLinks = () => {
       </button>
 
       <div className="scroll-buttons-container" ref={scrollRef}>
-        <Link to="/link1" className="info-btn">Button 1</Link>
-        <Link to="/link2" className="info-btn">Button 2</Link>
-        <Link to="/link3" className="info-btn">Button 3</Link>
-        <Link to="/link4" className="info-btn">Button 4</Link>
-        <Link to="/link5" className="info-btn">Button 5</Link>
-        <Link to="/link6" className="info-btn">Button 6</Link>
-        <Link to="/link1" className="info-btn">Button 7</Link>
-        <Link to="/link2" className="info-btn">Button 8</Link>
-        <Link to="/link3" className="info-btn">Button 9</Link>
-        <Link to="/link4" className="info-btn">Button 10</Link>
-        <Link to="/link5" className="info-btn">Button 11</Link>
-        <Link to="/link6" className="info-btn">Button 12</Link>
-
+        {buttons.map((btn, index) => (
+          <Link key={index} to={btn.to} className="info-btn">
+            {btn.text}
+          </Link>
+        ))}
       </div>
 
       <button className="scroll-btn right" onClick={() => scroll("right")}>
-        <span className="scrol-icon>">&#8250;</span>
+        &#8250;
       </button>
     </div>
   );

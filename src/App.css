@@ -47,7 +47,7 @@ animation: wave 0.8s ease-in-out infinite;
 }
 /*  */
 .page-heading{
-    font-size: 32px;
+    font-size: 32px !important;
     font-family: poppins;
 }
 .sub-heading{
