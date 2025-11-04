@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import "./Gallery.css";
 
 const Gallery = () => {
-  // 1️⃣ Co-Curricular Activities Images
   const coCurricularImages = [
     require("../assets/gallery/sports/co-1.jpg"),
     require("../assets/gallery/sports/co-2.jpg"),
@@ -27,7 +26,6 @@ const Gallery = () => {
     require("../assets/gallery/sports/co-14.jpg"),
   ];
 
-  // 2️⃣ College Fest Images
   const festImages = [
     require("../assets/gallery/anualFest/Afn-3.jpg"),
     require("../assets/gallery/anualFest/Afn-4.jpg"),
@@ -52,6 +50,14 @@ const Gallery = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(null);
   const [activeGallery, setActiveGallery] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleNext = (images) =>
     setSelectedIndex((prev) => (prev + 1) % images.length);
@@ -69,7 +75,7 @@ const Gallery = () => {
           modules={[Autoplay, Navigation]}
           className="straight-gallery-swiper"
           centeredSlides={true}
-          slidesPerView={3}
+          slidesPerView={isMobile ? 1 : 3} // ✅ Fix slider on mobile
           loop={true}
           loopedSlides={images.length}
           spaceBetween={0}
@@ -95,29 +101,50 @@ const Gallery = () => {
           ))}
         </Swiper>
 
-        {/* Fullscreen Image Popup */}
+        {/* Fullscreen Popup */}
         {selectedIndex !== null && activeGallery === id && (
-          <div className="image-popup">
-            <span
-              className="close-btn"
-              onClick={() => {
-                setSelectedIndex(null);
-                setActiveGallery(null);
-              }}
-            >
-              ✕
-            </span>
-            <button className="nav-btn left" onClick={() => handlePrev(images)}>
-              ‹
-            </button>
-            <img
-              src={images[selectedIndex]}
-              alt="Full View"
-              className="popup-img"
-            />
-            <button className="nav-btn right" onClick={() => handleNext(images)}>
-              ›
-            </button>
+          <div
+            className="image-popup"
+            onClick={() => {
+              setSelectedIndex(null);
+              setActiveGallery(null);
+            }}
+          >
+            {/* stop propagation so clicking on image doesn’t close popup */}
+            <div onClick={(e) => e.stopPropagation()}>
+              {!isMobile && (
+                <span
+                  className="close-btn"
+                  onClick={() => {
+                    setSelectedIndex(null);
+                    setActiveGallery(null);
+                  }}
+                >
+                  ✕
+                </span>
+              )}
+              {!isMobile && (
+                <button
+                  className="nav-btn left"
+                  onClick={() => handlePrev(images)}
+                >
+                  ‹
+                </button>
+              )}
+              <img
+                src={images[selectedIndex]}
+                alt="Full View"
+                className="popup-img"
+              />
+              {!isMobile && (
+                <button
+                  className="nav-btn right"
+                  onClick={() => handleNext(images)}
+                >
+                  ›
+                </button>
+              )}
+            </div>
           </div>
         )}
       </Container>
@@ -135,10 +162,7 @@ const Gallery = () => {
         ]}
       />
 
-      {/* Section 1 — Co-Curricular Activities */}
       {renderGallery("Co-Curricular Activities", coCurricularImages, "co-curricular")}
-
-      {/* Section 2 — College Fest */}
       {renderGallery("College Fest", festImages, "fest")}
     </>
   );

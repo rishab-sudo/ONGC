@@ -153,12 +153,32 @@
 
 /* Responsive popup */
 @media (max-width: 768px) {
-  .popup-box {
+  .modern-gallery-section {
+  margin-top: 5%;
+  padding: 25px 0;
+  background: #fff;
+  text-align: center;
+}
+  .straight-gallery-swiper {
+  width: 100%;
+  padding: 25px 0;
+}
+.popup-box {
     width: 90%;
-    height: 300px;
+    height: 100%;
     padding: 6px;
   }
-
+  .straight-slide img {
+  width: 380px;
+  max-width: 380px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.6s ease;
+}
   .popup-img {
     border-radius: 6px;
   }
@@ -168,12 +188,11 @@
     width: 28px;
     height: 28px;
     line-height: 28px;
-    top: 5px;
+    top: 50px;
     right: 8px;
   }
 
   .nav-btn {
-    font-size: 2rem;
-    padding: 0 10px;
+display: none !important;
   }
 }
