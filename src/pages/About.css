@@ -48,60 +48,57 @@
 }
 
 /* Section mission vision value */
-.about-container-fluid3 {
-  margin-top: 2.5%;
-  padding: 0;
-  background-color: #ffffff !important;
+/* Mission-Vision-Values Section */
+.mvc-section {
+  padding: 40px 0;
+  background: #ffffff;
 }
 
-.mvc-heading {
-  text-align: left !important;
-}
-
-.about-content-section3 {
+.mvc-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 25px 5px;
-  /* background-color: black; */
+  justify-content: space-between;
+  gap: 35px;
 }
 
-.about-section3-left-side{
-  width: 50% !important;
-  /* background-color: antiquewhite; */
-}
-.about-section3-left-side img {
-  width: 100% !important;
-  
-}
-/* text  */
-.about-section3-right-side {
-  text-align: justify;
-  width: 45%;
- 
+.mvc-row-1, .mvc-row-3 {
+  flex-direction: row; /* Image Left - Text Right */
 }
 
-/* --- Make all section images same height and width --- */
-.uniform-image img {
+.mvc-row-2 {
+  flex-direction: row-reverse; /* Text Left - Image Right */
+}
+
+.mvc-image {
+  width: 50%;
+}
+
+.mvc-image img {
   width: 100%;
-  height: 400px; /* ✅ consistent height */
-  object-fit: cover; /* ✅ ensures proportional crop */
-  border-radius: 10px; /* optional - keeps clean edges */
-}
-
-/* Smooth fading animation */
-.fade-image img {
-  width: 100%;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
   animation: lightFade 4s ease-in-out infinite alternate;
 }
 
+.mvc-content {
+  width: 47%;
+  text-align: justify;
+}
+
+.mvc-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Animation */
 @keyframes lightFade {
   0% { opacity: 0.92; }
   50% { opacity: 1; }
   100% { opacity: 0.92; }
 }
+
 
 /* --------------------------------- */
 @media (max-width: 768px) {
@@ -151,30 +148,19 @@
     text-align: justify;
   }
 
-  .about-container-fluid3 {
-    margin-top: 2.5%;
-    padding: 0;
+    .mvc-row {
+    flex-direction: column !important; /* Image Top + Text Bottom for ALL */
   }
 
-  .about-content-section3 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 5px;
+  .mvc-image, .mvc-content {
+    width: 100%;
   }
 
-  .about-section3-left-side,
-  .uniform-image {
-    min-width: 95% !important;
+  .mvc-image img {
+    height: 280px;
   }
 
-  .uniform-image img {
-    height: 280px; /* smaller but consistent on mobile */
-    object-fit: cover;
-  }
-
-  .about-section3-right-side {
-    text-align: justify;
-    min-width: 95%;
+  .mvc-title {
+    text-align: center;
   }
 }

@@ -100,56 +100,56 @@ const About = () => {
     </p>
   </div>
 </Container>
-
-
-        {/* ===== Section 2 ===== */}
-        <Container fluid className="about-container-fluid3 g-0">
-          <Container className="about-content-section3">
-            <div className="about-section3-left-side fade-image uniform-image">
-              <img src={section1Images[index1]} alt="About section 1" />
-            </div>
-            <div className="about-section3-right-side">
-              <p className='page-heading mvc-heading'>Mission</p>
-              <p className='page-text'>
-         ONGC Community School aims to nurture the holistic development of every child—physically, emotionally, mentally, and spiritually. Our mission is to awaken each student’s unique potential through meaningful learning experiences, fostering creativity, compassion, and resilience. 
-         We strive to cultivate lifelong learners who contribute responsibly to society, uphold global harmony, and lead with integrity and purpose.
-              </p>
-            </div>
-          </Container>
-        </Container>
-
-        <Container fluid className="about-container-fluid3 g-0">
-          <Container className="about-content-section3">
-            <div className="about-section3-right-side">
-              <p className='page-heading mvc-heading'>Vision</p>
-              <p className='page-text'>
-               To build a dynamic centre of excellence that nurtures intellectual curiosity, moral integrity, and social responsibility. ONGC Community School envisions an inclusive learning community where every student is inspired to realize their full potential,
-                become a lifelong learner, and emerge as a compassionate global citizen contributing positively to the world.
-              </p>
-            </div>
-            <div className="about-section3-left-side fade-image uniform-image">
-              <img src={section2Images[index2]} alt="About section 2" />
-            </div>
-          </Container>
-        </Container>
-
-        <Container fluid className="about-container-fluid3 g-0">
-          <Container className="about-content-section3">
-            <div className="about-section3-left-side fade-image uniform-image">
-              <img src={section3Images[index3]} alt="About section 3" />
-            </div>
-            <div className="about-section3-right-side">
-              <p className='page-heading mvc-heading'>Values</p>
-              <p className='page-text'>
-                Excellence in Learning: Encouraging curiosity, critical thinking, and lifelong learning.<br /><br />
-                Integrity and Respect: Upholding honesty, ethical behavior, and mutual respect.<br /><br />
-                Community and Environment: Promoting social responsibility, environmental consciousness, and active community engagement.<br /><br />
-                Inclusivity and Diversity: Celebrating secularism, diversity, and equal opportunities for all students.
-              </p>
-            </div>
-          </Container>
-        </Container>
       </Container>
+
+
+{/* ===== Mission ===== */}
+<Container fluid className="mvc-section">
+  <Container className="mvc-row mvc-row-1">
+    <div className="mvc-image">
+      <img src={section1Images[index1]} alt="Mission" />
+    </div>
+    <div className="mvc-content">
+      <h2 className="mvc-title">Mission</h2>
+      <p className="mvc-text">
+      ONGC Community School aims to nurture the holistic development of every child—physically, emotionally, mentally, and spiritually. Our mission is to awaken each student’s 
+      unique potential through meaningful learning experiences, fostering creativity, compassion, and resilience. We strive to cultivate lifelong learners who contribute responsibly to society, uphold global harmony, and lead with integrity and purpose.
+      </p>
+    </div>
+  </Container>
+</Container>
+
+{/* ===== Vision ===== */}
+<Container fluid className="mvc-section">
+  <Container className="mvc-row mvc-row-2">
+    <div className="mvc-image">
+      <img src={section2Images[index2]} alt="Vision" />
+    </div>
+    <div className="mvc-content">
+      <h2 className="mvc-title">Vision</h2>
+      <p className="mvc-text">
+        To build a dynamic centre of excellence that nurtures intellectual curiosity, moral integrity, and social responsibility. ONGC Community School envisions an inclusive learning community where every student is inspired to realize their
+         full potential, become a lifelong learner, and emerge as a compassionate global citizen contributing positively to the world.
+      </p>
+    </div>
+    
+  </Container>
+</Container>
+
+{/* ===== Values ===== */}
+<Container fluid className="mvc-section">
+  <Container className="mvc-row mvc-row-3">
+    <div className="mvc-image">
+      <img src={section3Images[index3]} alt="Values" />
+    </div>
+    <div className="mvc-content">
+      <h2 className="mvc-title">Values</h2>
+      <p className="mvc-text">
+        Excellence in Learning, Integrity and Respect, Community & Environment, Inclusivity and Diversity...
+      </p>
+    </div>
+  </Container>
+</Container>
 
       <PolicyCards />
       <QuerySection />

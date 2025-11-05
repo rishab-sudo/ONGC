@@ -17,7 +17,7 @@ const PrincipalMessage = () => {
           <div className="col-md-6 ">
             <h2 className="mb-4 fw-bold">Principal&apos;s Message</h2>
 
-            <p className="lead">
+            <p className=" page-text">
               It is my pleasure to welcome you at Radha Madhav Public School
               community. This is a school where we are deeply committed to
               ensuring that every day, each and every student has the attention
@@ -27,7 +27,7 @@ const PrincipalMessage = () => {
             </p>
 
             {expanded && (
-              <p className="lead extra-text mt-3">
+              <p className=" extra-text page-text">
                 We believe in nurturing each student’s academic, social, and
                 emotional growth. Our goal is to empower students to become
                 confident, lifelong learners who contribute positively to

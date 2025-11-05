@@ -19,7 +19,7 @@
   width: 350px;
   background: #fff;
   border-radius: 16px;
-  overflow: hidden;
+  overflow: visible !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   padding: 0px;
   transition: all 0.3s ease-in-out;
@@ -52,13 +52,12 @@
 }
 
 @media (max-width: 768px) {
-  .card-div {
-    margin: auto;
-    min-width: 95%;
+.card-div {
+  width: 100%;
+  max-width: 350px;
+}
 
-  }
-
-  .sep-icon-div img {
+.sep-icon-div img {
     height: 180px;
   }
 
