@@ -71,10 +71,10 @@ const ParentsGuideLines = () => {
           { label: "PARENTS GUIDELINES", link: "/ParentsGuideLines" },
         ]}
       />
- <Container fluid className='pg-fluid g-0'>
-
 <ScrolLinks/>
 
+
+ <Container fluid className='pg-fluid g-0'>
      <Container className='pg-container '>
           <div className="instructions-container">
             <div className="instructions-box scrollable-box">
@@ -86,19 +86,21 @@ const ParentsGuideLines = () => {
   {/* Initial visible points */}
   {initialPoints.map((point, index) =>
     typeof point === "string" ? (
-      <li key={index}>
+      <li key={index} className="guideline">
         <span className="circle-number">{index + 1}</span>
-        {point}
+        <div className="guideline-text">{point}</div>
       </li>
     ) : (
-      <li key={index}>
+      <li key={index} className="guideline">
         <span className="circle-number">{index + 1}</span>
-        {point.main}
-        <ul className="sub-points">
-          {point.sub.map((subPoint, subIndex) => (
-            <li key={subIndex}>{subPoint}</li>
-          ))}
-        </ul>
+        <div className="guideline-text">
+          {point.main}
+          <ul className="guideline-points">
+            {point.sub.map((subPoint, subIndex) => (
+              <li key={subIndex}>{subPoint}</li>
+            ))}
+          </ul>
+        </div>
       </li>
     )
   )}
@@ -107,27 +109,30 @@ const ParentsGuideLines = () => {
   {viewMore &&
     remainingPoints.map((point, index) =>
       typeof point === "string" ? (
-        <li key={index + initialPoints.length}>
+        <li key={index + initialPoints.length} className="guideline">
           <span className="circle-number">
             {index + 1 + initialPoints.length}
           </span>
-          {point}
+          <div className="guideline-text">{point}</div>
         </li>
       ) : (
-        <li key={index + initialPoints.length}>
+        <li key={index + initialPoints.length} className="guideline">
           <span className="circle-number">
             {index + 1 + initialPoints.length}
           </span>
-          {point.main}
-          <ul className="sub-points">
-            {point.sub.map((subPoint, subIndex) => (
-              <li key={subIndex}>{subPoint}</li>
-            ))}
-          </ul>
+          <div className="guideline-text">
+            {point.main}
+            <ul className="guideline-points">
+              {point.sub.map((subPoint, subIndex) => (
+                <li key={subIndex}>{subPoint}</li>
+              ))}
+            </ul>
+          </div>
         </li>
       )
     )}
 </ul>
+
 
 
               {!viewMore && remainingPoints.length > 0 && (

@@ -52,30 +52,31 @@ const GeneralPolicy = () => {
               <p className="page-heading">General School Policy</p>
             </div>
 
-            <ul>
-              {generalPoints
-                .slice(0, viewMore ? generalPoints.length : visibleCount)
-                .map((point, index) =>
-                  typeof point === 'string' ? (
-                    <li key={index}>
-                      <span className="circle-number">{index + 1}</span>
-                      {point}
-                    </li>
-                  ) : (
-                    <li key={index}>
-                      <span className="circle-number">{index + 1}</span>
-                      {point.main}
-                      <ul className="sub-points">
-                        {point.sub.map((subItem, subIndex) => (
-                          <li key={subIndex}>{subItem}</li>
-                        ))}
-                      </ul>
-                    </li>
-                  )
-                )}
+          <ul>
+  {generalPoints
+    .slice(0, viewMore ? generalPoints.length : visibleCount)
+    .map((point, index) =>
+      typeof point === "string" ? (
+        <li key={index} className="policy-points">
+          <span className="circle-number">{index + 1}</span>
+          <div className="point-text">{point}</div>
+        </li>
+      ) : (
+        <li key={index} className="policy-points">
+          <span className="circle-number">{index + 1}</span>
+          <div className="point-text">
+            {point.main}
+            <ul className="policy-sub-points">
+              {point.sub.map((subItem, subIndex) => (
+                <li key={subIndex}>{subItem}</li>
+              ))}
             </ul>
-
-            {!viewMore && generalPoints.length > visibleCount && (
+          </div>
+        </li>
+      )
+    )}
+</ul>
+{!viewMore && generalPoints.length > visibleCount && (
               <button
                 className="view-moree-btn"
                 onClick={() => setViewMore(true)}
