@@ -80,8 +80,9 @@
 
 .pg-banner-left h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
+  display: none !important;
 }
 
 
