@@ -69,11 +69,11 @@ animation: wave 0.8s ease-in-out infinite;
 @media (max-width: 768px) {
 
    .page-heading{
-    font-size: 28px;
+    font-size: 24px !important;
     
 }
 .sub-heading{
-    font-size: 24px;
+    font-size: 22px !important;
     font-weight: 600;
 }
 .special-heading {
@@ -85,6 +85,6 @@ animation: wave 0.8s ease-in-out infinite;
     border-radius: 30px;    */
 } 
 .page-text{
-    font-size: 16px;
+    font-size: 17px !important;
 }
 }

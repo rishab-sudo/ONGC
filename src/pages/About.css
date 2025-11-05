@@ -120,6 +120,7 @@
 
   .about-heading {
     text-align: left !important;
+    margin-right: auto;
   }
 
   .about-container-fluid2 {
@@ -161,6 +162,6 @@
   }
 
   .mvc-title {
-    text-align: center;
+    text-align: left;
   }
 }
