@@ -1,6 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
 import { Container } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+
 import "./Separate.css";
 
 const Separate = () => {
@@ -8,7 +13,7 @@ const Separate = () => {
     {
       id: 1,
       title: "Science Department",
-      desc: "Offering Physics, Chemistry, Biology, and Mathematics  nurturing future engineers, doctors, and researchers.",
+      desc: "Offering Physics, Chemistry, Biology, and Mathematics nurturing future engineers, doctors, and researchers.",
       img: require("../assets/ongc-dep-1.avif"),
     },
     {
@@ -25,21 +30,6 @@ const Separate = () => {
     },
   ];
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 700,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    arrows: false,
-    responsive: [
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
-    ],
-  };
-
   return (
     <Container fluid className="sep-fluid">
       <Container className="sep-container">
@@ -53,10 +43,21 @@ const Separate = () => {
         </div>
 
         <div className="bottom-sec-div">
-          <Slider {...settings}>
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            loop={true}
+            spaceBetween={25}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              992: { slidesPerView: 3 },
+            }}
+            className="sep-swiper"
+          >
             {departments.map((dept) => (
-              <div key={dept.id} className="icon-text-div">
-                <div className="card-div">
+              <SwiperSlide key={dept.id}>
+                <div className="sep-card-div">
                   <div className="sep-icon-div">
                     <img src={dept.img} alt={dept.title} />
                   </div>
@@ -65,9 +66,9 @@ const Separate = () => {
                     <p>{dept.desc}</p>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </Slider>
+          </Swiper>
         </div>
       </Container>
     </Container>
