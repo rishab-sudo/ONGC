@@ -8,10 +8,11 @@ const pdfFiles = {
   affiliation: require("../assets/doc/Affiliation-2027-1.pdf"),
   society: require("../assets/doc/2.pdf"),
   noc: require("../assets/doc/3.pdf"),
-  building: require("../assets/doc/8.pdf"),
-  fire: require("../assets/doc/Affiliation-2027-7.pdf"),
-  deo: require("../assets/doc/Building-Safety-Certificate-.pdf"),
-  water: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
+    building : require("../assets/doc/Building-Safety-Certificate-.pdf"),
+  deo: require("../assets/doc/8.pdf"),
+  water: require("../assets/doc/Affiliation-2027-7.pdf"),
+
+  fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
   fees: require("../assets/doc/smc-9.pdf"),
 
 };

@@ -89,3 +89,10 @@
     font-size: 16px;
   }
 }
+/* Tablet & Small Laptop (width between 769px and 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .banner-button {
+    width: fit-content;   
+    padding: 14px 22px;   
+  }
+}
