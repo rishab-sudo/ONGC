@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Banner from "../components/Banner";
 import { Container, Modal } from "react-bootstrap";
-import { FaFilePdf } from "react-icons/fa";
+import { FaFilePdf, FaYoutube } from "react-icons/fa";
 import "./Mandatory.css";
 
 const pdfFiles = {
@@ -10,10 +10,11 @@ const pdfFiles = {
   noc: require("../assets/doc/3.pdf"),
     building : require("../assets/doc/Building-Safety-Certificate-.pdf"),
   deo: require("../assets/doc/8.pdf"),
-  water: require("../assets/doc/Affiliation-2027-7.pdf"),
+  water: require("../assets/doc/6.pdf"),
 
   fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
-  fees: require("../assets/doc/smc-9.pdf"),
+  fees: require("../assets/doc/FEE-STRUCTURE-2025-26.jpeg"),
+    smc: require("../assets/doc/smc-9.pdf"),
 
 };
 
@@ -206,7 +207,7 @@ const Mandatory = () => {
               <tr>
                 <td>7</td>
                 <td>Video of School Infrastructure</td>
-                <td><FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.affiliation)} /></td>
+                <td><span>YouTube </span><FaYoutube className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.affiliation)} /></td>
               </tr>
             </tbody>
           </table>
