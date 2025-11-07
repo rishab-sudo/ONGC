@@ -7,7 +7,7 @@ const BannerButtons = () => {
     { 
       icon: require("../assets/Banner/ico_1.png"), 
       text: "Upcoming Events",
-      link: "/AcademicsCalendar" // internal route or external URL
+      link: "/activities" // internal route or external URL
     },
     { 
       icon: require("../assets/Banner/ico_2.png"), 

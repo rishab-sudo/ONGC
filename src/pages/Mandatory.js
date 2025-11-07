@@ -5,16 +5,15 @@ import { FaFilePdf } from "react-icons/fa";
 import "./Mandatory.css";
 
 const pdfFiles = {
-  // affiliation: require("../assets/sample.pdf"),
-  // society: require("../assets/sample.pdf"),
-  // noc: require("../assets/sample.pdf"),
-  // building: require("../assets/sample.pdf"),
-  // fire: require("../assets/sample.pdf"),
-  // deo: require("../assets/sample.pdf"),
-  // water: require("../assets/sample.pdf"),
-  // fees: require("../assets/sample.pdf"),
-  // calendar: require("../assets/sample.pdf"),
-  // smc: require("../assets/sample.pdf"),
+  affiliation: require("../assets/doc/Affiliation-2027-1.pdf"),
+  society: require("../assets/doc/2.pdf"),
+  noc: require("../assets/doc/3.pdf"),
+  building: require("../assets/doc/8.pdf"),
+  fire: require("../assets/doc/Affiliation-2027-7.pdf"),
+  deo: require("../assets/doc/Building-Safety-Certificate-.pdf"),
+  water: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
+  fees: require("../assets/doc/smc-9.pdf"),
+
 };
 
 const Mandatory = () => {
