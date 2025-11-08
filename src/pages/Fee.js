@@ -30,7 +30,7 @@ const Fee = () => {
       <h2 className="table-title">Academic Session Fee Structure 2025-26</h2>
 
       {/* NOTE: do NOT pass hover or striped props to Table */}
-      <Table className="custom-fee-table">
+      <Table className="custom-fee-table" > 
         <thead>
           <tr>
             <th>Class</th>

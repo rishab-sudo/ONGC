@@ -8,21 +8,21 @@ import QuerySection from '../components/QuerySection';
 
 const About = () => {
   const section1Images = [
-    require('../assets/campur_life_1.jpg'),
-    require('../assets/ongc-school-img.jpg'),
-    require('../assets/testimonial_img.png'),
+ require('../assets/mvv.jpg'),
+ require('../assets/mvv.jpg'),
+  require('../assets/mvv.jpg'),
   ];
 
   const section2Images = [
-    require('../assets/testimonial_img.png'),
-    require('../assets/ongc-school-img.jpg'),
-    require('../assets/campur_life_1.jpg'),
+    require('../assets/mvv.jpg'),
+ require('../assets/mvv.jpg'),
+ require('../assets/mvv.jpg'),
   ];
 
   const section3Images = [
-    require('../assets/ongc-school-img.jpg'),
-    require('../assets/campur_life_1.jpg'),
-    require('../assets/testimonial_img.png'),
+ require('../assets/mvv.jpg'),
+  require('../assets/mvv.jpg'),
+   require('../assets/mvv.jpg'),
   ];
 
   const [index1, setIndex1] = useState(0);
