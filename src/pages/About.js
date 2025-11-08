@@ -145,7 +145,13 @@ const About = () => {
     <div className="mvc-content">
       <h2 className="mvc-title">Values</h2>
       <p className="mvc-text">
-        Excellence in Learning, Integrity and Respect, Community & Environment, Inclusivity and Diversity...
+<span style={{fontSize:"18px", fontWeight:"600"}}>Excellence in Learning:</span> Fostering curiosity, creativity, and academic achievement.<br/>
+
+<span style={{fontSize:"18px", fontWeight:"600"}}>Integrity and Respect:</span> Building character through honesty, empathy, and respect.<br/>
+
+<span style={{fontSize:"18px", fontWeight:"600"}}>Community & Environment:</span> Encouraging social responsibility and environmental care.<br/>
+
+<span style={{fontSize:"18px", fontWeight:"600"}}>Holistic Growth:</span> Promoting balanced development of mind, body, and character.<br/>
       </p>
     </div>
   </Container>
