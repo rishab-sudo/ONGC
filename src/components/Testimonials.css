@@ -2,8 +2,7 @@
   margin-top: 5%;
   /* background-color: #f8f9fa; */
   /* background-color: #00001b; */
-
-  padding: 60px 0;
+padding: 0px ;
 }
 
 .test-container {
@@ -11,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .test-top-sec {
@@ -21,8 +21,6 @@
 }
 
 .test-top-sec .test-title {
-  font-size: 1.8rem;
-  font-weight: 700;
   color: #000 !important;
 }
 
