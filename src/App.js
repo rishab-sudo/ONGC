@@ -21,6 +21,7 @@ import AdmissionPolicy from "./pages/AdmissionPolicy";
 import Activities from './pages/Activities';
 import Mandatory from "./pages/Mandatory";
 import GeneralPolicy from "./pages/GeneralPolicy";
+import ExaminationScheme from "./pages/ExamScheme"
 import Punishment from "./pages/Punishment";
 import Gallery from "./pages/Gallery";
 import AbsencePolicy from "./pages/AbsencePolicy";
@@ -71,6 +72,7 @@ function App() {
           <Route path="/ParentsGuideLines" element={<ParentsGuideLines />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/DressCode" element={<DressCode />} />
+           <Route path="/ExaminationScheme" element={<ExaminationScheme />} />
           <Route path="/Curriculum" element={<Curriculum />} />
           <Route path="/AcademicsCalendar" element={<AcademicsCalendar />} />
           <Route path="/AdmissionPolicy" element={<AdmissionPolicy />} />

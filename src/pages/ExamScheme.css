@@ -1,0 +1,26 @@
+.exam-scheme-fluid {
+ margin-top: 2.5rem;
+  text-align: center;
+}
+.exam-scheme-container{
+    width: fit-content;
+}
+.exam-heading::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #eeee22);
+  border-radius: 2px;
+}
+/* Center the image and make it look neat */
+.exam-scheme-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+  border-radius: 8px;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.15); */
+  
+}

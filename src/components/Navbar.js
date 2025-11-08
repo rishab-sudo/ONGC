@@ -57,7 +57,7 @@ const Navbar = () => {
               <ul className={`dropdown-menu ${openDropdown === "academics" ? 'show' : ''}`}>
                 <li><a href="/Curriculum">Curriculum</a></li>
                 <li><a href="/AcademicsCalendar">Academics Calendar</a></li>
-                <li><a href="/examinationScheme">Examination Scheme</a></li>
+                <li><a href="/ExaminationScheme">Examination Scheme</a></li>
               </ul>
             </li>
 
