@@ -19,7 +19,7 @@ const monthImages = {
 };
 
 const AcademicsCalendar = () => {
-  const [selectedMonth, setSelectedMonth] = useState("April");
+  const [selectedMonth, setSelectedMonth] = useState("November");
 
   return (
     <>

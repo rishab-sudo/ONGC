@@ -12,7 +12,7 @@ const HomeAbout = () => {
         </div>
 
      <div className='homeabout-text-div'>
-  <p className='special-heading'>ABOUT US</p>
+  <h5 className='special-heading'>ABOUT US</h5>
   <h1 className='page-heading home-about-heading'>
     Building Bright Futures Through Quality Education
   </h1>
@@ -30,7 +30,7 @@ const HomeAbout = () => {
 
   <p className='sub-heading'>Holistic Development</p>
   <p className='page-text'>
-    We believe education goes beyond books — promoting sports, arts, and leadership activities that help students
+    We believe education goes beyond books, promoting sports, arts, and leadership activities that help students
     grow into confident and responsible individuals.
   </p>
 

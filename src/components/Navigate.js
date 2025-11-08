@@ -67,7 +67,7 @@ learning and value-based guidance, students explore, learn, and grow into respon
 
             <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("#")}>
               <div className="img-wrapper">
-                <img className='right-img' src={require("../assets/campur_life_1.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/mandatory.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
                 <p>Mandatory Disclosure</p>
