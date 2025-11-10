@@ -7,18 +7,18 @@ import BannerButtons from './BannerButtons';
 const slides = [
   {
     img: require("../assets/Banner/ongc-bn-1.jpg"),
-    title: "Nurturing Minds, Shaping Futures",
-    desc: "A CBSE-affiliated institution committed to academic excellence and holistic development from Kindergarten to Class 12."
+    title: " Empowering Minds, Bright Futures",
+    desc: " Learning with purpose and heart, we nurture confidence, curiosity, and compassion in every child."
   },
   {
     img: require("../assets/Banner/ongc-bn-2.jpg"),
-    title: "Empowering Students Through Quality Education",
-    desc: "We inspire curiosity, creativity, and character — preparing students to succeed in a rapidly changing world."
+    title: "From Curiosity to Capability",
+    desc: "Guiding young learners to explore, innovate, and grow beyond classrooms into confident global citizens."
   },
   {
     img: require("../assets/Banner/ongc-bn-3.jpg"),
-    title: "Where Learning Meets Values",
-    desc: "Beyond textbooks and classrooms, we focus on discipline, innovation, and integrity to build responsible global citizens."
+    title: "From Knowledge to Kindness",
+    desc: "Empowering every student to dream, discover, and thrive with integrity in a changing world."
   },
 ];
 

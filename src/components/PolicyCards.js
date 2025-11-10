@@ -10,19 +10,19 @@ const PolicyCards = () => {
     {
       img: require("../assets/cards/policies-and-procedures.png"),
       title: "General Policy",
-      desc: "We respect your privacy and ensure your data is protected with industry-leading standards.",
+      desc: "We foster an atmosphere of trust, respect, and excellence where every student feels valued and supported.",
       link: "/general-policy"
     },
     {
       img: require("../assets/cards/office-software-attendance-management-business-concept-infographics-web-banner-calendar.jpg"),
       title: "Absence Policy",
-      desc: "Our refund process is simple and transparent for a hassle-free experience.",
+      desc: "Regular attendance builds responsibility; absences are managed with understanding and fairness.",
       link: "/absence-policy"
     },
     {
       img: require("../assets/cards/177330215-rechtsgerechtigkeit-mit-waage.jpg"),
       title: "Conviction",
-      desc: "Learn more about the rules and policies that guide our platform operations.",
+      desc: "Discipline focuses on growth and reflection, guiding students toward responsible and positive conduct.",
       link: "/conviction-conditions"
     },
   ];

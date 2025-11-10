@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { MdOutlineArrowOutward } from "react-icons/md";
 import "./Navigate.css";
+import { Link } from 'react-router-dom';
 
 const Navigate = () => {
   const handleRedirect = (url) => {
@@ -16,34 +17,36 @@ const Navigate = () => {
     <div className='navigate-left-sec'>
   <h1 className='page-heading' style={{color:"#fff",textAlign:"left"}}>Empowering Minds to Learn, Lead, and Grow</h1>
   <p className='page-text'>
-Navigate through a world of learning, innovation, and growth at ONGC School. We guide every student on a 
-journey of discovery, nurturing knowledge, character, and confidence to help them reach their fullest potential.
+At ONGC Community School, learning goes beyond books, it’s a journey of curiosity, courage, and character. We inspire 
+students to think deeply, act compassionately, and grow confidently through holistic and value-based education.
  </p>
   <p className='page-text'>
-At ONGC School, we help young minds navigate the path of education with curiosity and courage. Through holistic 
-learning and value-based guidance, students explore, learn, and grow into responsible global citizens.
+Our nurturing environment encourages innovation, teamwork, and lifelong learning. By blending knowledge with values,
+ we empower young minds to explore their potential and evolve into responsible global citizens, ready to shape a brighter and better tomorrow.
   </p>
 
   {/* ✅ Add curved arrow container here */}
   <div className="curved-arrow"></div>
 
-  <button className='view-more-btn'>View More</button>
+  
+  <button className='view-more-btn'><Link className='view-more-btn' to="/activities">View More </Link></button>
+ 
 </div>
 
         {/* RIGHT SECTION */}
         <div className='navigate-right-section'>
           <div className='navigate-row'>
-            <div className='navigate-img-text-div' onClick={() => handleRedirect("#")}>
+            <div className='navigate-img-text-div' onClick={() => handleRedirect("/Gallery")}>
               <div className="img-wrapper">
                 <img className='right-img' src={require("../assets/gallery/sports/co-1.jpg")} alt="Campus" />
               </div>
               <div className='img-bottom'>
-                <p>Campus Student Life</p>
+              <p>Campus Student Life</p>
                 <MdOutlineArrowOutward className="arrow" />
               </div>
             </div>
 
-            <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("#")}>
+            <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("/activities")}>
               <div className="img-wrapper">
                 <img className='right-img' src={require("../assets/gallery/anualFest/Afn-6.jpg")} alt="Campus" />
               </div>
@@ -55,7 +58,7 @@ learning and value-based guidance, students explore, learn, and grow into respon
           </div>
 
           <div className='navigate-row'>
-            <div className='navigate-img-text-div' onClick={() => handleRedirect("#")}>
+            <div className='navigate-img-text-div' onClick={() => handleRedirect("/facilities")}>
               <div className="img-wrapper">
                 <img className='right-img' src={require("../assets/gallery/sports/co-7.jpg")} alt="Campus" />
               </div>
@@ -65,7 +68,7 @@ learning and value-based guidance, students explore, learn, and grow into respon
               </div>
             </div>
 
-            <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("#")}>
+            <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("Mandatory")}>
               <div className="img-wrapper">
                 <img className='right-img' src={require("../assets/mandatory.jpg")} alt="Campus" />
               </div>

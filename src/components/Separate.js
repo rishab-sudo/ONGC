@@ -13,19 +13,19 @@ const Separate = () => {
     {
       id: 1,
       title: "Science Department",
-      desc: "Offering Physics, Chemistry, Biology, and Mathematics nurturing future engineers, doctors, and researchers.",
+      desc: "Exploring innovation through Physics, Chemistry, Biology, and Mathematics shaping future scientists, engineers, and innovators.",
       img: require("../assets/ongc-dep-1.avif"),
     },
     {
       id: 2,
       title: "Commerce Department",
-      desc: "Focused on Accountancy, Business Studies, and Economics preparing students for finance careers.",
+      desc: "Building business acumen with Accountancy, Business Studies, and Economics — preparing tomorrow’s entrepreneurs and financial leaders.",
       img: require("../assets/ongc-dep-2.jpg"),
     },
     {
       id: 3,
       title: "Humanities Department",
-      desc: "Encouraging creativity and critical thinking through subjects like History, Political Science, and Psychology.",
+      desc: "Fostering creativity, empathy, and analytical thinking through History, Political Science, Psychology, and more.",
       img: require("../assets/ongc-dep-3.jpeg"),
     },
   ];

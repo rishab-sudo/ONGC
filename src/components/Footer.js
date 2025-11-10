@@ -16,8 +16,8 @@ const Footer = () => {
               <div className="trust-text">
                 <h2>Building Excellence Through Innovation, Quality, and Community Focus</h2>
                 <p>
-                  ONGC School fosters trust, innovation, and excellence. Through modern practices and a community-driven approach,
-                  we empower students and teachers, providing a nurturing environment and quality resources to shape confident, future-ready learners.
+                  At ONGC Community School, we believe excellence begins with innovation and a shared 
+                  sense of purpose. Rooted in trust and collaboration, we empower both students and educators through modern learning practices and a supportive environment. With quality resources and a strong community focus, we shape confident, compassionate, and future-ready individuals.
                 </p>
               </div>
               <div className="social-icons">
@@ -53,12 +53,12 @@ const Footer = () => {
               <div className="col-text-div">
                 <h4>Contact Info</h4>
                 <div className="footer-contact-info">
-                  <p><strong>Address:</strong><br />xxxxx International,<br />xxxxx Road, xxxxxx xxxxx, Bareilly.</p>
+                  <p><strong>Address:</strong><br />Vill. Paintala, ,<br />Laharpur, Uttar Pradesh, India.</p>
                   <p><strong>Phone:</strong> <br />
-                    <a href="tel:+916396854974">+91 xxxxx xxxxx</a>
+                    <a href="tel:+918009244441"> +91 80092 44441</a>
                   </p>
                   <p><strong>Email:</strong><br />
-                    <a href="mailto:xxxxx@alutuff.in">sales@xxxxx.in</a>
+                    <a href="mailto:xxxxx@alutuff.in">ongc.school@yahoo.com</a>
                   </p>
                 </div>
               </div>

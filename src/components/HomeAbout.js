@@ -18,8 +18,8 @@ const HomeAbout = () => {
   </h1>
 
   <p className='page-text'>
-    ONGC School is a CBSE-affiliated institution dedicated to nurturing young minds from Kindergarten to Class 12.
-    We focus on academic excellence, strong moral values, and all-round development to prepare students for success in life.
+ONGC School is a CBSE-affiliated institution dedicated to nurturing young minds from Kindergarten to Class 12. 
+We focus on academic excellence, strong moral values, and all-round development to prepare students for success in life.
   </p>
 
   <p className='sub-heading'>Academic Excellence</p>

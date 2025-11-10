@@ -16,8 +16,8 @@ const facilitiesData = [
 
 const Facilities = () => {
   return (
-    <div className="facilities-section">
-      <h2 className="facilities-heading">Our Facilities</h2>
+    <div className="facilities-section" id="facilities">
+      <h2 className="facilities-heading page-heading">Our Facilities</h2>
       <Container className="facilities-grid">
         {facilitiesData.map((item, index) => (
           <div className="facility-box" key={index}>

@@ -52,7 +52,7 @@
   background-color: #fff !important;
   color: #000 !important;
   border: none;
-  padding: 10px 25px;
+  padding: 10px 15px;
   border-radius: 25px;
   font-weight: 500 !important;
   font-size: 20px;
@@ -61,6 +61,7 @@
   transition: transform 0.3s ease;
   animation: bounceBtn 2s ease-in-out infinite;
   animation-delay: 3s;
+  width:180px !important;
   /* first bounce starts after 3s */
 }
 
@@ -182,7 +183,7 @@
   position: absolute;
   width: 220px;
   height: 340px; /* ⬆️ +80 px taller for deeper curve */
-  top: 45%;       /* slight upward shift to balance the new height */
+  top: 55%;       /* slight upward shift to balance the new height */
   left: 35%;
   background: none;
   pointer-events: none;
@@ -224,6 +225,7 @@
     transform: rotate(0deg) !important;
     margin: 0px !important;
     display: none !important;
+   
   }
 
   .navigate-right-section {

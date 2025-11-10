@@ -43,9 +43,8 @@ const Testimonials = () => {
         <div className="test-top-sec">
           <h1 className="test-title page-heading">Guardian Testimonials</h1>
           <p className="test-desc">
-            Education is a dynamic and evolving field that plays a crucial role
-            in shaping individuals and societies. While significant challenges
-            remain, continuous improvement leads to success.
+          Our parents and students are the heart of ONGC Community School. 
+          Their stories reflect our dedication to quality education, strong values, and holistic growth shaping confident learners and bright futures every day.
           </p>
         </div>
 

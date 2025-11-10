@@ -6,10 +6,9 @@
 }
 
 .facilities-heading {
-  font-size: 2.3rem;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .facilities-grid {
@@ -69,10 +68,9 @@
   margin-right: 15px;
   object-fit: contain;
 }
-
 .facility-title {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 700 ;
   color: #333;
 }
 }

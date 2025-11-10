@@ -18,22 +18,15 @@ const PrincipalMessage = () => {
             <h2 className="mb-4 fw-bold">Principal&apos;s Message</h2>
 
             <p className=" page-text">
-              It is my pleasure to welcome you at Radha Madhav Public School
-              community. This is a school where we are deeply committed to
-              ensuring that every day, each and every student has the attention
-              and care of our professional staff. We work to foster a school
-              environment that is supportive and encouraging for both children
-              and adults.
+           Welcome to ONGC Community School, a vibrant learning community where 
+           every child is valued and inspired. Our dedicated educators nurture curiosity, 
+           creativity, and character through holistic education. We strive to create a safe, inclusive, and supportive environment that empowers students to learn with purpose and truly “Make Tomorrow Brighter.”
             </p>
 
             {expanded && (
               <p className=" extra-text page-text">
-                We believe in nurturing each student’s academic, social, and
-                emotional growth. Our goal is to empower students to become
-                confident, lifelong learners who contribute positively to
-                society. Together, with the support of parents and teachers, we
-                aim to create a dynamic and inclusive environment where every
-                child can succeed.
+           At ONGC School, we nurture not only academic growth but also confidence, character, and compassion. With the support of our parents and teachers, we strive to provide a caring, inclusive environment where
+            every child is encouraged to learn, grow, and succeed.
               </p>
             )}
 
