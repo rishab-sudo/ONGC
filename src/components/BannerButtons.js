@@ -21,7 +21,7 @@ const BannerButtons = () => {
     },
     { 
       icon: require("../assets/Banner/ico_4.png"), 
-      text: "Our School Values",
+      text: " School Values",
       link: "/GeneralPolicy"
     },
   ];

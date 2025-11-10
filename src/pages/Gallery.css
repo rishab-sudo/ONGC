@@ -42,9 +42,9 @@
 }
 
 .straight-slide img {
-  width: 380px;
-  max-width: 380px;
-  height: 350px;
+  width: 370px;
+  max-width: 370px;
+  height: 335px;
   object-fit: cover;
   border: 2px solid rgba(211, 211, 211, 0.238);
   border-radius: 15px;
@@ -200,13 +200,17 @@ display: none !important;
 }
 
 @media (min-width: 992px) and (max-width: 1280px) {
-  .straight-slide img {
-    min-width: 90% !important;
-    height: 250px;
-    max-width: 95% !important;
-    max-height: 250px;
-    gap: 25px;
-    background-color: #000;
-  }
+.straight-slide img {
+  width: 315px;
+  max-width: 315px;
+  height: 325px;
+  object-fit: cover;
+  border: 2px solid rgba(211, 211, 211, 0.238);
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.6s ease;
+}
 }
 

@@ -21,13 +21,13 @@
     font-weight: 700;
 }
 .banner-button {
-    width: 275px;
+    width: 215px;
   background-color: #902724;
   color: #fff;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 28px;
+  padding: 14px 8px;
   border-radius: 8px;
   font-size: 18px;
   font-weight: 600;
