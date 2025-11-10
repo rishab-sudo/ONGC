@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { motion } from "framer-motion";
 import "./Facilities.css";
 
 const facilitiesData = [
@@ -20,11 +21,24 @@ const Facilities = () => {
       <h2 className="facilities-heading page-heading">Our Facilities</h2>
       <Container className="facilities-grid">
         {facilitiesData.map((item, index) => (
-          <div className="facility-box" key={index}>
-            <img src={item.img} alt={item.title} className="facility-icon" />
-            <span className="facility-title">{item.title}</span>
-          </div>
-        ))}
+<motion.div
+  className="facility-box"
+  key={index}
+  initial={{ y: 50 }} 
+  whileInView={{ y: 0 }}
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{
+    duration: 0.25,               // FAST
+    ease: [0.32, 0.72, 0, 1],     // VERY SMOOTH (no jerk)
+    delay: index * 0.06           // tiny stagger, feels natural
+  }}
+>
+  <img src={item.img} alt={item.title} className="facility-icon" />
+  <span className="facility-title">{item.title}</span>
+</motion.div>
+
+))}
+
       </Container>
     </div>
   );

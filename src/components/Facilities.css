@@ -10,7 +10,15 @@
   font-weight: 700;
   margin-bottom: 40px !important;
 }
-
+/* .facilities-heading::after {
+  content: "";
+  display: block;
+  width: 132px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+} */
 .facilities-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -27,6 +35,8 @@
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
+    will-change: transform, opacity;
+  transform: translateZ(0);
 }
 
 .facility-box:hover {

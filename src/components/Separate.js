@@ -19,7 +19,7 @@ const Separate = () => {
     {
       id: 2,
       title: "Commerce Department",
-      desc: "Building business acumen with Accountancy, Business Studies, and Economics — preparing tomorrow’s entrepreneurs and financial leaders.",
+      desc: "Building business acumen with Accountancy, Business Studies, and Economics, preparing tomorrow’s entrepreneurs and financial leaders.",
       img: require("../assets/ongc-dep-2.jpg"),
     },
     {

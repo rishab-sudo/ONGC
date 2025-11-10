@@ -23,6 +23,15 @@ padding: 0px ;
 .test-top-sec .test-title {
   color: #000 !important;
 }
+.test-top-sec .test-title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
 
 .test-top-sec .test-desc {
   color: #000 !important;

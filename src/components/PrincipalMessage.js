@@ -14,8 +14,8 @@ const PrincipalMessage = () => {
       <div className="container">
         <div className="row align-items-center">
           {/* Left Text Section */}
-          <div className="col-md-6 ">
-            <h2 className="mb-4 fw-bold">Principal&apos;s Message</h2>
+          <div className="col-md-6 message-content-div ">
+            <h2 className="mb-4 page-heading principal-heading">Principal&apos;s Message</h2>
 
             <p className=" page-text">
            Welcome to ONGC Community School, a vibrant learning community where 

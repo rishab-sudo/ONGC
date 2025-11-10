@@ -22,7 +22,15 @@
   margin-bottom: 30px;
   font-weight: 700;
 }
-
+.form-heading::after {
+  content: "";
+  display: block;
+  width: 132px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
 .admission-form {
   display: flex;
   flex-direction: column;

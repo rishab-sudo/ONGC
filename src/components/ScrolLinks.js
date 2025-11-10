@@ -24,14 +24,14 @@ const ScrolLinks = () => {
   }, []);
 
   const buttons = [
-    { to: "/link1", text: "Admission Policy" },
-    { to: "/link2", text: "Fee Structure" },
-    { to: "/link3", text: "Academics Calendar" },
-    { to: "/link4", text: "Activities" },
-    { to: "/link5", text: "Gallery" },
-    { to: "/link6", text: "General Policies" },
-    { to: "/link7", text: "Mandatory PD" },
-    { to: "/link8", text: "Contact Us" },
+    { to: "/AdmissionPolicy", text: "Admission Policy" },
+    { to: "/feeStructure", text: "Fee Structure" },
+    { to: "/AcademicsCalendar", text: "Academics Calendar" },
+    { to: "/Activities", text: "Activities" },
+    { to: "/Gallery", text: "Gallery" },
+    { to: "/GeneralPolicy", text: "General Policies" },
+    { to: "/Mandatory", text: "Mandatory PD" },
+    { to: "/contact", text: "Contact Us" },
   ];
 
   return (

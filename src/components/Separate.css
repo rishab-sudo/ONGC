@@ -22,7 +22,7 @@
 .sep-card-div {
   width: 100%;
   max-width: 350px;
-  height: 350px;
+  height: 380px;
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -49,7 +49,8 @@
 
 
 .sep-card-text {
-  padding: 15px 15px;
+  width: 100%;
+  padding: 15px ;
 }
 
 .sep-card-text h5 {
