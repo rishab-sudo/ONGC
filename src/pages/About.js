@@ -66,7 +66,7 @@ const About = () => {
       <Container className="about-container1">
   <div className="about-content-section1">
     <p className="page-heading about-heading">About ONGC Community</p>
-    <p className="page-text">
+    <p className="page-text about-text">
       <span className="highlight">“Making Tomorrow Brighter”</span> is the motto of 
       <span className="highlight"> ONGC Community School</span>. 
       <span className="highlight"> ONGC Community School</span> is the 

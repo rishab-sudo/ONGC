@@ -11,7 +11,7 @@
   content: "";
   display: block;
   width: 132px;
-  height: 4px;
+  height: 3.2px;
   margin: 8px auto 0;
   background: linear-gradient(to right, #902724, #000);
   border-radius: 2px;
@@ -141,8 +141,13 @@
   }
 
   .about-heading {
-    text-align: left !important;
-    margin-right: auto;
+    width: 100%;
+    text-align: center !important;
+    margin: auto !important;
+    font-size: 22px !important;
+  }
+  .about-text{
+margin-top: 1.26rem !important;
   }
 
   .about-container-fluid2 {
