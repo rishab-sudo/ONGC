@@ -105,6 +105,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+.admission-form-section {
+padding: 25px 20px;
+}
+
   .form-row {
     flex-direction: column;
   }
