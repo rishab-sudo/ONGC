@@ -1,13 +1,13 @@
 import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import HomeAbout from '../components/HomeAbout'
-import Features from '../components/Features'
+// import Features from '../components/Features'
 import Separate from '../components/Separate'
 import Testimonials from '../components/Testimonials'
 import QuerySection from '../components/QuerySection'
 import  Navigate  from '../components/Navigate'
 import { motion } from "framer-motion";
-import ScrolLinks from '../components/ScrolLinks'
+// import ScrolLinks from '../components/ScrolLinks'
 import PrincipalMessage from '../components/PrincipalMessage'
 import Facilities from '../components/Facilities'
 

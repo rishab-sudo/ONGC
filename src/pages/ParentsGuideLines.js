@@ -1,8 +1,8 @@
-import React, { useState,useRef  } from 'react';
+import React, { useState,  } from 'react';
 import { Container } from 'react-bootstrap';
 import Banner from "../components/Banner"
 import "./ParentsGuideLines.css";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import QuerySection from '../components/QuerySection';
 import ScrolLinks from '../components/ScrolLinks';
 
