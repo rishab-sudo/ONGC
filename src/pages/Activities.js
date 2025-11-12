@@ -230,21 +230,21 @@ const Activities = () => {
                   </td>
                   <td>
                     {row.facebook.map((link, i) => (
-                      <a key={i} href="#">
+                      <a key={i} href="https://www.facebook.com/profile.php?id=100064055612636">
                         {link}
                       </a>
                     ))}
                   </td>
                   <td>
                     {row.instagram.map((link, i) => (
-                      <a key={i} href="#">
+                      <a key={i} href="https://www.instagram.com/ongccommunityschool/">
                         {link}
                       </a>
                     ))}
                   </td>
                   <td>
                     {row.youtube.map((link, i) => (
-                      <a key={i} href="#">
+                      <a key={i} href="https://www.youtube.com/@ONGCCommunitySchool">
                         {link}
                       </a>
                     ))}

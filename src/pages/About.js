@@ -28,7 +28,7 @@ const About = () => {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(0);
   const [index3, setIndex3] = useState(0);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const interval1 = setInterval(() => {
       setIndex1((prev) => (prev + 1) % section1Images.length);
