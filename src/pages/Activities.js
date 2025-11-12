@@ -217,17 +217,43 @@ const Activities = () => {
               {calendarData.map((row, idx) => (
                 <tr key={idx}>
                   <td className="month-cell">{row.month}</td>
-                  <td>
-                    {row.prePrimary.length > 0 ? (
-                      <ul>
-                        {row.prePrimary.map((event, i) => (
-                          <li key={i}>{event}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      "-"
-                    )}
-                  </td>
+             <td>
+  {row.facebook.map((link, i) => (
+    <a
+      key={i}
+      href="https://www.facebook.com/profile.php?id=100064055612636"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {link}
+    </a>
+  ))}
+</td>
+<td>
+  {row.instagram.map((link, i) => (
+    <a
+      key={i}
+      href="https://www.instagram.com/ongccommunityschool/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {link}
+    </a>
+  ))}
+</td>
+<td>
+  {row.youtube.map((link, i) => (
+    <a
+      key={i}
+      href="https://www.youtube.com/@ONGCCommunitySchool"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {link}
+    </a>
+  ))}
+</td>
+
                   <td>
                     {row.facebook.map((link, i) => (
                       <a key={i} href="https://www.facebook.com/profile.php?id=100064055612636">
