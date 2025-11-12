@@ -27,10 +27,10 @@ Our nurturing environment encourages innovation, teamwork, and lifelong learning
 
   {/* ✅ Add curved arrow container here */}
   <div className="curved-arrow"></div>
-
+<div className='navigate-btn-div'>
   
-  <button className='view-more-btn'><Link className='view-more-btn' to="/activities">View More </Link></button>
- 
+  <button className='navigate-view-more-btn'><Link className='view-more-btn' style={{color:"#000"}} to="/activities">View More </Link></button>
+ </div>
 </div>
 
         {/* RIGHT SECTION */}
