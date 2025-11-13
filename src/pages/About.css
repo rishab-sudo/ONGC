@@ -128,6 +128,7 @@
     margin-top: 5%;
   }
 
+
   .about-container1 {
     display: flex;
     justify-content: center;
@@ -149,7 +150,10 @@
   .about-text{
 margin-top: 1.26rem !important;
   }
-
+.mvc-section {
+  padding: 7px 0;
+  background: #ffffff;
+}
   .about-container-fluid2 {
     margin-top: 5%;
     padding: 0;

@@ -70,4 +70,9 @@
   .sep-icon-div img {
     height: 180px;
   }
+  .sep-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
 }
