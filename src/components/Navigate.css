@@ -172,7 +172,9 @@
     flex-direction: column;
     align-items: center;
   }
-
+.arrow{
+  margin-top: -12.5px;
+}
   .navigate-left-sec {
     width: 100%;
     text-align: justify;
