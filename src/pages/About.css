@@ -84,7 +84,7 @@
 .mvc-image img {
   width: 100%;
   height: 350px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   animation: lightFade 4s ease-in-out infinite alternate;
 }
