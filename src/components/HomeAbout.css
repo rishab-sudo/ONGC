@@ -12,6 +12,26 @@
 }
 .homeabout-img-div {
     max-width: 45%;
+    position: relative; /* IMPORTANT for overlay */
+}
+
+.homeabout-circle-img {
+    position: absolute;
+    bottom: 35px;               
+    left: 25px;                
+    width: 250px;            
+    cursor: pointer;
+    animation: rotate 21s linear infinite; 
+}
+
+/* CLOCKWISE ROTATION */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .homeabout-img {
@@ -46,6 +66,9 @@
 }
 .homeabout-img-div {
     min-width: 100%;
+}
+.homeabout-circle-img {
+display: none !important; 
 }
 
 .homeabout-img {

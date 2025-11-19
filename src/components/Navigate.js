@@ -32,8 +32,7 @@ Our nurturing environment encourages innovation, teamwork, and lifelong learning
   <button className='navigate-view-more-btn'><Link className='view-more-btn' style={{color:"#000"}} to="/activities">View More </Link></button>
  </div>
 </div>
-
-        {/* RIGHT SECTION */}
+       {/* RIGHT SECTION */}
         <div className='navigate-right-section'>
           <div className='navigate-row'>
             <div className='navigate-img-text-div' onClick={() => handleRedirect("/Gallery")}>
@@ -58,7 +57,7 @@ Our nurturing environment encourages innovation, teamwork, and lifelong learning
           </div>
 
           <div className='navigate-row'>
-            <div className='navigate-img-text-div' onClick={() => handleRedirect("/facilities")}>
+            <div className='navigate-img-text-div' onClick={() => handleRedirect("/facilities")} >
               <div className="img-wrapper">
                 <img className='right-img' src={require("../assets/gallery/sports/co-7.jpg")} alt="Campus" />
               </div>
@@ -70,7 +69,7 @@ Our nurturing environment encourages innovation, teamwork, and lifelong learning
 
             <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("Mandatory")}>
               <div className="img-wrapper">
-                <img className='right-img' src={require("../assets/mandatory.jpg")} alt="Campus" />
+                <img className='right-img' src={require("../assets/mandatory.jpg")} alt="Campus"/>
               </div>
               <div className='img-bottom'>
                 <p>Mandatory Disclosure</p>

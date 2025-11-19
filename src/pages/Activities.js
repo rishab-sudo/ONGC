@@ -213,71 +213,63 @@ const Activities = () => {
                 <th>Youtube</th>
               </tr>
             </thead>
-            <tbody>
-              {calendarData.map((row, idx) => (
-                <tr key={idx}>
-                  <td className="month-cell">{row.month}</td>
-             <td>
-  {row.facebook.map((link, i) => (
-    <a
-      key={i}
-      href="https://www.facebook.com/profile.php?id=100064055612636"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {link}
-    </a>
-  ))}
-</td>
-<td>
-  {row.instagram.map((link, i) => (
-    <a
-      key={i}
-      href="https://www.instagram.com/ongccommunityschool/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {link}
-    </a>
-  ))}
-</td>
-<td>
-  {row.youtube.map((link, i) => (
-    <a
-      key={i}
-      href="https://www.youtube.com/@ONGCCommunitySchool"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {link}
-    </a>
-  ))}
-</td>
+         <tbody>
+  {calendarData.map((row, idx) => (
+    <tr key={idx}>
+      <td className="month-cell">{row.month}</td>
 
-                  <td>
-                    {row.facebook.map((link, i) => (
-                      <a key={i} href="https://www.facebook.com/profile.php?id=100064055612636">
-                        {link}
-                      </a>
-                    ))}
-                  </td>
-                  <td>
-                    {row.instagram.map((link, i) => (
-                      <a key={i} href="https://www.instagram.com/ongccommunityschool/">
-                        {link}
-                      </a>
-                    ))}
-                  </td>
-                  <td>
-                    {row.youtube.map((link, i) => (
-                      <a key={i} href="https://www.youtube.com/@ONGCCommunitySchool">
-                        {link}
-                      </a>
-                    ))}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
+      {/* Pre-Primary column */}
+      <td>
+        {row.prePrimary.map((item, i) => (
+          <p key={i}>{item}</p>
+        ))}
+      </td>
+
+      {/* Facebook */}
+      <td>
+        {row.facebook.map((link, i) => (
+          <a
+            key={i}
+            href="https://www.facebook.com/profile.php?id=100064055612636"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link}
+          </a>
+        ))}
+      </td>
+
+      {/* Instagram */}
+      <td>
+        {row.instagram.map((link, i) => (
+          <a
+            key={i}
+            href="https://www.instagram.com/ongccommunityschool/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link}
+          </a>
+        ))}
+      </td>
+
+      {/* YouTube */}
+      <td>
+        {row.youtube.map((link, i) => (
+          <a
+            key={i}
+            href="https://www.youtube.com/@ONGCCommunitySchool"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link}
+          </a>
+        ))}
+      </td>
+    </tr>
+  ))}
+</tbody>
+
           </table>
         </div>
       </div>

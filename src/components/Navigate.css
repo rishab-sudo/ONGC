@@ -165,14 +165,13 @@
   }
 }
 */
-
 /* ✅ MOBILE VIEW */
 @media (max-width: 768px) {
   .navigate-container {
     flex-direction: column;
     align-items: center;
   }
-.arrow{
+.arrow {
   margin-top: -12.5px;
 }
   .navigate-left-sec {
