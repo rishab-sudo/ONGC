@@ -8,21 +8,21 @@ import "./About.css";
 
 // ✅ Move static arrays OUTSIDE the component
 const section1Images = [
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
 ];
 
 const section2Images = [
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
 ];
 
 const section3Images = [
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
-  require("../assets/mvv.jpg"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
+  require("../assets/mvv-1.png"),
 ];
 
 const About = () => {
