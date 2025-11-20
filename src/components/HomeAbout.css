@@ -39,39 +39,52 @@
     }
 }
 /* PLAY ICON CENTERED ON CIRCLE */
+/* CIRCLE WRAPPER (Always wrap image + icon) */
 .circle-wrapper {
     position: absolute;
     bottom: 35px;
     left: 25px;
     width: 235px;
     height: 235px;
- }
+}
 
+
+/* Rotating Circle */
+.homeabout-circle-img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    animation: rotate 21s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* PERFECT CENTERED PLAY ICON */
 .circle-play-icon {
     position: absolute;
-    top: 35%;
-    left: 60%;
-    width: 35px;
-    height: 35px;
-    background: rgba(255, 255, 255, 0.95);
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: rgba(255,255,255,0.95);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 20;
     pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 .circle-play-icon::before {
     content: "";
     width: 0;
     height: 0;
-    border-left: 18px solid #902724; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    margin-left: 4px;
+    border-left: 15px solid #902724;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
 }
 
 /*  */
@@ -84,19 +97,22 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .homeabout-circle-img {
+ .circle-wrapper {
       width: 180px;
+      height: 180px;
       bottom: 20px;
       left: 15px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .homeabout-circle-img {
-      width: 140px;
-      bottom: 18px;
-      left: 12px;
+      .circle-wrapper {
+      width: 140px !important;
+      height: 140px !important;
+      bottom: 18px !important;
+      left: 12px !important;
   }
+
 }
 /*  */
 .homeabout-text-div {
@@ -128,9 +144,11 @@
 .homeabout-img-div {
     min-width: 100%;
 }
-.homeabout-circle-img {
-display: none !important; 
-}
+ .homeabout-circle-img,
+  .circle-wrapper,
+  .circle-play-icon {
+      display: none !important;
+  }
 
 .homeabout-img {
     width: 100%;

@@ -207,3 +207,12 @@
     margin-top: 0;
   }
 }
+@media screen and (max-width: 992px) {
+  .navigate-img-text-div img {
+  width: 99% !important;
+  height: 280px;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+}
