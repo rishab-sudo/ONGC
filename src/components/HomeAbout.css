@@ -20,7 +20,7 @@
     bottom: 35px;               
     left: 25px;                
     width: auto; 
-    max-width: 265px;           
+    max-width: 100%;           
     cursor: pointer;
     animation: rotate 21s linear infinite; 
 }
