@@ -7,16 +7,21 @@ const HomeAbout = () => {
   return (
     <Container fluid className='homeAbout-fluid'>
       <Container fluid className='homeAbout-container' >
-        <div className='homeabout-img-div'>
-          <img className='homeabout-img' src={require("../assets/ongc-school-hm.png")} alt="about-ongc" />
-         <img
-  className='homeabout-circle-img'
-  src={require("../assets/ongc-school-hm-circle.png")}
-  alt="about-ongc"
-  onClick={() => window.open("https://www.youtube.com/@ONGCCommunitySchool", "_blank")}
-/>
+<div className='homeabout-img-div'>
+  <img className='homeabout-img' src={require("../assets/ongc-school-hm.png")} alt="about-ongc" />
 
-        </div>
+  <div className="circle-wrapper">
+    <img
+      className='homeabout-circle-img'
+      src={require("../assets/ongc-school-hm-circle.png")}
+      alt="about-ongc"
+      onClick={() => window.open("https://www.youtube.com/@ONGCCommunitySchool", "_blank")}
+    />
+    <div className="circle-play-icon"></div>
+  </div>
+</div>
+
+
 
      <div className='homeabout-text-div'>
   <h5 className='special-heading'>ABOUT US</h5>

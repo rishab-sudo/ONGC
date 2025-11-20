@@ -11,16 +11,20 @@
     text-align: left !important;
 }
 .homeabout-img-div {
+    width: 45%;
     max-width: 45%;
     position: relative; /* IMPORTANT for overlay */
 }
 
+.homeabout-img {
+    width: 100%;
+}
 .homeabout-circle-img {
     position: absolute;
     bottom: 35px;               
     left: 25px;                
     width: 235px; 
-    max-width: 100% !important;           
+    max-width: auto !important;           
     cursor: pointer;
     animation: rotate 21s linear infinite; 
 }
@@ -34,11 +38,67 @@
         transform: rotate(360deg);
     }
 }
+/* PLAY ICON CENTERED ON CIRCLE */
+.circle-wrapper {
+    position: absolute;
+    bottom: 35px;
+    left: 25px;
+    width: 235px;
+    height: 235px;
+ }
 
-.homeabout-img {
-    width: 100%;
+.circle-play-icon {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+.circle-play-icon::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 18px solid #902724; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-left: 4px;
+}
+
+/*  */
+@media screen and (max-width: 1400px) {
+  .homeabout-circle-img {
+      width: 235px;
+      bottom: 25px;
+      left: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .homeabout-circle-img {
+      width: 180px;
+      bottom: 20px;
+      left: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .homeabout-circle-img {
+      width: 140px;
+      bottom: 18px;
+      left: 12px;
+  }
+}
+/*  */
 .homeabout-text-div {
     width: 45%;
     text-align: left;
