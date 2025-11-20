@@ -8,12 +8,12 @@ const HomeAbout = () => {
     <Container fluid className='homeAbout-fluid'>
       <Container fluid className='homeAbout-container' >
 <div className='homeabout-img-div'>
-  <img className='homeabout-img' src={require("../assets/ongc-school-hm.png")} alt="about-ongc" />
+  <img className='homeabout-img' src={require("../assets/ongc-school-hm2.png")} alt="about-ongc" />
 
   <div className="circle-wrapper">
     <img
       className='homeabout-circle-img'
-      src={require("../assets/ongc-school-hm-circle.png")}
+      src={require("../assets/ongc-school-hm-circle2.png")}
       alt="about-ongc"
       onClick={() => window.open("https://www.youtube.com/@ONGCCommunitySchool", "_blank")}
     />

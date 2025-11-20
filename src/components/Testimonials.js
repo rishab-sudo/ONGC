@@ -56,7 +56,7 @@ const Testimonials = () => {
               alt="Testimonials"
             /> */}
               <img
-              src={require("../assets/ongc-test.png")}
+              src={require("../assets/ongc-test2.png")}
               alt="Testimonials"
             />
           </div>

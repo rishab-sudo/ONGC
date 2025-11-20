@@ -103,11 +103,18 @@
 .img-wrapper {
   overflow: hidden;
   border-radius: 10px;
+  
 }
 
+/* .navigate-img-text-div {
+  object-fit: contain !important;
+} */
+ .navigate-img-text-div {
+  
+ }
 .navigate-img-text-div img {
   width: 350px;
-  height: 280px;
+  height: 265px;
   border-radius: 10px;
   transition: transform 0.4s ease;
 }

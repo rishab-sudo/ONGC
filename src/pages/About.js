@@ -9,19 +9,19 @@ import "./About.css";
 // ✅ Move static arrays OUTSIDE the component
 const section1Images = [
   require("../assets/mvv-1.png"),
-  require("../assets/mvv-1.png"),
+  require("../assets/mvv-4.png"),
   require("../assets/mvv-1.png"),
 ];
 
 const section2Images = [
   require("../assets/mvv-1.png"),
-  require("../assets/mvv-1.png"),
+  require("../assets/mvv-3.png"),
   require("../assets/mvv-1.png"),
 ];
 
 const section3Images = [
   require("../assets/mvv-1.png"),
-  require("../assets/mvv-1.png"),
+  require("../assets/mvv-2.png"),
   require("../assets/mvv-1.png"),
 ];
 
