@@ -58,7 +58,7 @@
 /* Section mission vision value */
 /* Mission-Vision-Values Section */
 .mvc-section {
-  padding: 40px 0;
+  padding: 35px 0;
   background: #ffffff;
 }
 
@@ -187,9 +187,12 @@ margin-top: 1.26rem !important;
   .mvc-image, .mvc-content {
     width: 100%;
   }
-
+.mvc-image{
+  height: 100%;
+   /* background-color: #000; */
+}
   .mvc-image img {
-    height: 280px;
+    height: 100%;   
   }
 
   .mvc-title {
