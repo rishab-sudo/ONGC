@@ -86,8 +86,11 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  
 }
-
+.arrow {
+  margin-top: -15px;
+}
 .navigate-img-text-div {
   width: 50%;
   text-align: center;

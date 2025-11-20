@@ -69,7 +69,7 @@ Our nurturing environment encourages innovation, teamwork, and lifelong learning
 
             <div className='navigate-img-text-div top-margin' onClick={() => handleRedirect("Mandatory")}>
               <div className="img-wrapper">
-                <img className='right-img' src={require("../assets/mandatory.jpg")} alt="Campus"/>
+                <img className='right-img' src={require("../assets/mandatory2.png")} alt="Campus"/>
               </div>
               <div className='img-bottom'>
                 <p>Mandatory Disclosure</p>

@@ -33,14 +33,18 @@
    ================================ */
 .circle-wrapper {
     position: absolute;
-    bottom: 5%;        
-    left: 4%;         
+    bottom: 5%;
+    left: 4%;
     width: 18vw;
     height: 18vw;
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 235px;
+    max-height: 235px;
     min-width: 130px;
     min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
 }
 
 
@@ -48,11 +52,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
     animation: rotate 21s linear infinite;
+    transform-origin: center center !important;
 }
+
+
 
 /* CENTER PLAY ICON */
 .circle-play-icon {

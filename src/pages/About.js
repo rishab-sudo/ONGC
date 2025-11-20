@@ -34,15 +34,15 @@ const About = () => {
   useEffect(() => {
     const interval1 = setInterval(() => {
       setIndex1((prev) => (prev + 1) % section1Images.length);
-    }, 2000);
+    }, 1500);
 
     const interval2 = setInterval(() => {
       setIndex2((prev) => (prev + 1) % section2Images.length);
-    }, 2500);
+    }, 2000);
 
     const interval3 = setInterval(() => {
       setIndex3((prev) => (prev + 1) % section3Images.length);
-    }, 3000);
+    }, 2500);
 
     return () => {
       clearInterval(interval1);
