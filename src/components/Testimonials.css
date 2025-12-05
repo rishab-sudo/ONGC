@@ -26,7 +26,7 @@ padding: 0px ;
 .test-top-sec .test-title::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 120px;
   height: 4px;
   margin: 10px auto 0;
   background: linear-gradient(to right, #902724, #000);
@@ -159,20 +159,25 @@ padding: 0px ;
   .test-top-sec {
   width: 95% !important;
   text-align: left;
+  /* background-color: #000; */
 
 }
   .test-bottom-sec {
     flex-direction: column;
-    gap: 30px;
+    margin-top: 5px;
+    gap: 0px;
+     
   }
 
   .test-left-img-div,
   .test-right-box-div {
     width: 100% !important;
+    /* background-color: #000; */
   }
 
   .test-right-box-div {
-    margin-top: 10px;
+    padding: 0px !important;
+    margin: 0px;
     height: auto !important;
   }
 
