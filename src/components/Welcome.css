@@ -26,7 +26,7 @@
 
 .left-content h1 {
   font-size: 42px;
-  color: #1d2855;
+  color: #902724;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -54,7 +54,7 @@
   flex: 1;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 380px;
+  min-height: fit-content;
   max-width: 550px;
   
 }
@@ -76,7 +76,7 @@
 
 .main-card img {
   width: 100%;
-  height: 100%;
+  height: 550px;
   object-fit: cover;
 }
 
@@ -159,9 +159,27 @@ color: #fff !important;
 }
 
 @media (max-width: 768px) {
+  .left-content {
+  min-width: 95% !important;
+}
+.left-content h1 {
+  font-size: 29px;
+  color: #902724;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  min-width: 100% !important;
+}
+.left-content p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  min-width: 100% !important;
+}
   .right-slider {
     flex-direction: column;
     align-items: center;
+    margin-top: 25px !important;
   }
 
   .side-cards {
@@ -170,11 +188,8 @@ color: #fff !important;
   }
 
   .small-card {
-    width: 100px;
-    height: 160px;
+   display: none !important;
   }
 
-  .left-content h1 {
-    font-size: 32px;
-  }
+
 }

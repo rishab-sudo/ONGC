@@ -52,6 +52,7 @@
   .trust-row {
     flex-direction: column !important;
     text-align: center;
+    gap: 15px;
   }
 
   .trust-image img {
@@ -60,5 +61,19 @@
 
   .trust-text {
     max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+    .trust-image img {
+    min-width: 100% !important;
+  }
+.trust-image {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+ }
+
+  .trust-text {
+    min-width: 100% !important;
   }
 }
