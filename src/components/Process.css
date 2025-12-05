@@ -20,7 +20,7 @@
 /* Text moves with scroll & bottom-right aligned */
 .content {
   position: absolute;
-  bottom: 40px;
+  top: 25%;
   left: 40px;
   z-index: 2;
   text-align: left;
@@ -52,6 +52,7 @@
 .content-2{
      position: absolute;
   right: 40px;
+  bottom: 25%;
   z-index: 2;
   text-align: left;
   color: #ffffff;
