@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./Trustees.css";
 
 const trustData = [
@@ -10,66 +10,78 @@ const trustData = [
     text: "Our trustees bring decades of leadership shaping the future of education.",
   },
   {
-    img: require("../assets/roshni-nadar-malhotra.jpg"),
+    img: require("../assets/Banner/student-programs4.jpg"),
     title: "Commitment to Excellence",
     text: "We focus on quality education and holistic growth of students.",
   },
   {
-   img: require("../assets/roshni-nadar-malhotra.jpg"),
+    img: require("../assets/roshni-nadar-malhotra.jpg"),
     title: "Strong Foundation",
     text: "Guiding values and mission ensure the best environment for learners.",
   },
 ];
 
-const Trsutees = () => {
+const Trustees = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(prev => (prev + 1) % trustData.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const item = trustData[index];
+
   return (
     <section className="trust">
-         <div className="d-flex flex-column justify-content-center align-item-center text-center mb-5">
-            <p className='page-heading'>Our Trsutees</p>
-            <p className="page-text" style={{marginTop:"-12px"}}>ONGC is led by our distinguished Trustees, <br/> guiding and strategizing to ensure that the school continues its    
-pathbreaking journey in education.</p>
-          </div>
+      <div className="d-flex flex-column justify-content-center align-item-center text-center mb-5">
+        <p className='page-heading'>Our Trustees</p>
+        <p className="page-text" style={{ marginTop:"-12px" }}>
+          ONGC is led by our distinguished Trustees, guiding and strategizing 
+          to ensure continuous excellence in education.
+        </p>
+      </div>
+
       <Container>
+        <div className="trust-slider-wrapper">
 
-        {trustData.map((item, index) => {
-          const isReverse = index % 2 !== 0;
+          {/* SMALL SMOOTH FADE + LIGHT SLIDE */}
+          <AnimatePresence mode="wait">
 
-          return (
-            <div
-              className={`trust-row ${isReverse ? "reverse" : ""}`}
-              key={index}
+            <motion.div
+              key={item.img}
+              className="trust-image"
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 10 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             >
+              <img src={item.img} alt={item.title} />
+            </motion.div>
 
-              {/* IMAGE */}
-              <motion.div
-                className="trust-image"
-                initial={{ x: isReverse ? 100 : -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <img src={item.img} alt={item.title} />
-              </motion.div>
+          </AnimatePresence>
 
-              {/* TEXT */}
-              <motion.div
-                className="trust-text"
-                initial={{ x: isReverse ? -100 : 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-              >
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
-              </motion.div>
+          <AnimatePresence mode="wait">
 
-            </div>
-          );
-        })}
+            <motion.div
+              key={item.title}
+              className="trust-text"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </motion.div>
 
+          </AnimatePresence>
+
+        </div>
       </Container>
     </section>
   );
 };
 
-export default Trsutees;
+export default Trustees;

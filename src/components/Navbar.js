@@ -27,10 +27,10 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div>
-            <img className="logo" src={require("../assets/ongc-logo1.jpg")} alt="Logo" />
+            <a href="/home"><img className="logo" src={require("../assets/ongc-logo1.jpg")} alt="Logo" /></a>
         </div>
           <ul className="nav-links">
-            <li><a href="/home">Home</a></li>
+            {/* <li><a href="/home">Home</a></li> */}
 
             {/* About Dropdown */}
             <li
@@ -113,7 +113,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <a href="/contact" className="dealer-btn desktop-only">Contact Us</a>
+              <a href="/contact" className="contact-btn desktop-only">Contact Us</a>
             </li>
           </ul>
 

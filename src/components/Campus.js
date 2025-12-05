@@ -25,6 +25,26 @@ const bottomImages = [
     title: "Bangalore Campus",
     desc: "Technology hub with world-class amenities.",
   },
+   {
+    img: require("../assets/Banner/student-programs4.jpg"),
+    title: "Mumbai Campus",
+    desc: "The heart of education and culture.",
+  },
+  {
+    img: require("../assets/Banner/student-programs4.jpg"),
+    title: "Bangalore Campus",
+    desc: "Technology hub with world-class amenities.",
+  },
+   {
+    img: require("../assets/Banner/student-programs4.jpg"),
+    title: "Mumbai Campus",
+    desc: "The heart of education and culture.",
+  },
+  {
+    img: require("../assets/Banner/student-programs4.jpg"),
+    title: "Bangalore Campus",
+    desc: "Technology hub with world-class amenities.",
+  },
 ];
 
 const CampusSection = () => {

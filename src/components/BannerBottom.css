@@ -1,7 +1,8 @@
 .banner-bottom-container {
   width: 100%;
-  background-color: #555; /* grey bg like screenshot */
-  padding: 60px 8%;
+  /* background-color: #555;  */
+background-color: rgba(0, 0, 0, 0.7) !important;
+padding: 60px 8%;
   display: flex;
   justify-content: space-between;
   gap: 40px;
