@@ -156,6 +156,9 @@ padding: 0px ;
 
 /* Responsive Design */
 @media (max-width: 992px) {
+  .test-fluid {
+padding-bottom: 25px ;
+}
   .test-top-sec {
   width: 95% !important;
   text-align: left;
@@ -177,7 +180,7 @@ padding: 0px ;
 
   .test-right-box-div {
     padding: 0px !important;
-    margin: 0px;
+    margin: 0px !important;
     height: auto !important;
   }
 
@@ -185,5 +188,6 @@ padding: 0px ;
     min-width: 100% !important;
     text-align: justify;
     height: auto !important;
+   margin-bottom: 2px !important;
   }
 }

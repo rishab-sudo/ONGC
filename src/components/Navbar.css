@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7); /* transparent black */
   color: #fff;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
