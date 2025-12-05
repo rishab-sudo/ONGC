@@ -13,7 +13,7 @@ const Footer = () => {
           <Col lg={4} md={12} sm={12} className="footer-column-wrapper">
             <div className="footer-left">
               <img src={require("../assets/ongc-logo1.jpg")} alt="logo" className="footer-logo" />
-              <div className="trust-text">
+              <div className="footer-trust-text">
                 <h2>Building Excellence Through Innovation, Quality, and Community Focus</h2>
                 <p>
                   At ONGC Community School, we believe excellence begins with innovation and a shared 

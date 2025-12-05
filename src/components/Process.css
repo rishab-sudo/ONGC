@@ -1,0 +1,69 @@
+/* Section with fixed background */
+.process-container {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  /* Keeps background fixed */
+  overflow: hidden;
+}
+
+/* Overlay scrolls, not fixed */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Text moves with scroll & bottom-right aligned */
+.content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  text-align: left;
+  color: #ffffff;
+  max-width: 450px;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Next Section (to scroll into view) */
+.next-section {
+  height: 100vh;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.content-2{
+     position: absolute;
+  right: 40px;
+  z-index: 2;
+  text-align: left;
+  color: #ffffff;
+  max-width: 450px; 
+}
+.content-2 h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-2 p {
+  font-size: 18px;
+  line-height: 1.5;
+}

@@ -1,0 +1,134 @@
+.campus {
+  width: 100%;
+  background: #e4e4e4;
+  padding: 60px 0;
+}
+
+.campus-container {
+  width: 90%;
+  margin: auto;
+}
+/* GAP BETWEEN SLIDES */
+.campus-slider .slick-slide {
+  padding: 0 15px;   /* 🔥 gap increase */
+}
+
+/* TOP CARD HEIGHT */
+.top-card {
+  height: 425px !important;  /* 🔥 increased height */
+}
+
+/* BOTTOM CARD HEIGHT */
+.second-card {
+  height: 425px !important;  /* 🔥 increased height */
+}
+
+/* For safety */
+.slick-list {
+  margin: 0 -15px; /* gap fix */
+}
+
+/* LEFT HEADING */
+.campus-left {
+  margin-bottom: 30px;
+}
+
+.campus-heading {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.campus-subheading {
+  font-size: 16px;
+  color: #444;
+}
+
+/* CARD STYLE */
+.campus-card {
+  position: relative;
+  width: 95%;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.campus-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campus-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* FIRST SLIDER TEXT */
+.campus-card-info {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.arrow-circle {
+  width: 38px;
+  height: 38px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* SECOND SLIDER TEXT */
+.second-card {
+  height: 280px;
+}
+
+.second-info {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  color: #fff;
+}
+
+.second-info h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.second-info p {
+  margin-top: 4px;
+  font-size: 14px;
+}
+/* .second{
+margin-top: 25px;
+} */
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .campus-heading {
+    font-size: 28px;
+  }
+  .campus-card {
+    height: 220px;
+  }
+}

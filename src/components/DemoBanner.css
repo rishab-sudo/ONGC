@@ -1,0 +1,29 @@
+.demoBanner {
+  width: 100%;
+  height: 80vh;   /* set banner height */
+  overflow: hidden;
+}
+
+/* Make slide follow parent height */
+.swiper-slide {
+  width: 100vw !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix image scaling */
+.demo-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* covers entire slide without stretching */
+  object-position: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .demoBanner {
+    height: 260px;  /* Your mobile height */
+  }
+}

@@ -1,0 +1,66 @@
+.banner-bottom-container {
+  width: 100%;
+  background-color: #555; /* grey bg like screenshot */
+  padding: 60px 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.bb-card {
+  flex: 1;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  padding-right: 35px;
+}
+
+.bb-card:last-child {
+  border-right: none;
+}
+
+.bb-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.bb-card p {
+  opacity: 0.9;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.bb-btn {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background: #d53c3c;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bb-btn:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 Mobile Responsive */
+@media(max-width: 850px) {
+  .banner-bottom-container {
+    flex-direction: column;
+  }
+  
+  .bb-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 30px;
+  }
+
+  .bb-card:last-child {
+    border-bottom: none;
+  }
+}
