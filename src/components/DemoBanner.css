@@ -1,6 +1,6 @@
 .demoBanner {
   width: 100%;
-  height: 90vh;  /* FIXED HEIGHT - jitni tumne boli */
+  height: 100%;  /* FIXED HEIGHT - jitni tumne boli */
   overflow: hidden;
   margin-top: 120px;
 }

@@ -64,12 +64,14 @@
   }
 }
 @media (max-width: 768px) {
-    .trust-image img {
-    min-width: 100% !important;
+
+ .trust-image img {
+  min-width: 100% !important;
+  height: 325px !important;
   }
 .trust-image {
   width: 100%;
-  height: fit-content;
+  height: 350px;
   object-fit: contain;
  }
 
