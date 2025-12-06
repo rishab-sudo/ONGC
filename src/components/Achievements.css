@@ -18,7 +18,7 @@
 .achievement-card .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,8 +36,10 @@
 
 .overlay-content p {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px !important;
+  font-weight: 600;
   opacity: 0.9;
+  /* opacity: 1; */
 }
 
 .achievement-card:hover .overlay {

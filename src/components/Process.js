@@ -17,11 +17,11 @@ const Process = () => {
         <div className="content">
           <h1>Who We Are</h1>
           <p>
-            VidyaGyan bridges a significant gap in India's education landscape.
-            Amidst institutions nurturing urban elite potential, VidyaGyan stands
-            out by focusing on high-achieving students from rural communities.
+ONGC Community School is a progressive educational institution committed to providing quality education, holistic development, and value-based learning. 
+We strive to empower
+ every child with academic excellence, life skills, discipline, and confidence to excel in a dynamic world.
           </p>
-
+        
           {/* SHOW HIDDEN TEXT */}
           {showMore1 && (
             <p className="more-text">

@@ -24,11 +24,12 @@ const Achievements = () => {
   };
 
   const data = [
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement One", text:"Short description about this achievement." },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Two", text:"Short description about this achievement." },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Three", text:"Short description about this achievement." },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Four", text:"Short description about this achievement." },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Five", text:"Short description about this achievement." }
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement One", text:"Consistent district toppers and outstanding CBSE results" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Two", text:"Students placed in leading schools and institutions" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Three", text:"Winners in  District-level sports events" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Four", text:"Multiple medals and recognitions in National Olympiads" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Five", text:"Excellence awards in cultural activities, art, debate, and science fairs" },
+        { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Five", text:"Recognition for quality education and community engagement at various platforms" }
   ];
 
   return (

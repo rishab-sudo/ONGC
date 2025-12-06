@@ -18,7 +18,9 @@
 .left-content {
   max-width: 45%;
 }
-
+.welcome-heading{
+  text-align: left !important;
+}
 .super-logo {
   width: 120px;
   margin-bottom: 20px;

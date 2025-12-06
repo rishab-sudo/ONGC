@@ -22,11 +22,9 @@ const PrincipalMessage = () => {
             <h2 className="mb-4 page-heading principal-heading">Principal&apos;s Message</h2>
 
             <p className="page-text">
-              Welcome to ONGC Community School, a vibrant learning community where 
-              every child is valued and inspired. Our dedicated educators nurture curiosity, 
-              creativity, and character through holistic education. We strive to create 
-              a safe, inclusive, and supportive environment that empowers students to 
-              learn with purpose and truly “Make Tomorrow Brighter.”
+<span style={{fontWeight:600}}>Dear Students, Parents, and Well-wishers,</span><br/>
+<span style={{fontWeight:600}}>At ONGC Community School,</span> we believe that education is a journey of discovery of knowledge, values, and identity. Our mission is to provide an environment where every child feels inspired, supported, and encouraged to dream fearlessly...<br/>
+
             </p>
 
             {expanded && (
@@ -36,10 +34,9 @@ const PrincipalMessage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                At ONGC School, we nurture not only academic growth but also confidence,
-                character, and compassion. With the support of our parents and teachers, 
-                we provide a caring, inclusive environment where every child is encouraged 
-                to learn, grow, and succeed.
+  We nurture learners not only to excel academically but to grow as compassionate, confident, and responsible individuals. With a dedicated team of educators, modern infrastructure, and a child-centric approach, we strive to create a learning experience that is meaningful, joyful, and transformative.<br/>
+Together, let us build a future where our children shine with curiosity, creativity, and courage.<br/>
+<span style={{fontWeight:600}}>– Principal, ONGC Community School</span>
               </motion.p>
             )}
 

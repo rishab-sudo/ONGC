@@ -16,12 +16,13 @@ const Welcome = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h1>Welcome to <br /> NPS Super 4</h1>
-          <p>
-            The Super 4 comprises of NPS Whitefield, East, Marathahalli, and Silk
-            Board. We blend advanced pedagogy with real-world readiness, and equip
-            students to think boldly, act confidently, and thrive in a changing
-            world.
+          <h1 className="page-heading welcome-heading">Welcome to <br /> ONGC Community School</h1>
+          <p className="page-text">
+        A place where education meets excellence.
+We are committed to nurturing young minds through quality learning and holistic development.<br/>
+Our dedicated faculty, modern facilities, and student-centric environment ensure meaningful growth.
+At ONGC Community School, every child is empowered to explore, achieve, and succeed.<br/>
+<span style={{fontWeight:"600"}}>Join us as we inspire future leaders with values, knowledge, and innovation.</span>
           </p>
         </motion.div>
 

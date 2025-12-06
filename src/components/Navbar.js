@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div>
-            <a href="/home"><img className="logo" src={require("../assets/ongc-logo1.jpg")} alt="Logo" /></a>
+            <a href="/home"><img className="logo" src={require("../assets/ONGC LOGO 11.png")} alt="Logo" /></a>
         </div>
           <ul className="nav-links">
             {/* <li><a href="/home">Home</a></li> */}
