@@ -13,14 +13,15 @@ import DemoBanner from '../components/DemoBanner'
 import Trsutees from '../components/Trsutees';
 import Process  from '../components/Process';
 import BannerBottom from '../components/BannerBottom';
+import WhyOngc from '../components/WhyOngc';
+import Achievements from '../components/Achievements';
 
 const Home = () => {
   return (
     <div>
         {/* <HomeBanner/> */}
         <DemoBanner/>
-        <BannerBottom/>
-           {/* <ScrolLinks/> */}
+       {/* <ScrolLinks/> */}
 
           <motion.div
         initial={{ opacity: 0, y: 80 }}
@@ -32,6 +33,23 @@ const Home = () => {
       </motion.div>
 
 
+       <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+   <WhyOngc/>
+      </motion.div>
+
+       <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+   <BannerBottom/>
+      </motion.div>
 
                <motion.div
         initial={{ opacity: 0, y: 80 }}
@@ -41,19 +59,7 @@ const Home = () => {
       >
    <PrincipalMessage/>
       </motion.div>
-  
-
-       <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-   <Trsutees/>
-      </motion.div>
-
-
-       {/* <motion.div
+   {/* <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -61,6 +67,7 @@ const Home = () => {
       >   
       <Separate/>
       </motion.div> */}
+
        <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -69,7 +76,14 @@ const Home = () => {
       >
    <Process/>
       </motion.div>
-
+     <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+   <Trsutees/>
+      </motion.div>
 
      <motion.div
         initial={{ opacity: 0, y: 80 }}
@@ -99,7 +113,14 @@ const Home = () => {
 </motion.div> */}
 
 {/*  */}
-
+         <motion.div
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >   
+<Achievements/>
+</motion.div>
 
 {/*  */}
          <motion.div
