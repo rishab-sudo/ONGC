@@ -81,45 +81,40 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-align: center !important;
   gap: 8px;
-  transition: 0.3s;
+  transition: .3s;
 }
 
-/* Hover */
+/* Hover effects now work properly */
 .read-more-btn:hover {
   background: transparent;
-  color: #fff;
- border: 1px solid #fff;
+  color: #fff !important;
+  border-color: #fff;
 }
 
-/* Expanded (Read Less Mode) */
+/* Active on Read Less */
 .read-more-btn.active {
   background: transparent;
   color: #fff;
   border-color: #fff;
 }
 
-/* Arrow Base */
-.react-icon-arrow {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+/* React Icon Styling so arrow becomes visible */
+.read-more-btn svg {
   transition: .3s;
 }
 
-/* Read More Arrow ↓ */
-.react-icon-arrow.down {
-  border-top: 8px solid #000;   /* Visible in default state */
+/* Default ↓ arrow black */
+.read-more-btn:not(.active) svg {
+  color: #000;
 }
 
-/* Read Less Arrow ↑ */
-.react-icon-arrow.up {
-  border-bottom: 8px solid #fff !important; /* Visible when expanded */
+/* On hover convert black arrow to white */
+.read-more-btn:hover svg {
+  color: #fff;
 }
 
-/* Hover Update ↓ arrow to white */
-.read-more-btn:hover .arrow.down {
-  border-top: 8px solid #fff;
+/* When expanded Read Less ↑ becomes white */
+.read-more-btn.active svg {
+  color: #fff;
 }
