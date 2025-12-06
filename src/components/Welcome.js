@@ -34,7 +34,7 @@ At ONGC Community School, every child is empowered to explore, achieve, and succ
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <div className="card main-card">
-            <img src={require("../assets/Banner/ongc-feature_img.jpg")} alt="NPS Whitefield" />
+            <img src={require("../assets/Banner/new-ongc-banner2.jpg")} alt="NPS Whitefield" />
             <div className="card-text">
               <h3>NPS Whitefield</h3>
               <ul>

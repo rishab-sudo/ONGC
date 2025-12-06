@@ -19,7 +19,7 @@ const DemoBanner = () => {
       >
         <SwiperSlide>
           <img
-            src={require("../assets/Banner/ongc-banner1.png")}
+            src={require("../assets/Banner/new-ongc-banner1.jpg")}
             alt="banner"
             className="demo-banner-img"
           />
@@ -27,7 +27,7 @@ const DemoBanner = () => {
 
         <SwiperSlide>
           <img
-             src={require("../assets/Banner/ongc-banner2.png")}
+            src={require("../assets/Banner/new-ongc-banner2.jpg")}
             alt="banner"
             className="demo-banner-img"
           />
@@ -35,14 +35,14 @@ const DemoBanner = () => {
 
         <SwiperSlide>
           <img
-            src={require("../assets/Banner/ongc-banner2.png")}
+           src={require("../assets/Banner/new-ongc-banner3.jpg")}
             alt="banner"
             className="demo-banner-img"
           />
         </SwiperSlide>
             <SwiperSlide>
           <img
-            src={require("../assets/Banner/ongc-banner1.png")}
+           src={require("../assets/Banner/new-ongc-banner2.jpg")}
             alt="banner"
             className="demo-banner-img"
           />

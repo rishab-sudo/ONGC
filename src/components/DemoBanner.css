@@ -1,8 +1,8 @@
 .demoBanner {
   width: 100%;
-  height: 100%;  /* FIXED HEIGHT - jitni tumne boli */
+  height: 700px;  /* FIXED HEIGHT - jitni tumne boli */
   overflow: hidden;
-  /* margin-top: 120px; */
+  margin-top: 149px;
 }
 
 /* Swiper Slide full occupy kare */
