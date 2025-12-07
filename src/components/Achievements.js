@@ -24,12 +24,12 @@ const Achievements = () => {
   };
 
   const data = [
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement One", text:"Consistent district toppers and outstanding CBSE results" },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Two", text:"Students placed in leading schools and institutions" },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Three", text:"Winners in  District-level sports events" },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Four", text:"Multiple medals and recognitions in National Olympiads" },
-    { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Five", text:"Excellence awards in cultural activities, art, debate, and science fairs" },
-        { img: require("../assets/Banner/student-programs4.jpg"), title: "Achievement Five", text:"Recognition for quality education and community engagement at various platforms" }
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Proven Excellence", text:"Consistent district toppers and outstanding CBSE results" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Consistent Achievements", text:"Students placed in leading schools and institutions" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: " Winning Legacy  ", text:"Winners in  District-level sports events" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Student Success", text:"Multiple medals and recognitions in National Olympiads" },
+    { img: require("../assets/Banner/student-programs4.jpg"), title: "Glorious Milestones", text:"Excellence awards in cultural activities, art, debate, and science fairs" },
+        { img: require("../assets/Banner/student-programs4.jpg"), title: "Shining Records", text:"Recognition for quality education and community engagement at various platforms" }
   ];
 
   return (

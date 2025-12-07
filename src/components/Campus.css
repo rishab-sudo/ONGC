@@ -36,11 +36,13 @@
 .campus-heading {
   font-size: 36px;
   font-weight: 700;
+  text-align: center !important;
 }
 
 .campus-subheading {
   /* font-size: 16px; */
   color: #444;
+  text-align: center !important;
 }
 
 /* CARD STYLE */

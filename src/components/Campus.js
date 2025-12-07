@@ -76,7 +76,7 @@ const CampusSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="campus-heading">Our Campus</h2>
+          <h2 className="campus-heading page-heading">Our Campus</h2>
           <p className="campus-subheading page-text">
          <span style={{fontWeight:600}}>ONGC</span>  CS epitomises vibrancy and freshness, dovetailing much of the ethos of the new post-independence India into its educational program and philosophy. The school is a secular co-educational one integrating into its curriculum concern for the environment, the spirit of community service and international peace and brotherhood.
 Besides spacious classrooms and playgrounds, we have fully developed facilities for each department, with Maths and Science laboratories, a Computer Resource Center, well stocked libraries, an auditorium and open-air stage, and a Teachers’ Learning Center.
@@ -116,7 +116,7 @@ Besides spacious classrooms and playgrounds, we have fully developed facilities 
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="campus-heading">Campus Facilities</h2>
+          <h2 className="campus-heading page-heading">Campus Facilities</h2>
           <p className="campus-subheading">
             Explore our world-class campuses across major cities.
           </p>

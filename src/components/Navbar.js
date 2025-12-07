@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
 
           <ul className="nav-links">
-            
+             <li><a href="/home" className="">Home</a></li>
             {/* About */}
             <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("about")}

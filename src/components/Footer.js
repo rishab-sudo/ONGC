@@ -7,7 +7,11 @@ const Footer = () => {
   return (
     <Container fluid className="footer-section">
       <div className="footer-overlay">
+ <img src={require("../assets/icons/image1.png")}
+       alt="footer-bg-logo"
+       className="footer-bg-logo" />
 
+  <div className="footer-overlay"></div>
         <Row className="footer-content-wrapper">
           {/* Left Column */}
           <Col lg={4} md={12} sm={12} className="footer-column-wrapper">

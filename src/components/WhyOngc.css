@@ -28,12 +28,14 @@
 /* --------== VERTICAL LINE BETWEEN ITEMS ==-------- */
 .vertical-line{
   position:absolute;
-  right:-20px;
-  height:70%;
-  border-right:2px dotted #873f3b;
+  left:100%;                
   top:50%;
   transform:translateY(-50%);
+  height:70%;
+  border-right:2px dotted #873f3b;
+  margin-left:15px;          /* Adjust spacing between card & line */
 }
+
 
 /* last item no line -> (handled by JSX condition) */
 

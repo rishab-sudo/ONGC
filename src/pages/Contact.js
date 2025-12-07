@@ -13,7 +13,7 @@ const Contact = () => {
           <div className='contact-tag-heading-div'>
             <p className='page-tag-heading'>CONTACT US</p>
           </div>
-          <h2 className='page-heading' style={{textTransform:"uppercase"}}>ONGC Community School</h2>
+          {/* <h2 className='page-heading' style={{textTransform:"uppercase"}}>ONGC Community School</h2> */}
           <h5 style={{ marginTop: "-12px" }}>
             Have questions or need any help? We’re here to help you with that
           </h5>
