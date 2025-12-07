@@ -4,7 +4,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: #000;
+  /* background-color: rgba(0, 0, 0, 0.7);  */
   /* background-color: #f0f0f0; */
   color: #fff;
   z-index: 1000;
@@ -21,7 +22,7 @@
 }
 
 .logo {
-  width: 45% !important;
+  width: 178px;
   height: auto;
   /* background-color: #000; */
 }

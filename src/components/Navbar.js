@@ -1,20 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  // ✅ For desktop dropdowns
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  // ✅ Separate states for each mobile dropdown
+  // mobile dropdown states
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileAcademicsOpen, setMobileAcademicsOpen] = useState(false);
   const [mobileStudentLifeOpen, setMobileStudentLifeOpen] = useState(false);
   const [mobileAdmissionOpen, setMobileAdmissionOpen] = useState(false);
-    const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
+  const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
   const [mobileDisclosureOpen, setMobileDisclosureOpen] = useState(false);
+
+  // 🔥 Scroll state for desktop background
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth >= 992) {        // apply only desktop
+        setIsScrolled(window.scrollY > 80);  // when scroll > 80px
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     if (window.innerWidth < 992) {
@@ -24,17 +36,20 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      {/* 🔥 Add dynamic class */}
+      <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
         <div className="navbar-container">
+          
           <div>
-            <a href="/home"><img className="logo" src={require("../assets/ONGC LOGO 11.png")} alt="Logo" /></a>
-        </div>
-          <ul className="nav-links">
-            {/* <li><a href="/home">Home</a></li> */}
+            <a href="/home">
+              <img className="logo" src={require("../assets/ONGC LOGO 11.png")} alt="Logo" />
+            </a>
+          </div>
 
-            {/* About Dropdown */}
-            <li
-              className="dropdown"
+          <ul className="nav-links">
+            
+            {/* About */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("about")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
@@ -47,9 +62,8 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* Academics Dropdown */}
-            <li
-              className="dropdown"
+            {/* Academics */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("academics")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
@@ -61,9 +75,8 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* Student Life Dropdown */}
-            <li
-              className="dropdown"
+            {/* Student Life */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("studentLife")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
@@ -74,9 +87,8 @@ const Navbar = () => {
               </ul>
             </li>
 
-            {/* Admission Dropdown */}
-            <li
-              className="dropdown"
+            {/* Admission */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("admission")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
@@ -87,22 +99,21 @@ const Navbar = () => {
               </ul>
             </li>
 
-     {/* Policy Dropdown */}
-            <li
-              className="dropdown"
+            {/* School Policy */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("policy")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <span className="dropdown-toggle">School Policy</span>
               <ul className={`dropdown-menu ${openDropdown === "policy" ? 'show' : ''}`}>
                 <li><a href="/GeneralPolicy">General Policy</a></li>
-                   <li><a href="/AbsencePolicy">Absence Policy </a></li>
-                      <li><a href="/Punishment">Punishment Policy</a></li>
+                <li><a href="/AbsencePolicy">Absence Policy</a></li>
+                <li><a href="/Punishment">Punishment Policy</a></li>
               </ul>
             </li>
-            {/* Disclosures Dropdown */}
-            <li
-              className="dropdown"
+
+            {/* Disclosures */}
+            <li className="dropdown"
               onMouseEnter={() => setOpenDropdown("disclosure")}
               onMouseLeave={() => setOpenDropdown(null)}
             >
@@ -112,9 +123,7 @@ const Navbar = () => {
               </ul>
             </li>
 
-            <li>
-              <a href="/contact" className="contact-btn desktop-only">Contact Us</a>
-            </li>
+            <li><a href="/contact" className="contact-btn desktop-only">Contact Us</a></li>
           </ul>
 
           <div className="hamburger" onClick={toggleMenu}>
@@ -122,19 +131,16 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* ✅ MOBILE MENU FIXED */}
+        {/* MOBILE MENU */}
         <div className={`side-menu ${menuOpen ? 'open' : ''}`}>
           <div className="side-menu-header"></div>
-
           <ul className="side-nav-links">
+
             <li><a href="/home" onClick={toggleMenu}>Home</a></li>
 
             {/* About */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-              >
+              <span onClick={() => setMobileAboutOpen(!mobileAboutOpen)}>
                 About {mobileAboutOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
               {mobileAboutOpen && (
@@ -149,27 +155,21 @@ const Navbar = () => {
 
             {/* Academics */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobileAcademicsOpen(!mobileAcademicsOpen)}
-              >
+              <span onClick={() => setMobileAcademicsOpen(!mobileAcademicsOpen)}>
                 Academics {mobileAcademicsOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
               {mobileAcademicsOpen && (
                 <ul className="side-dropdown-menu">
                   <li><a href="/Curriculum" onClick={toggleMenu}>Curriculum</a></li>
                   <li><a href="/AcademicsCalendar" onClick={toggleMenu}>Academics Calendar</a></li>
-                  <li><a href="/examinationScheme" onClick={toggleMenu}>Examination Scheme</a></li>
+                  <li><a href="/ExaminationScheme" onClick={toggleMenu}>Examination Scheme</a></li>
                 </ul>
               )}
             </li>
 
             {/* Student Life */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobileStudentLifeOpen(!mobileStudentLifeOpen)}
-              >
+              <span onClick={() => setMobileStudentLifeOpen(!mobileStudentLifeOpen)}>
                 Student Life {mobileStudentLifeOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
               {mobileStudentLifeOpen && (
@@ -182,10 +182,7 @@ const Navbar = () => {
 
             {/* Admission */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobileAdmissionOpen(!mobileAdmissionOpen)}
-              >
+              <span onClick={() => setMobileAdmissionOpen(!mobileAdmissionOpen)}>
                 Admission {mobileAdmissionOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
               {mobileAdmissionOpen && (
@@ -195,29 +192,24 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-             {/* Policy */}
+
+            {/* Policy */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobilePolicyOpen(!mobilePolicyOpen)}
-              >
-                School Policy {mobileDisclosureOpen ? <FaChevronUp /> : <FaChevronDown />}
+              <span onClick={() => setMobilePolicyOpen(!mobilePolicyOpen)}>
+                School Policy {mobilePolicyOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
-              {mobileDisclosureOpen && (
+              {mobilePolicyOpen && (
                 <ul className="side-dropdown-menu">
                   <li><a href="/GeneralPolicy" onClick={toggleMenu}>General Policy</a></li>
-                       <li><a href="/AbsencePolicy" onClick={toggleMenu}>Absence Policy</a></li>
-                            <li><a href="/Punishment" onClick={toggleMenu}>Punishment Policy</a></li>
+                  <li><a href="/AbsencePolicy" onClick={toggleMenu}>Absence Policy</a></li>
+                  <li><a href="/Punishment" onClick={toggleMenu}>Punishment Policy</a></li>
                 </ul>
               )}
             </li>
 
             {/* Disclosures */}
             <li className="side-dropdown">
-              <span
-                className="side-about-title"
-                onClick={() => setMobileDisclosureOpen(!mobileDisclosureOpen)}
-              >
+              <span onClick={() => setMobileDisclosureOpen(!mobileDisclosureOpen)}>
                 Disclosures {mobileDisclosureOpen ? <FaChevronUp /> : <FaChevronDown />}
               </span>
               {mobileDisclosureOpen && (
@@ -228,6 +220,7 @@ const Navbar = () => {
             </li>
 
             <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
+
           </ul>
         </div>
       </nav>
