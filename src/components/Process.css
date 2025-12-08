@@ -1,4 +1,4 @@
-/* ==================== COMMON BG SECTION ==================== */
+/* COMMON SECTION */
 .process-container {
   position: relative;
   height: 65vh;
@@ -6,17 +6,28 @@
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
+  margin-bottom: 25px;        /* 👈 Section gap added */
 }
 
-/* Dark Overlay */
+/* SECTION 1 BACKGROUND */
+.process1{
+  background-image: url('../assets/Banner/ongc-feature_img.jpg');
+}
+
+/* SECTION 2 BACKGROUND */
+.process2{
+  background-image: url('../assets/Banner/demo-img2.jpg'); /* 👈 यहां अपनी दूसरी image replace कर */
+}
+
+/* Overlay */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.5);
   z-index: 1;
 }
 
-/* ⭐ CENTERED CONTENT FOR BOTH SECTIONS */
+/* Center content */
 .center-content{
   position: relative;
   z-index: 2;
@@ -27,81 +38,51 @@
   top: 45%;
   transform: translateY(-50%);
 }
-
-/* Heading */
-.center-content h1{
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 18px;
-  letter-spacing: 1px;
-}
-
-/* Paragraph */
-.center-content p{
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* Read More Button */
+/* Read More Button CC/HLE Style */
 .read-more-btn {
-  margin-top: 20px;
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 30px;
-  padding: 9px 22px;
-  font-size: 16px;
+  margin-top: 25px;
+  background: #902724;                /* 🟡 highlight color */
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;                /* full rounded pill */
+  padding: 10px 28px;
+  font-size: 17px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px #000;   /* glow effect 🔥 */
+}
+
+/* Hover */
+.read-more-btn:hover {
+  background: #902724;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px #000;
+}
+
+/* Active while expanded */
+.read-more-btn.active {
+  background: #000;
+  color: #fff;
+  border: 1px solid #902724;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* Icon coloring smooth */
+.read-more-btn svg {
   transition: .3s;
 }
-
-/* Hover Effect */
-.read-more-btn:hover {
-  background: transparent;
-  color: #fff !important;
-  border-color: #fff;
-}
-
-/* Active On Read Less */
-.read-more-btn.active {
-  background: transparent;
+.read-more-btn.active svg {
   color: #fff;
-  border-color: #fff;
 }
 
-/* Icon Color Controls */
-.read-more-btn svg { transition: .3s; }
-.read-more-btn:not(.active) svg { color:#000; }
-.read-more-btn:hover svg,
-.read-more-btn.active svg { color:#fff; }
 
-
-/* OPTIONAL — RESPONSIVE FIXES */
-@media(max-width:992px){
-  .center-content{
-    max-width: 75%;
-  }
-  .center-content h1{ font-size: 38px; }
-  .center-content p{ font-size: 16px; }
-}
-
+/* Responsive same as you already wrote */
 @media(max-width:600px){
-  .process-container{
-    height: auto;
-    padding: 80px 0;
-  }
-  .center-content{
-    position: relative;
-    top: unset;
-    transform: none;
-    max-width: 85%;
-    padding: 40px 0;
-  }
-  .center-content h1{ font-size: 30px; }
-  .center-content p{ font-size: 15px; }
+  .process-container{ height:auto; padding:80px 0; }
+  .center-content{ top:unset; transform:none; padding:40px 0; }
 }

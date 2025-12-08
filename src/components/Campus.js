@@ -1,50 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import { motion } from "framer-motion";   // ⭐ ADD THIS
+import { motion } from "framer-motion";
 import "./Campus.css";
 
 const topImages = [
   { img: require("../assets/Banner/demo-img1.jpg"), city: "Delhi" },
   { img: require("../assets/Banner/demo-img1.jpg"), city: "Mumbai" },
   { img: require("../assets/Banner/demo-img1.jpg"), city: "Bangalore" },
-];
-
-const bottomImages = [
-  {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Delhi Campus",
-    desc: "A beautiful environment with modern facilities.",
-  },
-  {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Mumbai Campus",
-    desc: "The heart of education and culture.",
-  },
-  {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Bangalore Campus",
-    desc: "Technology hub with world-class amenities.",
-  },
-   {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Mumbai Campus",
-    desc: "The heart of education and culture.",
-  },
-  {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Bangalore Campus",
-    desc: "Technology hub with world-class amenities.",
-  },
-   {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Mumbai Campus",
-    desc: "The heart of education and culture.",
-  },
-  {
-    img: require("../assets/Banner/student-programs4.jpg"),
-    title: "Bangalore Campus",
-    desc: "Technology hub with world-class amenities.",
-  },
 ];
 
 const CampusSection = () => {
@@ -68,7 +30,7 @@ const CampusSection = () => {
     <section className="campus">
       <div className="campus-container">
 
-        {/* 🔥 HEADING — SLIDE FROM LEFT */}
+        {/* 🔥 Heading */}
         <motion.div
           className="campus-left"
           initial={{ x: -80, opacity: 0 }}
@@ -78,12 +40,12 @@ const CampusSection = () => {
         >
           <h2 className="campus-heading page-heading">Our Campus</h2>
           <p className="campus-subheading page-text">
-         <span style={{fontWeight:600}}>ONGC</span>  CS epitomises vibrancy and freshness, dovetailing much of the ethos of the new post-independence India into its educational program and philosophy. The school is a secular co-educational one integrating into its curriculum concern for the environment, the spirit of community service and international peace and brotherhood.
+            <span style={{ fontWeight: 600 }}>ONGC</span> CS epitomises vibrancy and freshness, dovetailing much of the ethos of the new post-independence India into its educational program and philosophy. The school is a secular co-educational one integrating into its curriculum concern for the environment, the spirit of community service and international peace and brotherhood.
 Besides spacious classrooms and playgrounds, we have fully developed facilities for each department, with Maths and Science laboratories, a Computer Resource Center, well stocked libraries, an auditorium and open-air stage, and a Teachers’ Learning Center.
-          </p>
+       </p>
         </motion.div>
 
-        {/* 🔥 SLIDER — SLIDE FROM RIGHT */}
+        {/* 🔥 Single Slider (only one kept) */}
         <motion.div
           className="campus-slider"
           initial={{ x: 80, opacity: 0 }}
@@ -108,42 +70,6 @@ Besides spacious classrooms and playgrounds, we have fully developed facilities 
           </Slider>
         </motion.div>
 
-        {/* 🔥 SECOND HEADING — SLIDE FROM LEFT */}
-        <motion.div
-          className="campus-left mt-5"
-          initial={{ x: -80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <h2 className="campus-heading page-heading">Campus Facilities</h2>
-          <p className="campus-subheading">
-            Explore our world-class campuses across major cities.
-          </p>
-        </motion.div>
-
-        {/* 🔥 SECOND SLIDER — FROM RIGHT */}
-        <motion.div
-          className="campus-slider second"
-          initial={{ x: 80, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <Slider {...settings}>
-            {bottomImages.map((item, index) => (
-              <div className="campus-card second-card" key={index}>
-                <img src={item.img} alt={item.title} />
-                <div className="campus-overlay"></div>
-
-                <div className="second-info">
-                  <h4>{item.title}</h4>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </motion.div>
       </div>
     </section>
   );

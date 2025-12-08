@@ -6,8 +6,11 @@
   position: relative;
   overflow: hidden;
   margin-top:25px;
+  
 }
-
+.achievements{
+  background: #f8f7fbdb !important;
+}
 .achievement-card img {
   width: 350px!important;
   max-width: 380px;
