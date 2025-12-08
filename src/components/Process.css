@@ -1,82 +1,57 @@
-/* Section with fixed background */
+/* ==================== COMMON BG SECTION ==================== */
 .process-container {
   position: relative;
-  height: 80vh;
+  height: 65vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;  /* Keeps background fixed */
+  background-attachment: fixed;
   overflow: hidden;
 }
 
-/* Overlay scrolls, not fixed */
+/* Dark Overlay */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   z-index: 1;
-  pointer-events: none;
 }
 
-/* Text moves with scroll & bottom-right aligned */
-.content {
-  position: absolute;
-  top: 25%;
-  left: 5%;
+/* ⭐ CENTERED CONTENT FOR BOTH SECTIONS */
+.center-content{
+  position: relative;
   z-index: 2;
-  text-align: left;
-  color: #ffffff;
-  max-width: 35%;
+  text-align: center;
+  color: #fff;
+  max-width: 75%;
+  margin: 0 auto;
+  top: 45%;
+  transform: translateY(-50%);
 }
 
-.content h1 {
-  font-size: 48px;
-  font-weight: bold;
+/* Heading */
+.center-content h1{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+/* Paragraph */
+.center-content p{
+  font-size: 18px;
+  line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.content p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Next Section (to scroll into view) */
-.next-section {
-  height: 100vh;
-  background: #111;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-}
-.content-2{
-     position: absolute;
-  right: 5%;
-  bottom: 25%;
-  z-index: 2;
-  text-align: left;
-  color: #ffffff;
-  max-width: 35%; 
-}
-.content-2 h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.content-2 p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-/* Button Default */
+/* Read More Button */
 .read-more-btn {
-  margin-top: 15px;
+  margin-top: 20px;
   background: #fff;
   color: #000;
   border: 1px solid #000;
   border-radius: 30px;
-  padding: 8px 20px;
-  font-size: 15px;
+  padding: 9px 22px;
+  font-size: 16px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -85,36 +60,48 @@
   transition: .3s;
 }
 
-/* Hover effects now work properly */
+/* Hover Effect */
 .read-more-btn:hover {
   background: transparent;
   color: #fff !important;
   border-color: #fff;
 }
 
-/* Active on Read Less */
+/* Active On Read Less */
 .read-more-btn.active {
   background: transparent;
   color: #fff;
   border-color: #fff;
 }
 
-/* React Icon Styling so arrow becomes visible */
-.read-more-btn svg {
-  transition: .3s;
+/* Icon Color Controls */
+.read-more-btn svg { transition: .3s; }
+.read-more-btn:not(.active) svg { color:#000; }
+.read-more-btn:hover svg,
+.read-more-btn.active svg { color:#fff; }
+
+
+/* OPTIONAL — RESPONSIVE FIXES */
+@media(max-width:992px){
+  .center-content{
+    max-width: 75%;
+  }
+  .center-content h1{ font-size: 38px; }
+  .center-content p{ font-size: 16px; }
 }
 
-/* Default ↓ arrow black */
-.read-more-btn:not(.active) svg {
-  color: #000;
-}
-
-/* On hover convert black arrow to white */
-.read-more-btn:hover svg {
-  color: #fff;
-}
-
-/* When expanded Read Less ↑ becomes white */
-.read-more-btn.active svg {
-  color: #fff;
+@media(max-width:600px){
+  .process-container{
+    height: auto;
+    padding: 80px 0;
+  }
+  .center-content{
+    position: relative;
+    top: unset;
+    transform: none;
+    max-width: 85%;
+    padding: 40px 0;
+  }
+  .center-content h1{ font-size: 30px; }
+  .center-content p{ font-size: 15px; }
 }
