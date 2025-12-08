@@ -26,7 +26,9 @@
   background: rgba(0,0,0,0.5);
   z-index: 1;
 }
-
+.process-heading{
+  color: #fff !important;
+}
 /* Center content */
 .center-content{
   position: relative;
@@ -66,7 +68,7 @@
 
 /* Active while expanded */
 .read-more-btn.active {
-  background: #000;
+  background: #902824e7;
   color: #fff;
   border: 1px solid #902724;
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
