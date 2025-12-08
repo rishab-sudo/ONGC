@@ -8,63 +8,52 @@ import ContactForm from '../components/ContactForm';
 const Contact = () => {
   return (
     <Container fluid className="contact-page">
-      <Container className="contact-content-container">
-        <div className='contact-page-heading-div'>
-          <div className='contact-tag-heading-div'>
-            <p className='page-tag-heading'>CONTACT US</p>
-          </div>
-          {/* <h2 className='page-heading' style={{textTransform:"uppercase"}}>ONGC Community School</h2> */}
-          <h5 style={{ marginTop: "-12px" }}>
-            Have questions or need any help? We’re here to help you with that
-          </h5>
+   <div className="contact-heading">
+          <h3 className='page-heading'>CONTACT US</h3>
+          <p className='page-text'>  Have questions or need any help? We’re here to help you with that</p>
         </div>
-{/* section-1 */}
-<div className='info-main-div'>
-<div className='info-div'>
-<FaPhoneVolume className='info-icon'/>
-<p>Contact</p>
-<p>+91 8009244441</p>
-</div>
+      {/* ====== TOP CONTAINER SECTION ====== */}
+      <Container className="contact-top-box">
+ <div className="contact-grid">
 
-<div className='info-div'>
-    <FaEnvelope className='info-icon'/>
-    <p>Email</p>
-    <p> info@ongcschool.com</p>
-</div>
+          {/* 1 --- CONTACT */}
+          <div className="contact-item">
+            <FaPhoneVolume className='contact-icon'/>
+            <h5>Contact</h5>
+            <p>+91 8009244441</p>
+          </div>
 
-<div className='info-div'>
-    <div><SiLibreofficewriter className='info-icon'/></div>
-    <p>Address</p>
-    <p>Hargaon- Laharpur road,<br/> paintala village,near ranifarm<br/>Sitapur (UP)</p>
-</div>
-</div>
-        {/* Section 2 */}
-        <section className="contact-main-section">
+          {/* 2 --- EMAIL */}
+          <div className="contact-item">
+            <FaEnvelope className='contact-icon'/>
+            <h5>Email</h5>
+            <p>info@ongcschool.com</p>
+          </div>
 
-          {/* Left Section: Image + Info Box */}
-        <div className='contact-left-img-div'>
-            <img className='contact-left-img' src={require("../assets/ongc-school-img.jpg")} alt=""/>
+          {/* 3 --- ADDRESS */}
+          <div className="contact-item">
+            <SiLibreofficewriter className='contact-icon'/>
+            <h5>Address</h5>
+            <p>Hargaon- Laharpur road,<br/>paintala village, near ranifarm<br/>Sitapur (UP)</p>
+          </div>
+
+        </div>
+      </Container>
+
+      {/* ===== SECOND SECTION (MAP LEFT + FORM RIGHT) ===== */}
+      <Container className="contact-lower-section">
+
+        <div className='map-box'>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.025123919405!2d79.356557!3d28.42793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4f2b7c32653%3A0xf47cdb5f9ebf7a9f!2sBandia%20Road%2C%20Parsakhera%20Industrial%20Area%2C%20Bareilly%2C%20Uttar%20Pradesh%20243122!5e0!3m2!1sen!2sin!4v1692999999999!5m2!1sen!2in"
+            allowFullScreen="" loading="lazy" title="Google Map">
+          </iframe>
         </div>
 
-          {/* Right Section - Contact Form */}
-          <div className="form-container">
-            <ContactForm />
-          </div>
-        </section>
+        <div className='form-box'>
+          <ContactForm />
+        </div>
 
-        {/* Section 2 - Google Map */}
-        <section className="map-section">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.025123919405!2d79.356557!3d28.42793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4f2b7c32653%3A0xf47cdb5f9ebf7a9f!2sBandia%20Road%2C%20Parsakhera%20Industrial%20Area%2C%20Bareilly%2C%20Uttar%20Pradesh%20243122!5e0!3m2!1sen!2sin!4v1692999999999!5m2!1sen!2sin"
-            width="100%"
-            height="400"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map"
-          ></iframe>
-        </section>
       </Container>
     </Container>
   );
