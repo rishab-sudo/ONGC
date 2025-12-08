@@ -122,7 +122,8 @@
 }
 
 .contact-btn:hover {
-  outline: none;                 
+  outline: none; 
+  border: none !important;                
   background-color: #902724;      
   color: #fff;   
 }
