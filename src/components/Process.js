@@ -19,13 +19,13 @@ const Process = () => {
           <h1 className="page-heading process-heading">Who We Are</h1>
 
           <p className="page-text">
-ONGC Community School is a progressive educational
- institution committed to providing quality education, holistic development, and value-based learning. We strive to empower every child with academic excellence, life skills, discipline, and confidence to excel in a dynamic world.
+Making Tomorrow Brighter” is the guiding motto of ONGC Community School — a pioneering institution and the first of its kind in India. Established by ONGC in collaboration with the SDMC Trust as its COM Partner, the school represents a visionary step toward redefining quality education. Inspired by sensitivity, compassion, and a deep understanding of every child’s unique potential, our institution is thoughtfully crafted to reflect the character of its location while meeting the evolving educational needs of our times.
+Affiliated with the Central Board of Secondary Education (CBSE), 
           </p>
        
           {showMore1 && (
             <p className="more-text page-text">
-             
+             ONGC Community School is dedicated to nurturing young minds through academic excellence, holistic development, and an unwavering commitment to high-quality learning. Here, we aspire not only to educate—but to illuminate a brighter future for every learner.
             </p>
           )}
 

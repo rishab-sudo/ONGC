@@ -47,6 +47,7 @@ color: #fff !important;
   font-size: 35px;
   margin-bottom: 8px;
   display: block;
+  opacity: 0.9;
 }
 
 /* TEXT */
@@ -54,11 +55,13 @@ color: #fff !important;
   font-size: 15px;
   margin-bottom: 3px;
   font-weight: 600;
+  opacity: 0.9;
 }
 
 .facility-box p {
   font-size: 13px;
   margin: 0;
+  opacity: 0.9;
 }
 
 /* RESPONSIVE GRID */
