@@ -5,17 +5,17 @@ import "./Trustees.css";
 
 const trustData = [
   {
-    img: require("../assets/roshni-nadar-malhotra.jpg"),
+    img: require("../assets/trustees/trust1 (1).jpeg"),
     title: "Leadership & Vision",
     text: "Our trustees bring decades of leadership shaping the future of education.",
   },
   {
-    img: require("../assets/Banner/student-programs4.jpg"),
+    img: require("../assets/trustees/trust2 (1).jpeg"),
     title: "Commitment to Excellence",
     text: "We focus on quality education and holistic growth of students.",
   },
   {
-    img: require("../assets/roshni-nadar-malhotra.jpg"),
+    img: require("../assets/trustees/trust3 (1).jpeg"),
     title: "Strong Foundation",
     text: "Guiding values and mission ensure the best environment for learners.",
   },

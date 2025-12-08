@@ -1,0 +1,44 @@
+.build{
+    margin-top: 3.5%;
+  background:#902724;
+  padding:0px ;
+  color:#fff;
+  overflow:hidden;
+}
+
+/* Initially image & text attached near center */
+.build-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+}
+
+.build-img img{
+  width:350px;
+  border-radius:10px;
+  transition:transform .6s ease; /* Smooth movement */
+}
+
+/* text */
+.build-text{
+    padding: 0px;
+  width:50%;
+  margin-left: auto !important;
+  /* background-color: #fff; */
+}
+.build-text h1{font-size:32px;font-weight:700;}
+.build-text p{opacity:.9;margin-top:8px;}
+
+button{
+  margin-top:15px;
+  background:#fff;
+  color:#902724;
+  padding:12px 26px;
+  font-size:16px;
+  border-radius:50px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+}
+button:hover{transform:scale(1.05);}

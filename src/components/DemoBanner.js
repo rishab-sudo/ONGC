@@ -9,43 +9,33 @@ const DemoBanner = () => {
     <div className="demoBanner">
       <Swiper
         modules={[Autoplay]}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         loop={true}
         spaceBetween={0}
         slidesPerView={1}
       >
         <SwiperSlide>
-          <img
-            src={require("../assets/Banner/new-ongc-banner1.jpg")}
-            alt="banner"
-            className="demo-banner-img"
-          />
+          <div className="banner-img-wrapper">
+            <img src={require("../assets/Banner/Gemini_Generated_b1.png")} alt="banner" className="banner-img" />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img
-            src={require("../assets/Banner/new-ongc-banner2.jpg")}
-            alt="banner"
-            className="demo-banner-img"
-          />
+          <div className="banner-img-wrapper">
+            <img src={require("../assets/Banner/b2.jpeg")} alt="banner" className="banner-img" />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <img
-           src={require("../assets/Banner/new-ongc-banner3.jpg")}
-            alt="banner"
-            className="demo-banner-img"
-          />
+          <div className="banner-img-wrapper">
+            <img src={require("../assets/Banner/b3.jpeg")} alt="banner" className="banner-img" />
+          </div>
         </SwiperSlide>
-            <SwiperSlide>
-          <img
-           src={require("../assets/Banner/new-ongc-banner2.jpg")}
-            alt="banner"
-            className="demo-banner-img"
-          />
+
+        <SwiperSlide>
+          <div className="banner-img-wrapper">
+            <img src={require("../assets/Banner/b2.jpeg")} alt="banner" className="banner-img" />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

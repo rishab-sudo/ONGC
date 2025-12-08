@@ -8,13 +8,14 @@ import CampusSection from '../components/Campus'
 import { motion } from "framer-motion";
 import PrincipalMessage from '../components/PrincipalMessage'
 import Welcome from '../components/Welcome'
-import GuideStudent from '../components/Campus'
+// import GuideStudent from '../components/Campus'
 import DemoBanner from '../components/DemoBanner'
 import Trsutees from '../components/Trsutees';
 import Process  from '../components/Process';
 import CampusFacility from '../components/CampusFacility';
 import WhyOngc from '../components/WhyOngc';
 import Achievements from '../components/Achievements';
+import Build from '../components/Build';
 
 const Home = () => {
   return (
@@ -143,6 +144,7 @@ const Home = () => {
 <Testimonials/>
 </motion.div>
 
+{/* <Build/> */}
  {/* <motion.div
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
