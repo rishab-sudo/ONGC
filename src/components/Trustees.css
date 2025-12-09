@@ -7,8 +7,8 @@
 .trust-slider-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: space-around;
+  gap: 25px;
 }
 
 .trust-image {
