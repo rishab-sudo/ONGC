@@ -6,22 +6,22 @@ import { FaQuoteRight, FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const testimonialsData = [
   {
-    img: require("../assets/testimonial_img.png"),
-    name: "John Doe",
+    img: require("../assets/campus/parents.jpeg"),
+    name: "Vikramaditya Sharma",
     review:
-      "This institution has transformed my learning journey. The teachers are supportive, and the environment is inspiring. I highly recommend it to everyone! The teachers are supportive, and the environment is inspiring. I highly recommend it to everyone!",
+      "This is the most  progressive school that is getting perfection in the quality education and cultivating the best citizens for our country.",
   },
   {
-    img: require("../assets/testimonial_img.png"),
-    name: "Sarah Johnson",
+    img: require("../assets/campus/parents.jpeg"),
+    name: "Prerit Srivastava",
     review:
-      "A wonderful experience! The staff is very professional and the teaching quality is exceptional. Truly a great place to grow and learn.The teachers are supportive, and the environment is inspiring. I highly recommend it to everyone!",
+      "This institution is a framework of Quality Education and Ethical Values that a child need to adopt.Highly Recommended",
   },
   {
-    img: require("../assets/testimonial_img.png"),
-    name: "Michael Smith",
+    img: require("../assets/campus/parents.jpeg"),
+    name: "Payal Agarwal",
     review:
-      "Excellent academic programs and great community! I have learned so much and grown as a person. Highly recommended for all learners.The teachers are supportive, and the environment is inspiring. I highly recommend it to everyone!",
+      "This school provides a opportunity to individual to grow in their own way. Providing them the best educationin a very students friendly enviornment.",
   },
 ];
 
@@ -52,11 +52,12 @@ const Testimonials = () => {
           {/* Left Image */}
           <div className="test-left-img-div">
             {/* <img
-              src={require("../assets/testimonial_img.png")}
+              src={require("../assets/campus/parents.jpeg"),)}
               alt="Testimonials"
             /> */}
               <img
-              src={require("../assets/ongc-test2.png")}
+              className="test-left-img"
+              src={require("../assets/campus/parents.jpeg")}
               alt="Testimonials"
             />
           </div>

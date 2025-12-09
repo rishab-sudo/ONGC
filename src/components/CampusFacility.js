@@ -1,37 +1,30 @@
 import React from "react";
 import "./CampusFacility.css";
-import {
-  FaChalkboardTeacher,
-  FaBusAlt,
-  FaBookReader,
-  FaThermometerThreeQuarters,
-  FaVideo,
-  FaFlask,
-  FaWheelchair,
-  FaHorseHead
-} from "react-icons/fa";
+
+import { FaBuilding, FaChalkboardTeacher, FaMedal } from "react-icons/fa";
+import { FaPersonRunning } from "react-icons/fa6"; // Running icon
+import { GiSoccerField, GiTabletopPlayers } from "react-icons/gi"; // Playground & indoor sport
 
 const facilityData = [
-  { icon: <FaChalkboardTeacher />, title: "Smart", desc: "Classrooms" },
-  { icon: <FaBusAlt />, title: "GPS Enabled", desc: "Transport" },
-  { icon: <FaBookReader />, title: "Exemplary", desc: "Library" },
-  { icon: <FaThermometerThreeQuarters />, title: "Air Conditioned", desc: "Campus" },
-  { icon: <FaVideo />, title: "CCTV Monitored", desc: "Campus" },
-  { icon: <FaFlask />, title: "Contemporary", desc: "Laboratories" },
-  { icon: <FaWheelchair />, title: "Lift", desc: "Access" },
-  { icon: <FaHorseHead />, title: "Horse", desc: "Riding" },
+  { icon: <FaBuilding />, title: "Modern Infrastructure", desc: "Well-equipped campus design" },
+  { icon: <FaChalkboardTeacher />, title: "Smart Classrooms", desc: "Digital learning environment" },
+  { icon: <FaMedal />, title: "Best Academics", desc: "Excellence in learning outcomes" },
+  { icon: <FaPersonRunning />, title: "Running Track", desc: "Athletic fitness & training" },
+  { icon: <GiSoccerField />, title: "Playground Field", desc: "Outdoor sports & activities" },
+  { icon: <GiTabletopPlayers />, title: "Indoor Sports", desc: "Recreational games area" },
 ];
 
 const CampusFacility = () => {
   return (
     <div className="facility-section">
-        {/* Heading Section */}
-        <div className="facility-heading">
-            <h3 className="page-heading">Campus Facilities</h3>
-            <p>Providing modern amenities for a better learning experience.</p>
-        </div>
+      
+      {/* Heading */}
+      <div className="facility-heading">
+        <h3 className="page-heading">Campus Facilities</h3>
+        <p>World-class amenities for learning, sports & overall development.</p>
+      </div>
 
-      {/* Facilities Grid */}
+      {/* Facility Grid */}
       <div className="facility-container">
         {facilityData.map((item, index) => (
           <div className="facility-box" key={index}>

@@ -36,7 +36,7 @@ const Trustees = () => {
   return (
     <section className="trust">
       <div className="d-flex flex-column justify-content-center align-item-center text-center mb-5">
-        <p className='page-heading'>Our Trustees</p>
+        <p className='page-heading trust-heading'>Our Trustees</p>
         <p className="page-text" style={{ marginTop:"-12px" }}>
           ONGC is led by our distinguished Trustees, guiding and strategizing 
           to ensure continuous excellence in education.

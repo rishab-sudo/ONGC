@@ -1,7 +1,7 @@
 .trust {
   width: 100%;
   padding: 60px 0;
-  background: #fff;
+  background: #f8f7fbdb;
 }
 
 .trust-slider-wrapper {
@@ -25,9 +25,17 @@ height: 100%;
 }
 
 .trust-text { width: 50%; }
-
+.trust-heading.trust-heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 7px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
 .trust-text h2 {
-  font-size: 32px;
+ 
   font-weight: 700;
   color: #902724;
 }

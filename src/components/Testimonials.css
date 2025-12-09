@@ -66,16 +66,20 @@ padding: 0px ;
   height: 60%; /* 👈 bottom to half */
   background: #902724;
   opacity: 1;
-  border-radius: 15px; /* niche rounded */
+ border-bottom-left-radius: 15px;
+ border-bottom-right-radius: 15px;
   z-index: 1;
 }
 
 .test-left-img-div img {
-  width: 100%;
+  width: 95%;
+  height: 80%;
+  margin-bottom: 40px; /* Image ko thoda upar shift to reveal color */
   border-radius: 15px;
-  position: relative;
-  z-index: 2; /* image always top */
+  z-index: 2;
 }
+
+
 
 /* right-side-css */
 .test-right-box-div .slick-slider {
@@ -206,4 +210,10 @@ padding-bottom: 25px ;
     height: auto !important;
    margin-bottom: 2px !important;
   }
+}
+
+@media (max-width: 992px) {
+.test-box {
+ min-width: 100%;
+}
 }

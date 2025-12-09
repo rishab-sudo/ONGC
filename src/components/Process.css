@@ -2,8 +2,9 @@
 .process-container {
   position: relative;
   height: 65vh;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  
   background-attachment: fixed;
   overflow: hidden;
   margin-bottom: 25px;        /* 👈 Section gap added */
@@ -11,12 +12,13 @@
 
 /* SECTION 1 BACKGROUND */
 .process1{
-  background-image: url('../assets/Banner/ongc-feature_img.jpg');
+  /* background-image: url('../assets/Banner/ongc-feature_img.jpg'); */
+    background-image: url('../assets/campus/achv.jpeg');
 }
 
 /* SECTION 2 BACKGROUND */
 .process2{
-  background-image: url('../assets/Banner/demo-img2.jpg'); /* 👈 यहां अपनी दूसरी image replace कर */
+  background-image: url('../assets/campus/we-do.jpeg'); /* 👈 यहां अपनी दूसरी image replace कर */
 }
 
 /* Overlay */

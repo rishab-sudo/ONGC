@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import "./Campus.css";
 
 const topImages = [
-  { img: require("../assets/Banner/demo-img1.jpg"), city: "Delhi" },
-  { img: require("../assets/Banner/demo-img1.jpg"), city: "Mumbai" },
-  { img: require("../assets/Banner/demo-img1.jpg"), city: "Bangalore" },
+  { img: require("../assets/campus/campus3.jpeg"), city: "" },
+  { img: require("../assets/campus/campus2.jpeg"), city: "" },
+  { img: require("../assets/campus/campus1.jpeg"), city: "" },
 ];
 
 const CampusSection = () => {

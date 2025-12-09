@@ -1,7 +1,8 @@
 .campus {
   width: 100%;
- background: #f8f7fbdb;
+ /* background: #f8f7fbdb; */
   padding: 60px 0;
+  margin: 0;
 }
 
 .campus-container {
@@ -23,11 +24,18 @@
 }
 
 .campus-heading {
-  font-size: 36px;
   font-weight: 700;
   text-align: center !important;
 }
-
+.campus-heading.campus-heading::after {
+  content: "";
+  display: block;
+  width: 105px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
 .campus-subheading {
   /* font-size: 16px; */
   color: #444;

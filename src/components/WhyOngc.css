@@ -41,6 +41,15 @@
 
 
 /* TEXT */
+.why-heading.why-heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
 .whyChoose-box h3{
   font-size:17px;
   font-weight:bold;

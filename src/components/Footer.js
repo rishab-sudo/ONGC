@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import "./Footer.css";
 
 const Footer = () => {
@@ -26,10 +26,10 @@ const Footer = () => {
                 </p>
               </div>
               <div className="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61578129710470"><FaFacebook /></a>
-                <a href="https://www.instagram.com/alutuff.panels/"><FaInstagram /></a>
-                <a href="https://wa.me/918009244441" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-                <a href="https://www.linkedin.com/company/alutuff/"><FaLinkedin /></a>
+                <a href="https://www.facebook.com/profile.php?id=100064055612636"><FaFacebook /></a>
+                <a href="https://www.instagram.com/ongccommunityschool/"><FaInstagram /></a>
+                <a href="https://www.youtube.com/@ONGCCommunitySchool" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                {/* <a href="https://www.linkedin.com/company/alutuff/"><FaLinkedin /></a> */}
               </div>
             </div>
           </Col>

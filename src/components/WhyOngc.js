@@ -59,7 +59,7 @@ const WhyOngc = () => {
 
   return (
     <section className="whyChoose">
-      <h2 className="page-heading">Why ONGC Community School?</h2>
+      <h2 className="page-heading why-heading">Why ONGC Community School?</h2>
 
       <Slider {...settings} className="whyChoose-slider">
 
