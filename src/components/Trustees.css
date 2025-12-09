@@ -12,8 +12,10 @@
 }
 
 .trust-image {
-width: 575px;
-  height: 350px;
+/* width: 575px;
+  height: 350px; */
+  width: 520px;
+  height: 325px;
 }
 
 .trust-image img {
