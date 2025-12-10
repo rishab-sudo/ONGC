@@ -1,299 +1,295 @@
-/* Base Navbar */
-.navbar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  /* background-color: rgba(0, 0, 0, 0.7);  */
-  /* background-color: #f0f0f0; */
-  color: #fff;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 39px;
+:root{
+  /* change this variable to control nav height used by mobile side-menu top */
+  --nav-height: 64px;
 }
 
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
-  width: 100%;
+/* ---------- TOP HEADER ---------- */
+.top-header{
+  width:100%;
+  background:#902724;
+  color:#fff;
+  padding:6px 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:15px;
+  box-sizing:border-box;
 }
 
-.logo {
-  width: 178px;
-  height: auto;
-  /* background-color: #000; */
+.top-left{ 
+  font-weight:600; 
 }
 
-.nav-links {
-  display: flex;
+.top-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.top-right a{ 
+  color:#fff; 
+  font-size:18px; 
+  display:inline-flex; 
+  align-items:center; 
+}
+.top-right a:hover{ 
+color: #fbfbfb;
+}
+.enquiry-btn{
+  background:#fff;
+  border:none;
+  padding:5px 12px;
+  color:#902724;
+  font-size: 14px;
+  font-weight:600;
+  border-radius:4px;
+  cursor:pointer;
+  margin: auto 0;
+}
+
+/* ---------- MIDDLE HEADER ---------- */
+/* Step 2: logo left, partner icons right */
+.middle-header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center !important;
+  padding:7px 25px;
+  background:#f5f5f5;
+  box-sizing:border-box;
+}
+
+.middle-left { display:flex; align-items:center; }
+.mid-logo{ width:175px; height:auto; display:block; }
+
+.middle-right{ display:flex; align-items:center; gap:12px; }
+.partner-icon{ font-size:20px; }
+
+
+
+/* ---------- NAVIGATION BAR ---------- */
+.navigation-bar{
+  width:100%;
+  background:#000;
+  position:sticky;
+  top:0;
+  z-index:900;
+padding: 0;
+}
+
+/* nav-inner contains logo, hamburger, and desktop links */
+.nav-inner{
+  display:flex;
+  align-items:center !important;
   justify-content: flex-end;
-  align-items: center;
-  gap: 27px;
-  margin-left: auto;
-  margin-right: 2.5%;
-  width: 100% !important;
-  font-weight: 600;
-  /* background-color: #f0f0f0; */
+  gap:15px;
+  text-align: center;
+  padding: 2px 15px;
+  box-sizing:border-box;
+  position:relative;
+  
 }
 
-.nav-links li {
-  list-style: none;
+/* logo area */
+.nav-logo{ display:flex; align-items:center; }
+.nav-logo-img{ width:150px; height:auto; }
+
+/* ---------- Desktop links: aligned to flex-end ---------- */
+.nav-links-wrap{ 
+  margin-left:auto;            
+  display:flex;
+  align-items:center !important;
+  text-align: center;
+  justify-content: flex-end;
+  padding: 0px;
 }
 
+.nav-links{
+  display:flex;
+  gap:15px;                   
+  align-items:center;
+  text-align: center;
+  list-style:none;             
+  margin:0;
+  padding:0;
+}
+
+/* anchor/button base */
 .nav-links a,
-.dropdown-toggle {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
+.drop-btn{
+  color:#fff;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:600;
+  background:transparent;
+  border:none;
+  cursor:pointer;
+  margin: auto 0;
 }
-
-/* Dropdown Styling */
-.dropdown {
-  position: relative;
-}
-
-
-.dropdown-toggle::after {
-  display: inline-block;
-  font-size: 22px;
-  margin-left: 5px;
-  position: relative;
-  top: 2px;
-  /* this moves the arrow a bit lower */
-}
-
-.dropdown :hover {
-  color: #902724 !important;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  padding: 10px 0;
-  list-style: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 150px;
-  z-index: 1000;
-}
-
-
-.dropdown:hover .dropdown-menu,
-.dropdown-menu.show {
-  display: block;
-}
-
-
-.dropdown-menu li {
-  padding: 8px 20px;
-}
-
-.dropdown-menu li a {
-  color: #000;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.dropdown-menu li:hover {
-  background-color: #f0f0f0;
-}
-
-/* Dealer Button - Desktop Only */
-.contact-btn {
-  box-shadow: 0 0 10px rgba(144, 40, 36, 0.121); 
-  color: #fff;
-  padding: 5px 11px;
-  font-size: 17px !important;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 30px;
-  outline: none !important;
-  border: 1px solid #ffffff;
-  transition: all 0.3s ease;
-  margin-left: auto !important;
+/* add dropdown icon after desktop links */
+/* All nav-links anchors — add arrow */
+/* Add arrow after all dropdown button links */
+.nav-links li:not(.home-link):not(.contact-link) > .drop-btn::after {
+  content: " ▼";
+ font-size: 12px;
+  margin-left: 2px;
+  color:#fff;
   width: fit-content !important;
 }
 
-.contact-btn:hover {
-  outline: none; 
-  border: none !important;                
-  background-color: #902724;      
-  color: #fff;   
+/* Make sure HOME & CONTACT do NOT show arrow */
+.nav-links .home-link a::after,
+.nav-links .contact-link a::after {
+  content: "";
+}
+/* Contact button */
+.contact-btn{
+  background:transparent;
+  border:1px solid #fff;
+  padding:6px 12px;
+  border-radius:20px;
+  color:#fff;
 }
 
-
-
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #f0f0f0;
+/* Dropdown - desktop */
+.dropdown{
+  position:relative;
 }
 
-/* Side Menu */
-.side-menu {
-margin-top: 7.8rem !important;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 80%;
-  height: 100vh;
-  background-color: #000;
-  z-index: 1100;
-  transition: left 0.3s ease;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+/* Step 6: dropdown CSS for desktop */
+.dropdown-menu{
+  position:absolute;
+  top:110%;
+  left:0;
+  background:#fff;
+  min-width:200px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  padding:8px 0;
+  border-radius:6px;
+  display:none;
+  z-index:1000;
 }
 
-.side-menu.open {
-  left: 0;
+.dropdown-menu.show,
+.dropdown:hover .dropdown-menu{
+  display:block;
 }
 
-.side-menu-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.dropdown-menu li{
+  list-style:none;   /* remove dots */
+  padding:8px 16px;
 }
 
-.side-logo {
-  width: 120px;
-  height: auto;
+.dropdown-menu li a{
+  color:#111;
+  text-decoration:none;
+  font-weight:500;
+  display:block;
 }
 
-.side-close-icon {
-  font-size: 24px;
-  cursor: pointer;
+/* subtle hover */
+.dropdown-menu li:hover{ background:#f5f5f5; }
+
+/* ---------- Hamburger & responsive ---------- */
+/* Step 7: on small screens hamburger at RIGHT, logo at left */
+.hamburger{
+  display:none;
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:22px;
+  cursor:pointer;
 }
 
-.side-nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-top: 2.5px;
+/* Side menu (mobile) - opens from left and starts below nav */
+.side-menu{
+  position:fixed;
+  top:var(--nav-height);  /* Step 7: start below navigation bar */
+  left:-100%;
+  width:80%;
+  max-width:360px;
+  height:calc(100vh - var(--nav-height));
+  background:#000;
+  color:#fff;
+  padding:20px;
+  transition:left .28s ease;
+  z-index:1200;
+  box-sizing:border-box;
+  overflow:auto;
 }
 
-.side-nav-links li {
-  list-style: none;
+.side-menu.open{ left:0; }
+
+/* side links stacked in column, left aligned (Step 7) */
+.side-nav-links{
+  list-style:none;
+  margin:0;
+  padding:8px 0;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
 }
 
-.side-nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
+.side-nav-links a{ color:#fff; text-decoration:none; font-size:18px; }
+
+/* mobile dropdown inside side menu */
+.side-dropdown .side-toggle{
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:18px;
+  text-align:left;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  padding:6px 0;
 }
 
-/* Side Dropdown */
-.side-dropdown span.side-about-title {
-  font-size: 20px;
-  color: #ffffff;
-  /* Ensure About is visible */
+.side-dropdown-menu{
+  list-style:none;
+  margin:8px 0 0 10px;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
 }
 
-.side-dropdown-menu {
-  padding-left: 15px;
-  margin-top: 10px;
-}
+/* remove bullets everywhere */
+ul{ list-style:none; margin:0; padding:0; }
 
-.side-dropdown-menu li {
-  padding: 5px 0;
+/* ---------- Responsive rules ---------- */
+/* Step 3: hide middle header on mobile */
+@media (max-width: 768px){
+  .middle-header{ display:none; }
 }
+@media (max-width: 992px){
+  /* hide desktop nav links */
+  .nav-links-wrap{ display:none; }
 
-.side-dropdown-menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-/* Dropdown arrows icon adjustment */
-.dropdown-toggle::after {
-  content: '';
-}
-
-/* Ensure side dropdown menus only show when open */
-.side-dropdown-menu {
-  padding-left: 15px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.side-dropdown-menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-}
-
-.side-about-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* Add icon spacing */
-.side-about-title svg {
-  margin-left: 10px;
-}
-/* Responsive  */
-/* Fix Contact Us alignment at medium screens (like 1200px) */
-@media screen and (max-width: 1300px) and (min-width: 992px) {
-  .nav-links {
-    gap: 20px; /* reduce gap between items */
+  /* show hamburger at right */
+  .hamburger{
+    display:block;
+    position:absolute;
+    right:20px;
   }
 
- .nav-links a,
-.dropdown-toggle {
-    font-size: 17px; /* slightly smaller text to fit */
-  }
+  /* logo pinned to left */
+  .nav-logo{ position:absolute; left:20px; }
 
-  .dealer-btn {
-    padding: 8px 12px; /* adjust padding to prevent wrapping */
-    font-size: 15px;
-  }
+  /* make nav-inner height variable for --nav-height if needed */
+  .navigation-bar{ --nav-height: 64px; }
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  /* ✅ Smaller logo for mobile screens */
-  .logo {
-    width: 150px !important;
-    height: 100%;
-  }
+/* larger devices: ensure hamburger hidden and show desktop links */
+@media (min-width: 993px){
+  .side-menu{ display:none; } /* not used on desktop */
+  .hamburger{ display:none; }
+  .nav-logo-img{ width:170px; }
+}
 
-  .dealer-btn {
-    display: none;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    /* background-color: #902724; */
-    margin-left: auto !important;
-  }
-
-  .navbar-container {
-    justify-content: space-between;
-  }
-
-  .logo {
-    order: 1;
-  }
-
-  .hamburger {
-    order: 2;
-  }
+/* small polish */
+.dropdown-menu li a:hover, .nav-links a:hover, .drop-btn:hover{
+  color:#902724;
 }

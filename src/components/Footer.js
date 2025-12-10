@@ -19,11 +19,10 @@ const Footer = () => {
               {/* <img src={require("../assets/ongc-logo1.jpg")} alt="logo" className="footer-logo" /> */}
                 <img src={require("../assets/ONGC LOGO 11.png")} alt="logo" className="footer-logo" />
               <div className="footer-trust-text">
-                <h2>Building Excellence Through Innovation, Quality, and Community Focus</h2>
-                <p>
-                  At ONGC Community School, we believe excellence begins with innovation and a shared 
-                  sense of purpose. Rooted in trust and collaboration, we empower both students and educators through modern learning practices and a supportive environment. With quality resources and a strong community focus, we shape confident, compassionate, and future-ready individuals.
-                </p>
+                <h2>Making Tomorrow Brighter</h2>
+            <p>
+  At ONGC Community School, we nurture young minds with innovation, care, and purposeful learning. Through a supportive environment and modern teaching practices, we help students grow into confident, responsible, and future-ready individuals.
+</p>
               </div>
               <div className="social-icons">
                 <a href="https://www.facebook.com/profile.php?id=100064055612636"><FaFacebook /></a>

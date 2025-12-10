@@ -61,7 +61,13 @@
 .campus-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
+  transform: translateX(0);         /* Initially applied */
+  transition: transform .45s ease;
+}
+
+.campus-card:hover .campus-overlay {
+  transform: translateX(100%);      /* Hover par overlay slide out */
 }
 
 /* FIRST SLIDER TEXT */
