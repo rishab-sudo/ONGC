@@ -74,8 +74,8 @@ const Navbar = () => {
 
      
         <div className="middle-right">
-          <FaGlobe className="partner-icon" title="G20" />
-          <FaFlag className="partner-icon" title="Partner" />
+          <img src={require("../assets/icons/ongc-partner1.png")} className="partner-icon" title="]" />
+       <img src={require("../assets/icons/ongc-partner2.png")}  className="partner-icon" title="" />
         </div>
       </div>
 

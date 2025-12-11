@@ -5,7 +5,6 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
@@ -25,9 +24,32 @@ import ExaminationScheme from "./pages/ExamScheme"
 import Punishment from "./pages/Punishment";
 import Gallery from "./pages/Gallery";
 import AbsencePolicy from "./pages/AbsencePolicy";
+// import { BsArrowUpShort } from "react-icons/bs";
+
 
 function App() {
   const [loading, setLoading] = useState(false);
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setShowTopBtn(true);
+    } else {
+      setShowTopBtn(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 
   useEffect(() => {
     const hasLoaded = sessionStorage.getItem("hasLoaded");
@@ -84,8 +106,17 @@ function App() {
           <Route path="/Gallery" element={<Gallery />} />
         </Routes>
 
-        <Footer />
       </div>
+
+
+{showTopBtn && (
+  <button className="app-top-btn" onClick={scrollToTop}>
+    <span className="app-top-arrow">↑</span>
+  </button>
+)}
+
+
+ <Footer />
     </Router>
   );
 }

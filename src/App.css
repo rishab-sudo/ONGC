@@ -3,8 +3,6 @@
     margin-top:0px;
     background-color: #fff !important;
 }
-
-
 .loader-wrapper {
 position: fixed;
 top: 0;
@@ -17,15 +15,11 @@ align-items: center;
 background-color: #fff;
 z-index: 9999;
 }
-
-
 .dots {
 display: flex;
 gap: 14px;
 align-items: center;
 }
-
-
 .dot {
 width: 16px;
 height: 16px;
@@ -69,6 +63,39 @@ animation: wave 0.8s ease-in-out infinite;
 .page-text{
     font-size: 18px;
 }
+.app-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 43px;
+  width: 45px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #902724 !important;
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999999 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.app-top-arrow {
+  color: #902724 !important;
+background: transparent;
+  font-size: 32px !important;
+  font-weight: 1200 !important;
+}
+
+.app-top-btn:hover {
+  background: #902724 !important;
+}
+
+.app-top-btn:hover .app-top-arrow {
+  color: #ffffff !important;
+}
+/* -------------------------------- */
 @media (max-width: 768px) {
 
    .page-heading{

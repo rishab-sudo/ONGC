@@ -54,7 +54,7 @@ color: #fbfbfb;
   display:flex;
   justify-content:space-between;
   align-items:center !important;
-  padding:7px 25px;
+  padding:5px 25px;
   background:#f5f5f5;
   box-sizing:border-box;
 }
@@ -63,10 +63,11 @@ color: #fbfbfb;
 .mid-logo{ width:175px; height:auto; display:block; }
 
 .middle-right{ display:flex; align-items:center; gap:12px; }
-.partner-icon{ font-size:20px; }
+.partner-icon{ 
+ width: auto !important;
+ height: auto;
 
-
-
+ }
 /* ---------- NAVIGATION BAR ---------- */
 .navigation-bar{
   width:100%;

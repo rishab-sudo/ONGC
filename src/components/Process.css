@@ -4,10 +4,9 @@
   height: 65vh;
   background-size: contain;
   background-position: center;
-  
   background-attachment: fixed;
   overflow: hidden;
-  margin-bottom: 25px;        /* 👈 Section gap added */
+
 }
 
 /* SECTION 1 BACKGROUND */
