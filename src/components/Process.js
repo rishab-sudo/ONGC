@@ -11,7 +11,7 @@ const Process = () => {
     <>
 
       {/* ========== SECTION 1 ========== */}
-      <div className="process-container process1">
+      <div className="process-container process1 mb-3">
 
         <div className="overlay"></div>
 
