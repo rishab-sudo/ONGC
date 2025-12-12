@@ -100,6 +100,7 @@
 .arrow {
   color: #fff;
   font-size: 20px;
+  margin-top: -7px !important;
 }
 
 /* SECOND SLIDER TEXT */

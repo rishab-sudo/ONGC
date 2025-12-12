@@ -62,7 +62,7 @@ Besides spacious classrooms and playgrounds, we have fully developed facilities 
                 <div className="campus-card-info">
                   <span className="city-name">{item.city}</span>
                   <div className="arrow-circle">
-                    <span className="arrow">→</span>
+                   <a href="/gallery"> <span className="arrow">→</span></a>
                   </div>
                 </div>
               </div>
