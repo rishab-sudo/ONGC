@@ -1,5 +1,5 @@
 .general-policy-fluid {
-  margin-top: 5% !important;
+  margin-top: 2.5% !important;
 }
 
 .general-policy {
@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 35px;
-  margin-top: 5%;
+  padding: 15px;
+  margin-top: 0%;
   flex-wrap: wrap;
 }
 

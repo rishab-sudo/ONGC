@@ -59,10 +59,21 @@ color: #fbfbfb;
   box-sizing:border-box;
 }
 
-.middle-left { display:flex; align-items:center; }
-.mid-logo{ width:175px; height:auto; display:block; }
+.middle-left { 
+  display:flex; 
+  align-items:center; 
+}
+.mid-logo{ 
+  width:175px; 
+  height:auto; 
+  display:block; 
+}
 
-.middle-right{ display:flex; align-items:center; gap:12px; }
+.middle-right{
+   display:flex; 
+   align-items:center; 
+   gap:12px; 
+  }
 .partner-icon{ 
  width: auto !important;
  height: auto;
