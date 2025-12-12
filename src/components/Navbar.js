@@ -32,7 +32,21 @@ const Navbar = () => {
     <>
       {/* TOP HEADER */}
   <div className="top-header">
-  <div className="top-left">CBSE AFFILIATION No. 2132671 </div>
+<div className="top-left">
+  <div className="marquee">
+    <div className="marquee-content">
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+
+      {/* Duplicate set for seamless loop */}
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+      <span>CBSE AFFILIATION No. 2132671  Phone: +91 8009244441</span>
+    </div>
+  </div>
+</div>
+
 
   <div className="top-right">
  <a 
