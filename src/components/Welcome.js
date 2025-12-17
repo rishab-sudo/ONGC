@@ -20,7 +20,7 @@ const Welcome = () => {
           </h1>
           </div>
 
-          <p className="page-text">
+          <p className="page-text welcome-text">
             A place where education meets excellence. We are committed to nurturing
             young minds through quality learning and holistic development. <br/><br/>
             Our dedicated faculty, modern facilities, and student-centric environment

@@ -15,7 +15,7 @@ const Process = () => {
 
         <div className="overlay"></div>
 
-        <Container className="center-content">
+        <Container fuid className="center-content">
           <h1 className="page-heading process-heading">Who We Are</h1>
 
           <p className="page-text">

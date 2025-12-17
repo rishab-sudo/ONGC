@@ -115,6 +115,31 @@ background: transparent;
     border-radius: 30px;    */
 } 
 .page-text{
-    font-size: 17px !important;
+    font-size: 15.5px !important;
 }
+}
+@media (max-width: 768px) {
+
+  .app-top-btn {
+    bottom: 18px;          /* 👈 closer to thumb */
+    right: 15px;
+    height: 40px;          /* 👈 smaller */
+    width: 40px;
+    border-width: 1.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  .app-top-arrow {
+    font-size: 26px;       /* 👈 better proportion */
+    font-weight: 700;
+  }
+
+  /* Remove hover effect on touch devices */
+  .app-top-btn:hover {
+    background: transparent;
+  }
+
+  .app-top-btn:hover .app-top-arrow {
+    color: #902724;
+  }
 }

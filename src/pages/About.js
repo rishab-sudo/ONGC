@@ -8,7 +8,7 @@ import "./About.css";
 
 // ✅ Move static arrays OUTSIDE the component
 const section1Images = [
-  require("../assets/mvv-1.png"),
+  require("../assets/Artboard 18oi898 (1).png"),
   require("../assets/mvv-4.png"),
   require("../assets/mvv-1.png"),
 ];

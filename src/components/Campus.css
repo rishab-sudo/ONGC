@@ -1,6 +1,5 @@
 .campus {
   width: 100%;
- /* background: #f8f7fbdb; */
   padding: 35px 0;
   margin: 0;
 }
@@ -9,47 +8,36 @@
   width: 90%;
   margin: auto;
 }
-/* GAP BETWEEN SLIDES */
+
+/* ============================= */
+/* SLIDER FIX (IMPORTANT) */
+/* ============================= */
+
+/* GAP BETWEEN SLIDES (DESKTOP ONLY) */
 .campus-slider .slick-slide {
-  padding: 0 15px;   /* 🔥 gap increase */
+  padding: 0 15px;
+}
+
+/* REMOVE EXTRA SPACE BUG */
+.campus-slider .slick-list {
+  overflow: hidden;
+}
+
+/* ============================= */
+/* CARD STYLE */
+/* ============================= */
+
+.campus-card {
+  position: relative;
+  width: 100%;                /* ✅ FIXED (was 90%) */
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* TOP CARD HEIGHT */
 .top-card {
-  height: 395px !important;  /* 🔥 increased height */
-}
-/* LEFT HEADING */
-.campus-left {
-  margin-bottom: 30px;
-}
-
-.campus-heading {
-  font-weight: 700;
-  text-align: center !important;
-}
-.campus-heading.campus-heading::after {
-  content: "";
-  display: block;
-  width: 105px;
-  height: 4px;
-  margin: 10px auto 0;
-  background: linear-gradient(to right, #902724, #000);
-  border-radius: 2px;
-}
-.campus-subheading {
-  /* font-size: 16px; */
-  color: #444;
-  text-align: center !important;
-}
-
-/* CARD STYLE */
-.campus-card {
-  position: relative;
-  width: 90%;
-  height: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  margin: auto;
+  height: 395px !important;
 }
 
 .campus-card img {
@@ -58,19 +46,54 @@
   object-fit: cover;
 }
 
+/* ============================= */
+/* OVERLAY EFFECT */
+/* ============================= */
+
 .campus-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  transform: translateX(0);         /* Initially applied */
-  transition: transform .45s ease;
+  transform: translateX(0);
+  transition: transform 0.45s ease;
 }
 
 .campus-card:hover .campus-overlay {
-  transform: translateX(100%);      /* Hover par overlay slide out */
+  transform: translateX(100%);
 }
 
-/* FIRST SLIDER TEXT */
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+.campus-left {
+  margin-bottom: 30px;
+}
+
+.campus-heading {
+  font-weight: 700;
+  text-align: center !important;
+}
+
+.campus-heading::after {
+  content: "";
+  display: block;
+  width: 105px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: linear-gradient(to right, #902724, #000);
+  border-radius: 2px;
+}
+
+.campus-subheading {
+  color: #444;
+  text-align: center !important;
+}
+
+/* ============================= */
+/* SLIDE CONTENT */
+/* ============================= */
+
 .campus-card-info {
   position: absolute;
   bottom: 12px;
@@ -100,10 +123,13 @@
 .arrow {
   color: #fff;
   font-size: 20px;
-  margin-top: -7px !important;
+  margin-top: -7px;
 }
 
-/* SECOND SLIDER TEXT */
+/* ============================= */
+/* SECOND SLIDER (IF USED) */
+/* ============================= */
+
 .second-card {
   height: 280px;
 }
@@ -126,15 +152,37 @@
   margin-top: 4px;
   font-size: 14px;
 }
-/* .second{
-margin-top: 25px;
-} */
-/* RESPONSIVE */
+
+/* ============================= */
+/* MOBILE FIX (MOST IMPORTANT) */
+/* ============================= */
+
 @media (max-width: 768px) {
+.slick-track {
+  display: flex;
+}
+.slick-slide {
+  float: none;
+  height: auto;
+}
+/* REMOVE GAP SO ONLY ONE SLIDE SHOWS */
+  .campus-slider .slick-slide {
+    padding: 0;
+  }
+
   .campus-heading {
     font-size: 28px;
   }
-  .campus-card {
-    height: 220px;
+.campus-card {
+min-width: 95% !important;
+}
+  .top-card {
+    min-width: 95% !important;
+    height: 220px !important;
   }
+  .campus-card img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 }

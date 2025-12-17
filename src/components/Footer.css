@@ -175,6 +175,7 @@ a:hover {
   .footer-column-wrapper {
     align-items: flex-start;
     text-align: left;
+    padding: 0px 25px;
   }
 
   .footer-left {

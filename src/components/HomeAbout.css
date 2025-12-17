@@ -56,9 +56,6 @@
     animation: rotate 21s linear infinite;
     transform-origin: center center !important;
 }
-
-
-
 /* CENTER PLAY ICON */
 .circle-play-icon {
     position: absolute;
@@ -131,11 +128,10 @@
       min-width: 100%;
   }
 }
-
 /* TEXT SECTION */
 .homeabout-text-div {
     width: 45%;
-    text-align: left;
+    text-align: center;
 }
 
 .aboutus-btn-div {}

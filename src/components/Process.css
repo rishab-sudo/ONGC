@@ -85,7 +85,28 @@
 
 
 /* Responsive same as you already wrote */
-@media(max-width:600px){
-  .process-container{ height:auto; padding:80px 0; }
-  .center-content{ top:unset; transform:none; padding:40px 0; }
+@media (max-width: 768px) {
+  .process-container {
+    height: auto;              /* 🔥 content ke hisaab se height */
+    min-height: fit-content;         /* 🔥 kam se kam full screen */
+    background-size: cover;    /* 🔥 image pura area cover kare */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* 🔥 mobile fix */
+    padding: 35px 0;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .center-content {
+    min-width: 95% !important;
+    top: unset;
+    transform: none;
+    padding: 0 !important;
+    text-align: justify !important;
+  }
 }
+

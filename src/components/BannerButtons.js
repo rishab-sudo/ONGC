@@ -7,7 +7,7 @@ const BannerButtons = () => {
     { 
       icon: require("../assets/Banner/ico_1.png"), 
       text: "Upcoming Events",
-      link: "/activities" // internal route or external URL
+      link: "/activities" 
     },
     { 
       icon: require("../assets/Banner/ico_2.png"), 
@@ -29,9 +29,9 @@ const BannerButtons = () => {
   // Handle redirection (opens internal routes or external links)
   const handleRedirect = (url) => {
     if (url.startsWith("http")) {
-      window.open(url, "_blank"); // external site → open new tab
+      window.open(url, "_blank"); 
     } else {
-      window.location.href = url; // internal route → same tab
+      window.location.href = url; 
     }
   };
 

@@ -35,11 +35,6 @@
   border-right:2px dotted #873f3b;
   margin-left:15px;          /* Adjust spacing between card & line */
 }
-
-
-/* last item no line -> (handled by JSX condition) */
-
-
 /* TEXT */
 .why-heading.why-heading::after {
   content: "";
@@ -74,4 +69,11 @@
 }
 .slick-arrow{
   bottom:-30px;
+}
+
+@media(max-width:900px){
+.whyChoose{
+padding: 15px 0px;
+
+}
 }
