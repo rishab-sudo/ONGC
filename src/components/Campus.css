@@ -2,6 +2,7 @@
   width: 100%;
   padding: 35px 0;
   margin: 0;
+  
 }
 
 .campus-container {
@@ -14,13 +15,13 @@
 /* ============================= */
 
 /* GAP BETWEEN SLIDES (DESKTOP ONLY) */
-.campus-slider .slick-slide {
-  padding: 0 15px;
+/* Swiper Fix */
+.campus-slider .swiper {
+  width: 100%;
 }
 
-/* REMOVE EXTRA SPACE BUG */
-.campus-slider .slick-list {
-  overflow: hidden;
+.campus-slider .swiper-slide {
+  height: auto;
 }
 
 /* ============================= */

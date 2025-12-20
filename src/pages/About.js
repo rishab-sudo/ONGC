@@ -8,7 +8,8 @@ import "./About.css";
 
 // ✅ Move static arrays OUTSIDE the component
 const section1Images = [
-  require("../assets/Artboard 18oi898 (1).png"),
+  // require("../assets/Artboard 18oi898 (1).png"),
+   require("../assets/mvv-1.png"),
   require("../assets/mvv-4.png"),
   require("../assets/mvv-1.png"),
 ];
@@ -85,7 +86,7 @@ const About = () => {
               .
             </p>
 
-            <p className="page-text">
+            <p className="page-text about-text">
               <span className="highlight">ONGC CS</span> epitomises
               <span className="highlight"> vibrancy and freshness</span>,
               dovetailing much of the
@@ -111,7 +112,7 @@ const About = () => {
               .
             </p>
 
-            <p className="page-text">
+            <p className="page-text about-text">
               Besides <span className="highlight"> spacious classrooms</span> and
               <span className="highlight"> playgrounds</span>, we have fully
               developed facilities for each department, including

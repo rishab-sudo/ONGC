@@ -115,8 +115,11 @@ const scrollToTop = () => {
   </button>
 )}
 
+<Footer />
 
- <Footer />
+
+
+
     </Router>
   );
 }

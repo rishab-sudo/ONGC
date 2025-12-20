@@ -243,9 +243,10 @@ padding: 0;
   display:none;
   background:transparent;
   border:none;
-  color:#fff;
+  color:#000;
   font-size:22px;
   cursor:pointer;
+  margin-right: 0px;
 }
 
 /* Side menu (mobile) - opens from left and starts below nav */
@@ -253,7 +254,7 @@ padding: 0;
   position:fixed;
   top:var(--nav-height);  /* Step 7: start below navigation bar */
   left:-100%;
-  width:80%;
+  width:55%;
   max-width:360px;
   height:calc(100vh - var(--nav-height));
   background:#000;
@@ -307,7 +308,12 @@ padding: 0;
 }
 
 /* remove bullets everywhere */
-ul{ list-style:none; margin:0; padding:0; }
+ul{
+   list-style:none; 
+   margin:0; 
+   padding:0;
+   }
+   
 
 /* ---------- Responsive rules ---------- */
 /* Step 3: hide middle header on mobile */

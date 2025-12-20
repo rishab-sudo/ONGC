@@ -23,7 +23,9 @@
   align-items: center;
   text-align: center;
 }
-
+.about-text{
+text-align: left !important;
+}
 /* Section - chairman */
 .about-container-fluid2 {
   margin-top: 5%;
@@ -78,11 +80,11 @@
 }
 
 .mvc-image {
-  width: 50%;
+  width: 45%;
 }
 .mvc-image img {
   width: 100%;
-  height: 350px;
+  height: 250px;
   object-fit: contain;
   border-radius: 10px;
   animation: lightFade 4s ease-in-out infinite alternate;

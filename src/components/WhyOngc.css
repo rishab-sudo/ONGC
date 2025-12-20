@@ -1,8 +1,10 @@
 .whyChoose{
-  width:100%;
+  width: 100%;
+  max-width:100%;
   padding:60px 0;
   text-align:center;
   box-shadow:0px 4px 12px rgba(0,0,0,0.12);
+ 
 }
 
 .whyChoose-slider{
@@ -71,7 +73,7 @@
   bottom:-30px;
 }
 
-@media(max-width:900px){
+@media(max-width:768px){
 .whyChoose{
 padding: 15px 0px;
 

@@ -201,7 +201,9 @@ const Navbar = () => {
             - opens from left
             - links stacked left column
             - mobile dropdown toggles work */}
+            
         <aside className={`side-menu ${menuOpen ? "open" : ""}`} aria-hidden={!menuOpen}>
+          
           <ul className="side-nav-links">
             <li><a href="/home" onClick={toggleMenu}>Home</a></li>
 

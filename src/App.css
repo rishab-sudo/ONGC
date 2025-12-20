@@ -1,6 +1,7 @@
 .App{
     /* margin-top: 128px; */
     margin-top:0px;
+    padding: 0;
     background-color: #fff !important;
 }
 .loader-wrapper {
@@ -120,19 +121,17 @@ background: transparent;
 }
 @media (max-width: 768px) {
 
-  .app-top-btn {
-    bottom: 18px;          /* 👈 closer to thumb */
-    right: 15px;
-    height: 40px;          /* 👈 smaller */
+ .app-top-btn {
+    bottom: 16px;
+    right: 14px;
+    height: 40px;
     width: 40px;
-    border-width: 1.5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
   }
 
   .app-top-arrow {
-    font-size: 26px;       /* 👈 better proportion */
-    font-weight: 700;
+    font-size: 24px;
   }
+
 
   /* Remove hover effect on touch devices */
   .app-top-btn:hover {

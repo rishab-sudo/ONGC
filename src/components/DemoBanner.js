@@ -6,7 +6,7 @@ import "./DemoBanner.css";
 
 const DemoBanner = () => {
   return (
-    <div className="demoBanner">
+    <div className="demoBanner g-0">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 2500, disableOnInteraction: false }}

@@ -1,8 +1,10 @@
 import React from "react";
-import Slider from "react-slick";
 import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/autoplay";
 import "./Campus.css";
 
 const topImages = [
@@ -12,28 +14,6 @@ const topImages = [
 ];
 
 const CampusSection = () => {
-const settings = {
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 2200,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  speed: 700,
-  arrows: false,
-  centerMode: false,     // ✅ ensure no center peeking
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: { slidesToShow: 3 },
-    },
-    {
-      breakpoint: 768,
-      settings: { slidesToShow: 1 },
-    },
-  ],
-};
-
   return (
     <section className="campus">
       <div className="campus-container">
@@ -48,12 +28,13 @@ const settings = {
         >
           <h2 className="campus-heading page-heading">Our Campus</h2>
           <p className="campus-subheading page-text">
-            <span style={{ fontWeight: 600 }}>ONGC</span> CS epitomises vibrancy and freshness, dovetailing much of the ethos of the new post-independence India into its educational program and philosophy. The school is a secular co-educational one integrating into its curriculum concern for the environment, the spirit of community service and international peace and brotherhood.
-Besides spacious classrooms and playgrounds, we have fully developed facilities for each department, with Maths and Science laboratories, a Computer Resource Center, well stocked libraries, an auditorium and open-air stage, and a Teachers’ Learning Center.
-       </p>
+            <span style={{ fontWeight: 600 }}>ONGC</span> CS epitomises vibrancy and freshness,
+            dovetailing much of the ethos of the new post-independence India into its educational
+            program and philosophy.
+          </p>
         </motion.div>
 
-        {/* 🔥 Single Slider (only one kept) */}
+        {/* 🔥 Swiper Slider */}
         <motion.div
           className="campus-slider"
           initial={{ x: 80, opacity: 0 }}
@@ -61,20 +42,42 @@ Besides spacious classrooms and playgrounds, we have fully developed facilities 
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <Slider {...settings}>
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{ delay: 2200, disableOnInteraction: false }}
+            speed={700}
+            loop={true}
+            spaceBetween={30}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+            }}
+          >
             {topImages.map((item, index) => (
-              <div className="campus-card top-card" key={index}>
-                <img src={item.img} alt={item.city} />
-                <div className="campus-overlay"></div>
-                <div className="campus-card-info">
-                  <span className="city-name">{item.city}</span>
-                  <div className="arrow-circle">
-                   <a href="/gallery"> <span className="arrow">→</span></a>
+              <SwiperSlide key={index}>
+                <div className="campus-card top-card">
+                  <img src={item.img} alt={item.city} />
+                  <div className="campus-overlay"></div>
+
+                  <div className="campus-card-info">
+                    <span className="city-name">{item.city}</span>
+                    <div className="arrow-circle">
+                      <a href="/gallery">
+                        <span className="arrow">→</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </Slider>
+          </Swiper>
         </motion.div>
 
       </div>
