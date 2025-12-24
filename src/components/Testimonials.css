@@ -18,8 +18,8 @@ padding: 0px ;
   margin: auto;
   width: 60%;
 }
-.test-top-sec .test-title {
-  color: #000 !important;
+.test-title {
+  color: #902724 !important;
 }
 .test-top-sec .test-title::after {
   content: "";
