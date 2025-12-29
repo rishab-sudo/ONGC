@@ -5,7 +5,7 @@ import "./Banner.css";
 
 const Banner = ({ title, image, breadcrumbs = [] }) => {
   return (
-    <Container fluid>
+    <Container fluid className="g-0">
       <div className="pg-banner">
         <div className="pg-banner-img">
           <img src={image} alt={title} />

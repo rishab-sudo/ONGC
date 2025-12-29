@@ -53,8 +53,6 @@
   white-space: nowrap;
 }
 
-
-
 .top-right{
   display:flex;
   align-items:center;
@@ -138,8 +136,14 @@ padding: 0;
 }
 
 /* logo area */
-.nav-logo{ display:flex; align-items:center; }
-.nav-logo-img{ width:150px; height:auto; }
+.nav-logo{ 
+  display:flex; 
+  align-items:center;
+ }
+.nav-logo-img{ 
+  width:150px;
+   height:auto; 
+  }
 
 /* ---------- Desktop links: aligned to flex-end ---------- */
 .nav-links-wrap{ 
@@ -314,15 +318,50 @@ ul{
    padding:0;
    }
    
-
 /* ---------- Responsive rules ---------- */
 /* Step 3: hide middle header on mobile */
-@media (max-width: 768px){
-  .middle-header{ display:none; }
+/* ================= MOBILE VIEW SWAP (FIXED) ================= */
+@media (max-width: 768px) {
+.middle-header{
+display: none !important;
 }
+  .top-right{
+    gap: 0;
+  }
+
+  .top-right .enquiry-btn{
+    padding: 2px !important;
+    font-size: 12px;
+    position: static;
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* SOCIAL ICONS → FLOAT VERTICALLY */
+  .top-right a{
+    position: fixed;
+    right: 8px;
+    z-index: 1400;
+    background: rgba(0,0,0,0.35);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* individual vertical positions */
+  .top-right a:nth-child(1){ top: 45%; } /* Facebook */
+  .top-right a:nth-child(2){ top: 52%; } /* Instagram */.top-right a:nth-child(3){ top: 59%; } /* Email */
+}
+
+
 @media (max-width: 992px){
   /* hide desktop nav links */
-  .nav-links-wrap{ display:none; }
+  .nav-links-wrap{ 
+    display:none; 
+  }
 
   /* show hamburger at right */
   .hamburger{
