@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Navbar.css";
 import {
   FaBars,
@@ -15,7 +17,7 @@ import {
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
-
+  const navigate = useNavigate();
   // mobile dropdown states
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [mobileAcademicsOpen, setMobileAcademicsOpen] = useState(false);
@@ -69,7 +71,12 @@ const Navbar = () => {
    <a href="mailto:info@example.com" aria-label="email">
       <FaEnvelope />
     </a>
-    <button className="enquiry-btn">Enquiry Now</button>
+    <button
+      className="enquiry-btn"
+      onClick={() => navigate("/contact")}
+    >
+      Enquiry Now
+    </button>
   </div>
 </div>
 
