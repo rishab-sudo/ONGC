@@ -2,7 +2,6 @@
   /* change this variable to control nav height used by mobile side-menu top */
   --nav-height: 64px;
 }
-
 /* ---------- TOP HEADER ---------- */
 .top-header{
   width:100%;
@@ -15,13 +14,11 @@
   font-size:15px;
   box-sizing:border-box;
 }
-
 .top-left {
   width: 85%;
   overflow: hidden;
   position: relative;
 }
-
 /* outer wrapper */
 .marquee {
   width: 100%;
@@ -33,7 +30,7 @@
 /* long scrolling track */
 .marquee-content {
   display: inline-flex;
-  gap: 50px;            /* spacing between items */
+  gap: 50px; /* spacing between items */
   animation: scrollLoop 20s linear infinite;
 }
 
@@ -328,8 +325,7 @@ display: none !important;
   .top-right{
     gap: 0;
   }
-
-  .top-right .enquiry-btn{
+.top-right .enquiry-btn{
     /* padding: 2px !important;
     font-size: 12px;
     position: static;
@@ -363,10 +359,9 @@ display: none !important;
 
   /* individual vertical positions */
   .top-right a:nth-child(1){ top: 45%; } /* Facebook */
-  .top-right a:nth-child(2){ top: 52%; } /* Instagram */.top-right a:nth-child(3){ top: 59%; } /* Email */
+  .top-right a:nth-child(2){ top: 52%; } /* Instagram */
+  .top-right a:nth-child(3){ top: 59%; } /* Email */
 }
-
-
 @media (max-width: 992px){
   /* hide desktop nav links */
   .nav-links-wrap{ 

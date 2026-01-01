@@ -70,6 +70,11 @@ color: #fff !important;
 }
 
 @media (max-width: 768px) {
+  .facility-section {
+  width: 100%;
+  background-color: #902724;
+  padding: 1.5rem 0;
+}
  .facility-box {
     flex: 1 1 calc(50% - 15px) !important; 
     min-width: 0;

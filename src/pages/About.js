@@ -63,8 +63,7 @@ const About = () => {
         ]}
       />
       <ScrolLinks />
-
-      {/* ===== Section 1 ===== */}
+     {/* ===== Section 1 ===== */}
       <Container fluid className="about-fluid">
         <Container className="about-container1">
           <div className="about-content-section1">
