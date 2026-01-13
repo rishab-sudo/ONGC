@@ -58,7 +58,7 @@ const houseData = [
   return (
     <>
       <Banner
-        title="Parents Guidelines"
+        title="Dress Code"
         image={require("../assets/parents-guide-img.jpg")}
         breadcrumbs={[
           { label: "HOME", link: "/home" },

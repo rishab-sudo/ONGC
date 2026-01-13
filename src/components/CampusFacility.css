@@ -13,7 +13,7 @@
 }
 
 .facility-heading h3 {
-color: #fff !important;
+  color: #fff !important;
   margin-bottom: 10px;
   opacity: 0.9;
 }
@@ -66,25 +66,27 @@ color: #fff !important;
 
 /* RESPONSIVE GRID */
 @media (max-width: 1024px) {
-  .facility-box { flex: 1 1 20%; }
+  .facility-box {
+    flex: 1 1 20%;
+  }
 }
 
 @media (max-width: 768px) {
   .facility-section {
-  width: 100%;
-  background-color: #902724;
-  padding: 1.5rem 0;
-}
- .facility-box {
-    flex: 1 1 calc(50% - 15px) !important; 
+    width: 100%;
+    background-color: #902724;
+    padding: 1.5rem 0;
+  }
+
+  .facility-box {
+    flex: 1 1 calc(50% - 15px) !important;
     min-width: 0;
   }
 }
 
 @media (max-width: 480px) {
   .facility-box {
-    flex: 1 1 calc(50% - 15px) !important; 
+    flex: 1 1 calc(50% - 15px) !important;
     min-width: 0;
   }
 }
-
