@@ -11,6 +11,7 @@ import {
   FaFacebookF,
   FaInstagram
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -69,7 +70,9 @@ const Navbar = () => {
    <a href="mailto:info@example.com" aria-label="email">
       <FaEnvelope />
     </a>
-    <button className="enquiry-btn">Enquiry Now</button>
+    <Link to ="/contact"> <button className="enquiry-btn">Enquiry Now</button></Link>
+
+   
 
      <button
             className="hamburger"
