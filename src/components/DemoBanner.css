@@ -1,39 +1,29 @@
 .demoBanner {
   width: 100%;
-  height: fit-content;
   overflow: hidden;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
 }
 
-/* Slide full area cover kare */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* IMAGE WRAPPER DIV */
-.banner-img-wrapper {
+/* VIDEO WRAPPER */
+.banner-media-wrapper {
   width: 100%;
- height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+  height: 650px;
+  background: #000;
+  overflow: hidden;
+}
 
-/* IMAGE STYLING */
-.banner-img {
+/* VIDEO */
+.banner-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;     
+  object-fit: cover;
   object-position: center;
-  background-color: #000;  
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
-  .demoBanner {
-    height: 260px;
+  .banner-media-wrapper {
+    height: 350px;
   }
 }

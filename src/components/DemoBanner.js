@@ -1,43 +1,19 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import "./DemoBanner.css";
 
 const DemoBanner = () => {
   return (
-    <div className="demoBanner g-0">
-      <Swiper
-        modules={[Autoplay]}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
-        loop={true}
-        spaceBetween={0}
-        slidesPerView={1}
-      >
-        <SwiperSlide>
-          <div className="banner-img-wrapper">
-            <img src={require("../assets/Banner/Gemini_Generated_b1.png")} alt="banner" className="banner-img" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="banner-img-wrapper">
-            <img src={require("../assets/Banner/b2.jpeg")} alt="banner" className="banner-img" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="banner-img-wrapper">
-            <img src={require("../assets/Banner/b3.jpeg")} alt="banner" className="banner-img" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="banner-img-wrapper">
-            <img src={require("../assets/Banner/b2.jpeg")} alt="banner" className="banner-img" />
-          </div>
-        </SwiperSlide>
-      </Swiper>
+    <div className="demoBanner">
+      <div className="banner-media-wrapper">
+        <video
+          className="banner-video"
+          src={require("../assets/video/ONGC VideoForWebSite.mp4")}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </div>
     </div>
   );
 };
