@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Home from "./pages/Home";
 import Fee from "./pages/Fee";
 import ParentsGuideLines from './pages/ParentsGuideLines';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,  } from "react";
 import "./Navbar.css";
 import {
   FaBars,
@@ -6,8 +6,6 @@ import {
   FaChevronDown,
   FaChevronUp,
   FaEnvelope,
-  FaGlobe,
-  FaFlag,
   FaFacebookF,
   FaInstagram
 } from "react-icons/fa";
@@ -100,8 +98,8 @@ const Navbar = () => {
 
      
         <div className="middle-right">
-          <img src={require("../assets/icons/ongc-partner1.png")} className="partner-icon" title="]" />
-       <img src={require("../assets/icons/ongc-partner2.png")}  className="partner-icon" title="" />
+          <img src={require("../assets/icons/ongc-partner1.png")} className="partner-icon" title="" alt="ongc-partner1" />
+       <img src={require("../assets/icons/ongc-partner2.png")}  className="partner-icon" title="" alt="ongc-partner1"/>
         </div>
       </div>
 

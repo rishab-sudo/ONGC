@@ -1,6 +1,6 @@
 import React from 'react'
 // import HomeBanner from '../components/HomeBanner'
-import HomeAbout from '../components/HomeAbout'
+// import HomeAbout from '../components/HomeAbout'
 // import Features from '../components/Features'
 // import Separate from '../components/Separate'
 import Testimonials from '../components/Testimonials'
@@ -15,7 +15,7 @@ import Process  from '../components/Process';
 import CampusFacility from '../components/CampusFacility';
 import WhyOngc from '../components/WhyOngc';
 import Achievements from '../components/Achievements';
-import Build from '../components/Build';
+// import Build from '../components/Build';
 
 const Home = () => {
   return (
