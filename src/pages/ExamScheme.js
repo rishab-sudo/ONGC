@@ -19,7 +19,7 @@ const ExamScheme = () => {
         <Container className='exam-scheme-container'>
           <h2 className="page-heading exam-heading">Examination Scheme</h2>
           <img
-            src={require("../assets/doc/SCHEME-OF-EXAMINATION-2025-2026.jpg")}
+            src={require("../assets/doc/exam-schm22.png")}
             alt="exam-scheme"
             className="exam-scheme-img"
           />
