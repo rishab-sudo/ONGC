@@ -119,7 +119,7 @@ const Mandatory = () => {
         </Container>
 
         {/* C: RESULT AND ACADEMICS */}
-        <h2 className="ongc-table-heading">C: Result and Academics</h2>
+        {/* <h2 className="ongc-table-heading">C: Result and Academics</h2>
         <Container className="ongc-table-scroll">
           <table className="ongc-table">
             <thead>
@@ -137,9 +137,9 @@ const Mandatory = () => {
               <tr><td>5</td><td>Last Three-Year Result of the Board Examination</td><td>✔</td></tr>
             </tbody>
           </table>
-        </Container>
+        </Container> */}
 
-        <h2 className="ongc-table-heading">Result Class: XII (2023-2024)</h2>
+        {/* <h2 className="ongc-table-heading">Result Class: XII (2023-2024)</h2>
         <Container className="ongc-table-scroll">
           <table className="ongc-table">
             <thead>
@@ -163,10 +163,10 @@ const Mandatory = () => {
               </tr>
             </tbody>
           </table>
-        </Container>
+        </Container> */}
 
         {/* D: STAFF (TEACHING) */}
-        <h2 className="ongc-table-heading">D: Staff (Teaching)</h2>
+        {/* <h2 className="ongc-table-heading">D: Staff (Teaching)</h2>
         <Container className="ongc-table-scroll">
           <table className="ongc-table">
             <thead>
@@ -184,7 +184,7 @@ const Mandatory = () => {
               <tr><td>5</td><td>Counsellor and Wellness Teacher</td><td>Mrs. Ekta Singh (M.A in Psychology, D.El.Ed)</td></tr>
             </tbody>
           </table>
-        </Container>
+        </Container> */}
 
         {/* E: SCHOOL INFRASTRUCTURE */}
         <h2 className="ongc-table-heading">E: School Infrastructure</h2>
