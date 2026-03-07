@@ -486,10 +486,16 @@ const Mandatory = () => {
           <Modal.Title>Document Viewer</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <iframe src={pdfSrc} title="PDF Viewer" width="100%" height="500px" />
+          <iframe
+src={`${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0`}
+title="PDF Viewer"
+width="100%"
+height="500px"
+onContextMenu={(e) => e.preventDefault()}
+/>
         </Modal.Body>
         <Modal.Footer>
-          <a href={pdfSrc} download className="download-btn">Download PDF</a>
+         
         </Modal.Footer>
       </Modal>
     </>

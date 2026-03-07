@@ -64,6 +64,52 @@ const scrollToTop = () => {
       return () => clearTimeout(timer);
     }
   }, []);
+  useEffect(() => {
+
+  // Disable Right Click
+  const disableRightClick = (e) => {
+    e.preventDefault();
+  };
+
+  // Disable Keyboard Shortcuts
+  const disableKeys = (e) => {
+
+    // Ctrl+C
+    if (e.ctrlKey && e.key === "c") {
+      e.preventDefault();
+    }
+
+    // Ctrl+U (View Source)
+    if (e.ctrlKey && e.key === "u") {
+      e.preventDefault();
+    }
+
+    // Ctrl+S (Save Page)
+    if (e.ctrlKey && e.key === "s") {
+      e.preventDefault();
+    }
+
+    // Ctrl+A (Select All)
+    if (e.ctrlKey && e.key === "a") {
+      e.preventDefault();
+    }
+
+    // F12 (Inspect)
+    if (e.key === "F12") {
+      e.preventDefault();
+    }
+
+  };
+
+  document.addEventListener("contextmenu", disableRightClick);
+  document.addEventListener("keydown", disableKeys);
+
+  return () => {
+    document.removeEventListener("contextmenu", disableRightClick);
+    document.removeEventListener("keydown", disableKeys);
+  };
+
+}, []);
 
   if (loading) {
     return (
@@ -116,11 +162,7 @@ const scrollToTop = () => {
 )}
 
 <Footer />
-
-
-
-
-    </Router>
+</Router>
   );
 }
 
