@@ -1,4 +1,4 @@
-import React, { useState,  } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import {
   FaBars,
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
+const [openDropdown, setOpenDropdown] = useState(null);
 
   // mobile dropdown states
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
@@ -26,7 +26,19 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen((p) => !p);
   };
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setOpenDropdown(null);
+    }
+  };
 
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
+  const dropdownRef = useRef();
   return (
     <>
       {/* TOP HEADER */}
@@ -97,13 +109,8 @@ const Navbar = () => {
         </div>
 
      
-        <div className="middle-right">
-          <img src={require("../assets/icons/ongc-partner1.png")} className="partner-icon" title="" alt="ongc-partner1" />
-       <img src={require("../assets/icons/ongc-partner2.png")}  className="partner-icon" title="" alt="ongc-partner1"/>
-        </div>
-      </div>
-
-      {/* NAVIGATION BAR */}
+     {/* NAVIGATION BAR */}
+     <div>
       <header className="navigation-bar" role="banner">
         <div className="nav-inner">
           {/* <div className="nav-logo">
@@ -125,8 +132,7 @@ const Navbar = () => {
               <li className="home-link"><a href="/home">Home</a></li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("about")}
-                onMouseLeave={() => setOpenDropdown(null)}
+            onClick={() => setOpenDropdown(openDropdown === "about" ? null : "about")}
               >
                 <button className="drop-btn">
                   About
@@ -140,8 +146,7 @@ const Navbar = () => {
               </li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("academics")}
-                onMouseLeave={() => setOpenDropdown(null)}
+             onClick={() => setOpenDropdown(openDropdown === "academics" ? null : "academics")}
               >
                 <button className="drop-btn">Academics</button>
                 <ul className={`dropdown-menu ${openDropdown === "academics" ? "show" : ""}`}>
@@ -152,8 +157,7 @@ const Navbar = () => {
               </li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("life")}
-                onMouseLeave={() => setOpenDropdown(null)}
+          onClick={() => setOpenDropdown(openDropdown === "life" ? null : "life")}
               >
                 <button className="drop-btn">Student Life</button>
                 <ul className={`dropdown-menu ${openDropdown === "life" ? "show" : ""}`}>
@@ -163,19 +167,17 @@ const Navbar = () => {
               </li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("admission")}
-                onMouseLeave={() => setOpenDropdown(null)}
+onClick={() => setOpenDropdown(openDropdown === "admission" ? null : "admission")}
               >
                 <button className="drop-btn">Admission</button>
                 <ul className={`dropdown-menu ${openDropdown === "admission" ? "show" : ""}`}>
                   <li><a href="/AdmissionPolicy">Admission Policy</a></li>
-                  <li><a href="/tc">TC Verification</a></li>
+                  <li><a href="/TcVerification">TC Verification</a></li>
                 </ul>
               </li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("policy")}
-                onMouseLeave={() => setOpenDropdown(null)}
+             onClick={() => setOpenDropdown(openDropdown === "policy" ? null : "policy")}
               >
                 <button className="drop-btn">School Policy</button>
                 <ul className={`dropdown-menu ${openDropdown === "policy" ? "show" : ""}`}>
@@ -186,8 +188,7 @@ const Navbar = () => {
               </li>
 
               <li className="dropdown"
-                onMouseEnter={() => setOpenDropdown("disclosure")}
-                onMouseLeave={() => setOpenDropdown(null)}
+onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosure")}
               >
                 <button className="drop-btn">Disclosures</button>
                 <ul className={`dropdown-menu ${openDropdown === "disclosure" ? "show" : ""}`}>
@@ -257,7 +258,7 @@ const Navbar = () => {
               {mobileAdmissionOpen && (
                 <ul className="side-dropdown-menu">
                   <li><a href="/AdmissionPolicy" onClick={toggleMenu}>Admission Policy</a></li>
-                  <li><a href="/tc" onClick={toggleMenu}>TC Verification</a></li>
+                  <li><a href="/TcVerification" onClick={toggleMenu}>TC Verification</a></li>
                 </ul>
               )}
             </li>
@@ -290,8 +291,13 @@ const Navbar = () => {
           </ul>
         </aside>
       </header>
+</div>
+
+      </div>
+
+   
     </>
   );
 };
-
+ 
 export default Navbar;

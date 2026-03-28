@@ -201,7 +201,7 @@ const About = () => {
         </Container>
       </Container>
 
-      <PolicyCards />
+      {/* <PolicyCards /> */}
      
     </>
   );

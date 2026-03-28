@@ -85,7 +85,7 @@ color: #fbfbfb;
   justify-content:space-between;
   align-items:center !important;
   padding:5px 25px;
-  background:#f5f5f5;
+  background:#f5f5f51a;
   box-sizing:border-box;
 }
 
@@ -112,7 +112,7 @@ color: #fbfbfb;
 /* ---------- NAVIGATION BAR ---------- */
 .navigation-bar{
   width:100%;
-  background:#000;
+  /* background:#000; */
   position:sticky;
   top:0;
   z-index:900;
@@ -165,7 +165,7 @@ padding: 0;
 /* anchor/button base */
 .nav-links a,
 .drop-btn{
-  color:#fff;
+  color:#000;
   text-decoration:none;
   font-size:17px;
   font-weight:600;
@@ -174,6 +174,7 @@ padding: 0;
   cursor:pointer;
   margin: auto 0;
 }
+
 /* add dropdown icon after desktop links */
 /* All nav-links anchors — add arrow */
 /* Add arrow after all dropdown button links */
@@ -181,7 +182,7 @@ padding: 0;
   content: " ▼";
  font-size: 12px;
   margin-left: 2px;
-  color:#fff;
+  color:#000;
   width: fit-content !important;
 }
 
@@ -193,10 +194,10 @@ padding: 0;
 /* Contact button */
 .contact-btn{
   background:transparent;
-  border:1px solid #fff;
+  border:1px solid #000;
   padding:6px 12px;
   border-radius:20px;
-  color:#fff;
+  color:#000;
 }
 
 /* Dropdown - desktop */
@@ -218,8 +219,11 @@ padding: 0;
   z-index:1000;
 }
 
-.dropdown-menu.show,
-.dropdown:hover .dropdown-menu{
+.dropdown-menu{
+  display:none;
+}
+
+.dropdown-menu.show{
   display:block;
 }
 
@@ -236,7 +240,12 @@ padding: 0;
 }
 
 /* subtle hover */
-.dropdown-menu li:hover{ background:#f5f5f5; }
+.dropdown-menu li a:hover,
+.nav-links a:hover,
+.drop-btn:hover {
+  color: #000 !important; 
+  
+}
 
 /* ---------- Hamburger & responsive ---------- */
 /* Step 7: on small screens hamburger at RIGHT, logo at left */
@@ -391,5 +400,5 @@ display: none !important;
 
 /* small polish */
 .dropdown-menu li a:hover, .nav-links a:hover, .drop-btn:hover{
-  color: #902724;
+  color: #fbfbfb;
 }

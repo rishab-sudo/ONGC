@@ -24,6 +24,7 @@ import ExaminationScheme from "./pages/ExamScheme"
 import Punishment from "./pages/Punishment";
 import Gallery from "./pages/Gallery";
 import AbsencePolicy from "./pages/AbsencePolicy";
+import TcVerification from "./pages/TcVerification"
 // import { BsArrowUpShort } from "react-icons/bs";
 
 
@@ -149,6 +150,8 @@ const scrollToTop = () => {
           <Route path="/GeneralPolicy" element={<GeneralPolicy />} />
           <Route path="/AbsencePolicy" element={<AbsencePolicy />} />
           <Route path="/Punishment" element={<Punishment />} />
+            <Route path="/TcVerification" element={<TcVerification />} />
+          
           <Route path="/Gallery" element={<Gallery />} />
         </Routes>
 

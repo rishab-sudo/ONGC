@@ -4,22 +4,23 @@ import Banner from "../components/Banner";
 import "./AcademicsCalendar.css";
 
 const monthImages = {
-  // April: require("../assets/calendar.jpeg"),
-  // May: require("../assets/calendar.jpeg"),
-  // June: require("../assets/calendar.jpeg"),
-  // July: require("../assets/calendar.jpeg"),
-  // August: require("../assets/calendar.jpeg"),
-  // September: require("../assets/calendar.jpeg"),
-  October: require("../assets/calendar/calendar-1.png"),
-  November: require("../assets/calendar/calendar-2.png"),
-  December: require("../assets/calendar/calendar-3.png"),
-  // January: require("../assets/calendar.jpeg"),
-  // February: require("../assets/calendar.jpeg"),
-  // March: require("../assets/calendar.jpeg"),
+  April: require("../assets/calendar/Calendar-1.png"),
+  May: require("../assets/calendar/Calendar-2.png"),
+  June: require("../assets/calendar/Calendar-3.png"),
+  July: require("../assets/calendar/Calendar-4.png"),
+  August: require("../assets/calendar/Calendar-5.png"),
+  September: require("../assets/calendar/Calendar-6.png"),
+  October: require("../assets/calendar/Calendar-7.png"),
+  November: require("../assets/calendar/Calendar-8.png"),
+  December: require("../assets/calendar/Calendar-9.png"),
+  January: require("../assets/calendar/Calendar-10.png"),
+  February: require("../assets/calendar/Calendar-11.png"),
+  March: require("../assets/calendar/Calendar-12.png"),
 };
 
 const AcademicsCalendar = () => {
-  const [selectedMonth, setSelectedMonth] = useState("November");
+const currentMonth = new Date().toLocaleString("en-US", { month: "long" });
+const [selectedMonth, setSelectedMonth] = useState(currentMonth);
 
   return (
     <>

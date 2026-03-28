@@ -490,7 +490,7 @@ const Mandatory = () => {
 src={`${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0`}
 title="PDF Viewer"
 width="100%"
-height="500px"
+height="570px"
 onContextMenu={(e) => e.preventDefault()}
 />
         </Modal.Body>

@@ -1,0 +1,35 @@
+.tc-container {
+  text-align: center;
+  padding: 40px;
+}
+.tc-lables{
+    text-align: left !important;
+}
+.tc-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+}
+
+.tc-container button {
+  padding: 7px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  width: 70%;
+  margin: 5% auto;
+  background: #fff;
+  padding: 20px;
+}
