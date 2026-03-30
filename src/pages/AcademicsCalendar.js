@@ -6,7 +6,7 @@ import "./AcademicsCalendar.css";
 /* ✅ IMPORT ALL IMAGES */
 import bannerImg from "../assets/parents-guide-img.jpg";
 
-import cal1 from "../assets/calendar/Calendar-1.png";
+import cal1 from "../assets/calendar/Calendar-01.png";
 import cal2 from "../assets/calendar/Calendar-2.png";
 import cal3 from "../assets/calendar/Calendar-3.png";
 import cal4 from "../assets/calendar/Calendar-4.png";
@@ -19,7 +19,7 @@ import cal10 from "../assets/calendar/Calendar-10.png";
 import cal11 from "../assets/calendar/Calendar-11.png";
 import cal12 from "../assets/calendar/Calendar-12.png";
 
-/* ✅ ORDER FIX (April → March) */
+/*  (April → March) */
 const monthsOrder = [
   "April",
   "May",
