@@ -1,35 +1,134 @@
+/* -------- Container -------- */
 .tc-container {
   text-align: center;
   padding: 40px;
+ 
 }
-.tc-lables{
-    text-align: left !important;
+
+/* -------- Form Group -------- */
+.tc-form-wrapper{
+  margin-top: 1.5%;
 }
-.tc-container input {
+.tc-container .form-group {
+  width: 260px;
+  margin: 12px auto;
+  text-align: left;
+   
+}
+
+/* -------- Labels -------- */
+.tc-lables {
   display: block;
-  margin: 10px auto;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* -------- Inputs -------- */
+.tc-container input {
+  width: 100%;
   padding: 10px;
-  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
-.tc-container button {
-  padding: 7px 35px;
-  border-radius: 30px;
-  cursor: pointer;
+/* -------- Button -------- */
+
+/* -------- Button Base -------- */
+.tc-verify-btn {
+  background-color: #fbfbfb;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #902724 !important;
+  padding: 5.2px 25px;
+  border-radius: 4px !important;
+  color: #902724;
+  font-size: 16px !important;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
 
+/* -------- Hover Text Color FIX -------- */
+.tc-verify-btn:hover {
+  color: #ffffff !important;
+}
+
+/* -------- Background Animation -------- */
+.tc-verify-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #902724;
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.tc-verify-btn:hover::before {
+  width: 100%;
+}
+
+/* -------- Popup Overlay -------- */
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* vertical center */
+  z-index: 999;
 }
 
+/* -------- Popup Content -------- */
 .popup-content {
-  width: 70%;
-  margin: 5% auto;
+  width: 50%;
+  height: 80vh; /* FIXED */
   background: #fff;
   padding: 20px;
+  border-radius: 10px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* IMPORTANT */
+}
+
+/* -------- Close Button -------- */
+.popup-content button {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background: #902724;
+  color: #fff;
+}
+
+/* -------- Iframe -------- */
+.popup-content iframe {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: contain; /* keeps it inside */
+}
+.popup-content {
+  overflow: hidden;
+}
+
+.popup-content iframe {
+  overflow: auto;
+}
+.popup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* PERFECT FIT */
 }

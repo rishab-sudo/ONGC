@@ -1,8 +1,10 @@
+/* ===== ROOT ===== */
 :root{
-  /* change this variable to control nav height used by mobile side-menu top */
   --nav-height: 64px;
+  /* overflow: hidden; */
 }
-/* ---------- TOP HEADER ---------- */
+
+/* ===== TOP HEADER ===== */
 .top-header{
   width:100%;
   background:#902724;
@@ -14,40 +16,34 @@
   font-size:15px;
   box-sizing:border-box;
 }
-.top-left {
-  width: 85%;
-  overflow: hidden;
-  position: relative;
-}
-/* outer wrapper */
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
+
+.top-left{
+  width:85%;
+  overflow:hidden;
+  position:relative;
 }
 
-/* long scrolling track */
-.marquee-content {
-  display: inline-flex;
-  gap: 50px; /* spacing between items */
-  animation: scrollLoop 20s linear infinite;
+.marquee{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  white-space:nowrap;
 }
 
-/* animation */
-@keyframes scrollLoop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%); 
-  }
+.marquee-content{
+  display:inline-flex;
+  gap:50px;
+  animation:scrollLoop 20s linear infinite;
 }
 
-/* text style */
-.marquee-content span {
-  font-weight: 600;
-  white-space: nowrap;
+@keyframes scrollLoop{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+.marquee-content span{
+  font-weight:600;
+  white-space:nowrap;
 }
 
 .top-right{
@@ -56,29 +52,63 @@
   gap:12px;
 }
 
-.top-right a{ 
-  color:#fff; 
-  font-size:18px; 
-  display:inline-flex; 
-  align-items:center; 
+.top-right a{
+  color:#fff;
+  font-size:18px;
+  display:inline-flex;
+  align-items:center;
 }
-.top-right a:hover{ 
-color: #fbfbfb;
+
+.top-right a:hover{
+  color:#fbfbfb;
 }
+
 .enquiry-btn{
   background:#fff;
   border:none;
   padding:5px 12px;
   color:#902724;
-  font-size: 14px;
+  font-size:14px;
   font-weight:600;
   border-radius:4px;
   cursor:pointer;
-  margin: auto 0;
 }
 
-/* ---------- MIDDLE HEADER ---------- */
-/* Step 2: logo left, partner icons right */
+/* ===== CONTACT BUTTON (ANIMATED) ===== */
+.contact-btn{
+  position:relative;
+  display:inline-block;
+  border:1px solid #902724 !important;
+  padding:3.5px 8px;
+  border-radius:4px !important;
+  color:#902724;
+  font-size: 16px !important;
+  overflow:hidden;
+  z-index:1;
+  transition:color 0.3s ease;
+}
+
+.contact-btn::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:0%;
+  height:100%;
+  background:#902724;
+  z-index:-1;
+  transition:width 0.3s ease;
+}
+
+.contact-btn:hover::before{
+  width:100%;
+}
+
+.nav-links .contact-link .contact-btn:hover{
+  color:#fff !important;
+}
+
+/* ===== MIDDLE HEADER ===== */
 .middle-header{
   width:100%;
   display:flex;
@@ -89,80 +119,41 @@ color: #fbfbfb;
   box-sizing:border-box;
 }
 
-.middle-left { 
-  display:flex; 
-  align-items:center; 
-}
-.mid-logo{ 
-  width:175px; 
-  height:auto; 
-  display:block; 
+.mid-logo{
+  width:175px;
 }
 
-.middle-right{
-   display:flex; 
-   align-items:center; 
-   gap:12px; 
-  }
-.partner-icon{ 
- width: auto !important;
- height: auto;
-
- }
-/* ---------- NAVIGATION BAR ---------- */
+/* ===== NAVBAR ===== */
 .navigation-bar{
   width:100%;
-  /* background:#000; */
   position:sticky;
   top:0;
   z-index:900;
-padding: 0;
 }
 
-/* nav-inner contains logo, hamburger, and desktop links */
 .nav-inner{
   display:flex;
-  align-items:center !important;
-  justify-content: flex-end;
-  gap:15px;
-  text-align: center;
-  padding: 2px 15px;
-  box-sizing:border-box;
+  justify-content:flex-end;
+  align-items:center;
+  padding:2px ;
   position:relative;
-  
 }
 
-/* logo area */
-.nav-logo{ 
-  display:flex; 
-  align-items:center;
- }
-.nav-logo-img{ 
-  width:150px;
-   height:auto; 
-  }
-
-/* ---------- Desktop links: aligned to flex-end ---------- */
-.nav-links-wrap{ 
-  margin-left:auto;            
+.nav-links-wrap{
+  margin-left:auto;
   display:flex;
-  align-items:center !important;
-  text-align: center;
-  justify-content: flex-end;
-  padding: 0px;
 }
 
 .nav-links{
   display:flex;
-  gap:15px;                   
+  gap:15px;
   align-items:center;
-  text-align: center;
-  list-style:none;             
+  list-style:none;
   margin:0;
   padding:0;
 }
 
-/* anchor/button base */
+/* ===== NAV LINKS ===== */
 .nav-links a,
 .drop-btn{
   color:#000;
@@ -172,40 +163,18 @@ padding: 0;
   background:transparent;
   border:none;
   cursor:pointer;
-  margin: auto 0;
 }
 
-/* add dropdown icon after desktop links */
-/* All nav-links anchors — add arrow */
-/* Add arrow after all dropdown button links */
-.nav-links li:not(.home-link):not(.contact-link) > .drop-btn::after {
-  content: " ▼";
- font-size: 12px;
-  margin-left: 2px;
-  color:#000;
-  width: fit-content !important;
-}
-
-/* Make sure HOME & CONTACT do NOT show arrow */
-.nav-links .home-link a::after,
-.nav-links .contact-link a::after {
-  content: "";
-}
-/* Contact button */
-.contact-btn{
-  background:transparent;
-  border:1px solid #000;
-  padding:6px 12px;
-  border-radius:20px;
-  color:#000;
-}
-
-/* Dropdown - desktop */
+/* ===== DROPDOWN ===== */
 .dropdown{
   position:relative;
 }
 
-/* Step 6: dropdown CSS for desktop */
+/*  HOVER OPEN DROPDOWN */
+.dropdown:hover .dropdown-menu{
+  display:block;
+}
+
 .dropdown-menu{
   position:absolute;
   top:110%;
@@ -213,14 +182,9 @@ padding: 0;
   background:#fff;
   min-width:200px;
   box-shadow:0 6px 18px rgba(0,0,0,0.12);
-  padding:8px 0;
   border-radius:6px;
   display:none;
   z-index:1000;
-}
-
-.dropdown-menu{
-  display:none;
 }
 
 .dropdown-menu.show{
@@ -228,41 +192,51 @@ padding: 0;
 }
 
 .dropdown-menu li{
-  list-style:none;   /* remove dots */
   padding:8px 16px;
 }
 
 .dropdown-menu li a{
   color:#111;
-  text-decoration:none;
   font-weight:500;
   display:block;
+  transition:0.2s;
 }
 
-/* subtle hover */
-.dropdown-menu li a:hover,
-.nav-links a:hover,
-.drop-btn:hover {
-  color: #000 !important; 
-  
+/* DROPDOWN LINK HOVER BG */
+.dropdown-menu li:hover{
+  background:#f2f2f2;
 }
 
-/* ---------- Hamburger & responsive ---------- */
-/* Step 7: on small screens hamburger at RIGHT, logo at left */
+/* FIX GLOBAL HOVER ISSUE */
+.nav-links .dropdown-menu li a:hover{
+  color:#000 !important;
+}
+/* ===== DROPDOWN ARROW ICON ===== */
+.nav-links li:not(.home-link):not(.contact-link) > .drop-btn::after {
+  content: " ▼";
+  font-size: 11px;
+  margin-left: 4px;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+/* OPTIONAL: rotate arrow on hover */
+.dropdown:hover .drop-btn::after {
+  transform: rotate(180deg);
+}
+/* ===== HAMBURGER ===== */
 .hamburger{
   display:none;
   background:transparent;
   border:none;
-  color:#000;
   font-size:22px;
   cursor:pointer;
-  margin-right: 0px;
 }
 
-/* Side menu (mobile) - opens from left and starts below nav */
+/* ===== MOBILE MENU ===== */
 .side-menu{
   position:fixed;
-  top:var(--nav-height);  /* Step 7: start below navigation bar */
+  top:var(--nav-height);
   left:-100%;
   width:55%;
   max-width:360px;
@@ -272,133 +246,75 @@ padding: 0;
   padding:20px;
   transition:left .28s ease;
   z-index:1200;
-  box-sizing:border-box;
-  overflow:auto;
 }
 
-.side-menu.open{ left:0; }
+.side-menu.open{
+  left:0;
+}
 
-/* side links stacked in column, left aligned (Step 7) */
 .side-nav-links{
-  list-style:none;
-  margin:0;
-  padding:8px 0;
   display:flex;
   flex-direction:column;
   gap:14px;
 }
 
-.side-nav-links a{ color:#fff; 
-  text-decoration:none; 
-  font-size: 18px;
- }
-
-/* mobile dropdown inside side menu */
-.side-dropdown .side-toggle{
-  background:transparent;
-  border:none;
+.side-nav-links a{
   color:#fff;
+  text-decoration:none;
   font-size:18px;
-  text-align:left;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  cursor:pointer;
-  padding:6px 0;
 }
 
-.side-dropdown-menu{
-  list-style:none;
-  margin:8px 0 0 10px;
-  padding:0;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
+/* ===== RESPONSIVE ===== */
+@media (max-width:768px){
 
-/* remove bullets everywhere */
-ul{
-   list-style:none; 
-   margin:0; 
-   padding:0;
-   }
-   
-/* ---------- Responsive rules ---------- */
-/* Step 3: hide middle header on mobile */
-/* ================= MOBILE VIEW SWAP (FIXED) ================= */
-@media (max-width: 768px) {
-.middle-header{
-display: none !important;
-}
-  .top-right{
-    gap: 0;
+  .middle-header{
+    display:none !important;
   }
-.top-right .enquiry-btn{
-    /* padding: 2px !important;
-    font-size: 12px;
-    position: static;
-    transform: none;
-    box-shadow: none; */
-    display: none !important;
+
+  .top-right .enquiry-btn{
+    display:none !important;
   }
+
   .hamburger{
     display:block;
     position:absolute;
-    right:20px !important;
-  /* background-color: #000; */
-  padding: 0px;
-  max-height: fit-content;
-    color: #fff !important;
-  margin-bottom: 16px;
+    right:20px;
+    color:#fff !important;
   }
-  /* SOCIAL ICONS → FLOAT VERTICALLY */
+
   .top-right a{
-    position: fixed;
-    right: 8px;
-    z-index: 1400;
-    background: rgba(0,0,0,0.35);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position:fixed;
+    right:8px;
+    z-index:1400;
+    background:rgba(0,0,0,0.35);
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 
-  /* individual vertical positions */
-  .top-right a:nth-child(1){ top: 45%; } /* Facebook */
-  .top-right a:nth-child(2){ top: 52%; } /* Instagram */
-  .top-right a:nth-child(3){ top: 59%; } /* Email */
+  .top-right a:nth-child(1){ top:45%; }
+  .top-right a:nth-child(2){ top:52%; }
+  .top-right a:nth-child(3){ top:59%; }
 }
-@media (max-width: 992px){
-  /* hide desktop nav links */
-  .nav-links-wrap{ 
-    display:none; 
-  }
 
-  /* show hamburger at right */
+@media (max-width:992px){
+  .nav-links-wrap{ display:none; }
+
   .hamburger{
     display:block;
     position:absolute;
     right:20px;
   }
 
-  /* logo pinned to left */
-  .nav-logo{ position:absolute; left:20px; }
-
-  /* make nav-inner height variable for --nav-height if needed */
-  .navigation-bar{ --nav-height: 64px; }
+  .navigation-bar{
+    --nav-height:64px;
+  }
 }
 
-/* larger devices: ensure hamburger hidden and show desktop links */
-@media (min-width: 993px){
-  .side-menu{ display:none; } /* not used on desktop */
+@media (min-width:993px){
+  .side-menu{ display:none; }
   .hamburger{ display:none; }
-  .nav-logo-img{ width:170px; }
-}
-
-/* small polish */
-.dropdown-menu li a:hover, .nav-links a:hover, .drop-btn:hover{
-  color: #fbfbfb;
 }

@@ -42,41 +42,55 @@ const TcVerification = () => {
 
       <div className="tc-container">
         <h2>Transfer Certificate Verification</h2>
-        <p>Enter your TC Number and Date of Birth</p>
+        {/* <p>Enter your TC Number and Date of Birth</p> */}
 
-        <label className="tc-lables">Enter TC Number</label>
-        <input
-          type="text"
-          placeholder="Enter TC Number"
-          value={tcNumber}
-          onChange={(e) => setTcNumber(e.target.value)}
-        />
+        {/* TC Number */}
+        <div className="tc-form-wrapper">
+        <div className="form-group">
+          <label className="tc-lables">Enter TC Number</label>
+          <input
+            type="text"
+            placeholder="Enter TC Number"
+            value={tcNumber}
+            onChange={(e) => setTcNumber(e.target.value)}
+          />
+        </div>
 
-        <label className="tc-lables">Enter DOB (DD-MM-YYYY)</label>
-        <input
-          type="text"
-          placeholder="DD-MM-YYYY"
-          value={dob}
-          onChange={(e) => setDob(e.target.value)}
-        />
+        {/* DOB */}
+        <div className="form-group">
+          <label className="tc-lables">Enter DOB (DD-MM-YYYY)</label>
+          <input
+            type="text"
+            placeholder="DD-MM-YYYY"
+            value={dob}
+            onChange={(e) => setDob(e.target.value)}
+          />
+        </div>
 
-        <button onClick={handleSearch}>Verify</button>
+        <button onClick={handleSearch} className="tc-verify-btn">Verify</button>
+      </div>
       </div>
 
       {/* Popup Modal */}
       {selectedFile && (
-        <div className="popup">
-          <div className="popup-content">
+        <div
+          className="popup"
+          onClick={() => setSelectedFile(null)} // close on outside click
+        >
+          <div
+            className="popup-content"
+            onClick={(e) => e.stopPropagation()} // prevent close on inside click
+          >
             <button onClick={() => setSelectedFile(null)}>Close</button>
 
-            <iframe
-              src={selectedFile}
-              title="TC Preview"
-              width="100%"
-              height="500px"
-            />
+        {selectedFile.endsWith(".pdf") ? (
+  <iframe src={selectedFile} title="TC Preview" />
+) : (
+  <img src={selectedFile} alt="TC Preview" className="popup-image" />
+)}
           </div>
         </div>
+
       )}
     </div>
   );
