@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Banner from "../components/Banner";
 import ScrolLinks from "../components/ScrolLinks";
-import PolicyCards from "../components/PolicyCards";
+// import PolicyCards from "../components/PolicyCards";
 // import QuerySection from "../components/QuerySection";
 import "./About.css";
 
