@@ -263,7 +263,42 @@
   text-decoration:none;
   font-size:18px;
 }
+/* ===== SIDE MENU LOGO ===== */
+.side-logo {
+  margin-bottom: 20px;
+}
 
+.side-logo img {
+  width: 140px;
+}
+
+/* ===== SIDE DROPDOWN ===== */
+.side-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-dropdown-menu {
+  padding-left: 12px;
+  margin-top: 6px;
+}
+
+.side-dropdown-menu li {
+  margin: 6px 0;
+}
+
+.side-dropdown-menu a {
+  font-size: 16px;
+  color: #ccc;
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width:768px){
 
