@@ -330,6 +330,7 @@
   }
 
   .middle-header{
+    padding: 5px;
     display:flex !important;
     justify-content:space-between;
   }
