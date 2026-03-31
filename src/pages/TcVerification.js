@@ -34,9 +34,9 @@ const TcVerification = () => {
   };
 
   // TRACK ACTIVE INPUT
-  const handleFocus = (field) => {
-    setActiveField(field);
-  };
+  // const handleFocus = (field) => {
+  //   setActiveField(field);
+  // };
 
   // LONG PRESS START
   const handleClearStart = (e) => {
