@@ -82,16 +82,6 @@ useEffect(() => {
     </a>
     <Link to ="/contact"> <button className="enquiry-btn">Enquiry Now</button></Link>
 
-   
-
-     <button
-            className="hamburger"
-            aria-label="toggle menu"
-            onClick={toggleMenu}
-          >
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-          
   </div>
 </div>
 
@@ -108,26 +98,23 @@ useEffect(() => {
           </a>
         </div>
 
-     
-     {/* NAVIGATION BAR */}
+        <div className="middle-right">
+          {/* Mobile hamburger (toggles the same side menu as desktop links) */}
+          <button
+            className="hamburger"
+            aria-label="toggle menu"
+            onClick={toggleMenu}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+
+  {/* NAVIGATION BAR */}
      <div>
       <header className="navigation-bar" role="banner">
         <div className="nav-inner">
-          {/* <div className="nav-logo">
-            <a href="/home">
-              <img
-                src={require("../assets/ONGC LOGO 11.png")}
-                alt="logo"
-                className="nav-logo-img"
-              />
-            </a>
-          </div> */}
-
-          {/* Step 7: Hamburger should be at RIGHT on mobile */}
-         
-
-         
-          <nav className="nav-links-wrap" aria-label="Primary">
+          
+         <nav className="nav-links-wrap" aria-label="Primary">
             <ul className="nav-links">
               <li className="home-link"><a href="/home">Home</a></li>
 
@@ -200,12 +187,6 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
             </ul>
           </nav>
         </div>
-
-        {/* MOBILE SIDE MENU - Step 7 behavior:
-            - top equals navigation-bar height (so it starts below bar)
-            - opens from left
-            - links stacked left column
-            - mobile dropdown toggles work */}
             
         <aside className={`side-menu ${menuOpen ? "open" : ""}`} aria-hidden={!menuOpen}>
           
@@ -291,12 +272,12 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
           </ul>
         </aside>
       </header>
-</div>
+   </div>
 
       </div>
 
    
-    </>
+</>
   );
 };
  
