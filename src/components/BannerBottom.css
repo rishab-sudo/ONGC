@@ -87,9 +87,11 @@
   .bb-overlay{
     text-align: center;
     padding: 30px 20px;
+    margin: auto !important;
   }
 
   .bb-overlay p {
     width: 95%;
+    margin: auto !important;
   }
 }

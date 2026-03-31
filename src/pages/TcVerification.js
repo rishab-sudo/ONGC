@@ -47,10 +47,10 @@ const TcVerification = () => {
         {/* TC Number */}
         <div className="tc-form-wrapper">
         <div className="form-group">
-          <label className="tc-lables">Enter TC Number</label>
+          <label className="tc-lables">Enter Admission Number</label>
           <input
             type="text"
-            placeholder="Enter TC Number"
+            placeholder="Enter Admission Number"
             value={tcNumber}
             onChange={(e) => setTcNumber(e.target.value)}
           />
