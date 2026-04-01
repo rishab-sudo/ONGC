@@ -1,0 +1,71 @@
+.sport {
+  padding: 5px 20px;
+  margin-top: 3.5%;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 3.5%;
+}
+.table-container::after {
+  content: "→ Scroll";
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #902724;
+  margin-top: 5px;
+}
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+/* Make Month column bold */
+tbody td:first-child {
+  font-weight: bold;
+}
+/* HEAD */
+thead {
+  background-color: #902724;
+  color: #fff;
+}
+
+th {
+  padding: 10px;
+  border: 2px solid #902724;
+ 
+}
+
+/* BODY */
+td {
+  padding: 10px;
+  border: 2px solid #902724;
+}
+
+/* ROW ALTERNATE */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* NOTE SECTION */
+.note {
+  margin-top: 20px;
+  border: 2px solid #902724;
+  padding: 10px;
+  text-align: center;
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-weight: bold;
+}

@@ -149,6 +149,7 @@ useEffect(() => {
                 <button className="drop-btn">Student Life</button>
                 <ul className={`dropdown-menu ${openDropdown === "life" ? "show" : ""}`}>
                   <li><a href="/activities">Activities</a></li>
+                   <li><a href="/sports">Games & Sports</a></li>
                   <li><a href="/Gallery">Gallery</a></li>
                 </ul>
               </li>
