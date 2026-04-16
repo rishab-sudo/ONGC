@@ -2,7 +2,7 @@
 export const tcData = [
   {
     tcNumber: "1035",
-    dob: "2004-08-17",
+    dob: "17-08-2004",
     file: require("./assets/tc/ANSHI TIWARI 1035.jpeg"),
   },
   {

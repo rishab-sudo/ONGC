@@ -25,18 +25,38 @@
 
 .table-scroll {
   overflow-x: auto;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
+/* table outer border + bottom border maroon */
 .curriculum-table {
-    margin-top: 2rem;
+  margin-top: 2rem;
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   min-width: 900px;
   background: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid #902724;   /* outer border */
   border-radius: 12px;
   overflow: hidden;
+}
+
+/* last row bottom border maroon */
+.curriculum-table tbody tr:last-child td {
+  border-bottom: 1px solid #902724 
+}
+
+/* vertical lines between all columns */
+.curriculum-table th,
+.curriculum-table td {
+  border-right: 1px solid #902724;
+}
+
+/* last column no extra inner line */
+.curriculum-table th:last-child,
+.curriculum-table td:last-child {
+  border-right: none;
 }
 
 .curriculum-table th {
@@ -51,7 +71,7 @@
 }
 
 .curriculum-table td {
-  padding: 12px 10px;
+  padding: 15px 10px;
   text-align: left;
   border-bottom: 1px solid #eee;
   font-size: 14px;
