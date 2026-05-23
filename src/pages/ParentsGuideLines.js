@@ -1,69 +1,57 @@
-import React, { useState,  } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
-import Banner from "../components/Banner"
+import Banner from "../components/Banner";
 import "./ParentsGuideLines.css";
-// import { Link } from 'react-router-dom';
 import QuerySection from '../components/QuerySection';
-import ScrolLinks from '../components/ScrolLinks';
 
 const leftPoints = [
-  "Check the haircut, uniform and punctuality of your ward in the morning.",
-  "See that your ward carries book/exercise books according to the time table for that day. No extra books are allowed.",
-  "See that he/she is prepared for the Tuesday tests and brings answer books to school on Tuesday.",
-  "Also see his/her report card and teachers remarks in his/her class work / home work exercise books.",
-  "Encourage your ward to take a balanced interest in studies, co-curricular activities and sports.",
-  "Children should not bring crackers, colors, transistors etc. to the school. Bursting of crackers and playing with colors is liable to lead to expulsion of a student from the school.",
-  "During school hours no student will be allowed to go home without the written permission of the Principal.",
-  "Your ward should be instructed to be careful about his/her things. There should be a name tag on blazers and sweaters. Expensive articles like transistors, calculators etc. should not be brought to school. They are also not allowed to wear jewellery in school. In case of violation, articles will be confiscated.",
-  "If your ward is absent from school, he/she must make up all the work missed.",
-  "Ensure that children do not carry fancy & expensive stationery items.",
-  "Students suffering from diseases such as chicken pox, cholera, measles, mumps, whooping cough and jaundice must observe the prescribed period of quarantine as mentioned in the Almanac.",
-    "Students suffering from infectious diseases like conjunctivitis, dermatitis, scabies etc. should not be sent to school.",
-  "Students suffering from chronic diseases like asthma, epilepsy, rheumatic heart disease etc. are advised to be under the continuous medical supervision of a specialized doctor.",
-    "School transport is an optional facility. The school cannot be held responsible for any mishap otherwise.",
-];
+  "Ensure your child completes his/her work on routine basis.",
 
-const rightPoints = [
+  "Encourage your ward to take a poised interest in studies, co-curricular activities and sports.",
 
+  "Ensure your ward carries book/exercise books according to the time table every day. No extra books are allowed.",
+
+  "Ensure your child proper haircut, uniform, nails, school shoes, school ID, Almanac (school diary), and punctuality in attending morning assembly.",
+
+  "Ensure your child do not carry fancy & expensive stationery items.",
+
+  "Ensure your child does not carry unwarranted items to school like pen-markers, crackers, colours, mobiles phones, smart watches etc. Bursting of crackers and playing with colours is liable to lead to expulsion of your student from the school.",
+
+  "Ensure your ward is careful about his/her things. There should be a name tag on blazers and sweaters. Expensive articles like mobiles, Calculators etc. should not be brought to school. They are also not allowed to wear Jewellery in school.",
+
+  "During School hours no student will be allowed to go home without the written permission of the Principal.",
+
+  "School transport is optional facility provided by school for your convenience and in no way school can be held responsible for any mishappening or otherwise.",
 
   {
-    main: "All parents are requested to impart health education to their children so that they maintain personal hygiene like trimming nails and being neat regularly.",
+    main: "All parents are requested to impart Health Education to their children so that they -",
     sub: [
+      "Immunize child as per the doctor's guidance.",
       "Students should exercise regularly.",
       "Sleep for at least eight hours daily.",
       "Have a balanced diet, nutritionally rich in proteins and milk.",
-      "Drink water which is either boiled or filtered. All students are advised to bring their own water bottles.",
-      "Avoid consumption of ice-creams, other milk products and eatables from roadside vendors.",
-      "De-worm your child every year. Advice to be taken from your family physician.",
-      "Get dental and eye check-up done once every year by a dental and eye surgeon.",
-      "Parents should immunize all children as per the schedule below:",
-      "BCG, DPT, Oral Polio, Measles/MMR (before entry to school)",
-      "DT at 5 years of age, Tetanus, Typhoid booster (7–16 years), Cholera (yearly), Hepatitis (preferably in March), Meningitis (optional but recommended)."
-    ],
-  }
+      "Drink water which is either boiled or filtered. All students are advised to bring their own water bottles from home.",
+      "Avoid Consumption of ice-creams, other milk products and eatables from road side vendors.",
+      "De-worm your child every year. Requisite advice to be taken from Physician.",
+      "Get dental and eye check up done once in every year by a dental surgeon and eye surgeon.",
+      "Maintain personal hygiene like: trimming of nails and being neat on a regular basis."
+    ]
+  },
+
+  "Students suffering from disease such as chicken pox, cholera, Measles, Mumps, Whooping Cough and Jaundice must observe the prescribed period of quarantine as mentioned under the heading, 'Absence' in the Almanac.",
+
+  "Students suffering from infectious diseases like conjunctivitis, Dermatitis, Scabies etc. should not be sent to school.",
+
+  "Students suffering from chronic diseases like Asthma, Epilepsy, Rheumatic, Heart Disease etc. are advised to be under continuous medical supervision of a specialized doctor. History of the illness must be filled up in the Almanac along with the treatment being given.",
+
+  "Lost & Found department is constituted in school. Contact school office for lost & found article along with written application."
 ];
 
-  
-
- 
 const ParentsGuideLines = () => {
-  
-  const [viewMore, setViewMore] = useState(false);
-
-  // Merge all points
-  const allPoints = [...leftPoints, ...rightPoints.flatMap(p => typeof p === "string" ? p : [p])];
-
-  // Split points at the "view more" line
-  const splitIndex = allPoints.findIndex(
-    p => typeof p === "string" && p.includes("Students suffering from infectious diseases like conjunctivitis")
-  );
-
-  const initialPoints = allPoints.slice(0, splitIndex + 1);
-  const remainingPoints = allPoints.slice(splitIndex + 1);
 
   return (
     <>
-   <Banner
+      <Banner
         title="Parents Guidelines"
         image={require("../assets/parents-guide-img.jpg")}
         breadcrumbs={[
@@ -71,81 +59,65 @@ const ParentsGuideLines = () => {
           { label: "PARENTS GUIDELINES", link: "/ParentsGuideLines" },
         ]}
       />
-<ScrolLinks/>
 
-
- <Container fluid className='pg-fluid g-0'>
-     <Container className='pg-container '>
+      <Container fluid className='pg-fluid g-0'>
+        <Container className='pg-container'>
           <div className="instructions-container">
             <div className="instructions-box scrollable-box">
+
               <div className='d-flex justify-content-center align-items-center'>
-
-            <p className='page-heading'>Parental Advisory & School Guidelines</p>
+                <p className='page-heading'>
+                  Parent-School Communication & Guidelines
+                </p>
               </div>
-<ul>
-  {/* Initial visible points */}
-  {initialPoints.map((point, index) =>
-    typeof point === "string" ? (
-      <li key={index} className="guideline">
-        <span className="circle-number">{index + 1}</span>
-        <div className="guideline-text">{point}</div>
-      </li>
-    ) : (
-      <li key={index} className="guideline">
-        <span className="circle-number">{index + 1}</span>
-        <div className="guideline-text">
-          {point.main}
-          <ul className="guideline-points">
-            {point.sub.map((subPoint, subIndex) => (
-              <li key={subIndex}>{subPoint}</li>
-            ))}
-          </ul>
-        </div>
-      </li>
-    )
-  )}
 
-  {/* View More Points */}
-  {viewMore &&
-    remainingPoints.map((point, index) =>
-      typeof point === "string" ? (
-        <li key={index + initialPoints.length} className="guideline">
-          <span className="circle-number">
-            {index + 1 + initialPoints.length}
-          </span>
-          <div className="guideline-text">{point}</div>
-        </li>
-      ) : (
-        <li key={index + initialPoints.length} className="guideline">
-          <span className="circle-number">
-            {index + 1 + initialPoints.length}
-          </span>
-          <div className="guideline-text">
-            {point.main}
-            <ul className="guideline-points">
-              {point.sub.map((subPoint, subIndex) => (
-                <li key={subIndex}>{subPoint}</li>
-              ))}
-            </ul>
-          </div>
-        </li>
-      )
-    )}
-</ul>
+              <ul>
+                {leftPoints.map((point, index) =>
 
+                  typeof point === "string" ? (
 
+                    <li key={index} className="guideline">
+                      <span className="circle-number">
+                        {index + 1}
+                      </span>
 
-              {!viewMore && remainingPoints.length > 0 && (
-                <button className="view-moree-btn" onClick={() => setViewMore(true)}>
-                  View More
-                </button>
-              )}
+                      <div className="guideline-text">
+                        {point}
+                      </div>
+                    </li>
+
+                  ) : (
+
+                    <li key={index} className="guideline">
+                      <span className="circle-number">
+                        {index + 1}
+                      </span>
+
+                      <div className="guideline-text">
+
+                        <strong>{point.main}</strong>
+
+                        <ul className="guideline-points">
+                          {point.sub.map((subPoint, subIndex) => (
+                            <li key={subIndex}>
+                              {subPoint}
+                            </li>
+                          ))}
+                        </ul>
+
+                      </div>
+                    </li>
+
+                  )
+                )}
+              </ul>
+
             </div>
           </div>
         </Container>
       </Container>
 
-<QuerySection />
+      <QuerySection />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 // import Banner from "../components/Banner";
 import "./Activities.css";
+import Banner from "../components/Banner";
 
 const socialLinks = {
   facebook: ["Click Here"],
@@ -161,6 +162,14 @@ const calendarData = [
 const Activities = () => {
   return (
     <>
+         <Banner
+        title="Co-Curricular Activities"
+        image={require("../assets/parents-guide-img.jpg")}
+        breadcrumbs={[
+          { label: "HOME", link: "/home" },
+          { label: "Co-Curricular Activities", link: "Co-Curricular Activities" },
+        ]}
+      />
       {/* <Banner
         title="Activities"
         image={require("../assets/parents-guide-img.jpg")}

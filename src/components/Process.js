@@ -19,7 +19,7 @@ const Process = () => {
           <h1 className="page-heading process-heading">Who We Are</h1>
 
           <p className="page-text">
-Making Tomorrow Brighter” is the guiding motto of ONGC Community School  a pioneering institution and the first of its kind in India. Established by ONGC in collaboration with the SDMC Trust as its COM Partner, the school represents a visionary step toward redefining quality education. 
+Making Tomorrow Brighter” is the guiding motto of ONGC Community School  a pioneering institution and the first of its kind in India. Established by ONGC Foundation in collaboration with the SDMC Trust as its COM Partner, the school represents a visionary step toward redefining quality education. 
 Inspired by sensitivity, compassion, and a deep understanding of every child’s unique potential, our institution is thoughtfully crafted to reflect the character of its location while meeting the evolving educational needs of our times.
 Affiliated with the Central Board of Secondary Education (CBSE), 
           </p>

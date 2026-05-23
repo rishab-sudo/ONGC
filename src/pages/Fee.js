@@ -2,6 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { Container } from 'react-bootstrap';
 import './Fee.css'; // make sure this import appears AFTER bootstrap css in your app
+import Banner from '../components/Banner';
 
 const Fee = () => {
   const rows = [
@@ -23,6 +24,15 @@ const Fee = () => {
   ];
 
   return (
+    <>
+       <Banner
+        title="Fee Structure"
+        image={require("../assets/parents-guide-img.jpg")}
+        breadcrumbs={[
+          { label: "HOME", link: "/home" },
+          { label: "Fee Structure", link: "/Fee Structure" },
+        ]}
+      />
     <Container className="fee-table-container mt-5">
       <div className='fee-top-div'>
         <img src={require("../assets/ongc-logo1.jpg")} alt="logo" />
@@ -47,6 +57,7 @@ const Fee = () => {
         </tbody>
       </Table>
     </Container>
+    </>
   );
 };
 

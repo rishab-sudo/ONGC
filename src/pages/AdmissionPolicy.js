@@ -13,10 +13,10 @@ const points = [
     heading: "Principal's Decision",
     text: 'The decision of the Principal regarding admission is final and binding.'
   },
-  {
-    heading: 'Medical Consent',
-    text: 'If selected, you authorize the school medical officer to administer inoculations (Typhoid & Cholera) to your child from year to year.'
-  },
+  // {
+  //   heading: 'Medical Consent',
+  //   text: 'If selected, you authorize the school medical officer to administer inoculations (Typhoid & Cholera) to your child from year to year.'
+  // },
   {
     heading: 'Fee Payment Responsibility',
     text: 'You have taken note of fee details and will remit school fees within due dates without waiting for reminders.'
@@ -31,20 +31,20 @@ const points = [
   },
   {
     heading: 'Caution Money',
-    text: 'If you do not claim the caution money within 3 years after leaving, it may be treated as a donation and you relinquish refund rights.'
+    text: 'If you do not claim the caution money within 1 year after leaving, it may be treated as a donation and you relinquish refund rights.'
   },
   {
     heading: 'Liability for Mishaps',
     text: 'The school is not liable for any injury or mishap to the student inside or outside the premises.'
   },
-  {
-    heading: 'Transport is Optional',
-    text: 'School transport is an optional convenience; the school cannot be held responsible for mishaps related to transport.'
-  },
-  {
-    heading: 'Transport Capacity & Routing',
-    text: 'Due to changing preferences and time constraints, vehicles may sometimes carry more students than capacity.'
-  },
+  // {
+  //   heading: 'Transport is Optional',
+  //   text: 'School transport is an optional convenience; the school cannot be held responsible for mishaps related to transport.'
+  // },
+  // {
+  //   heading: 'Transport Capacity & Routing',
+  //   text: 'Due to changing preferences and time constraints, vehicles may sometimes carry more students than capacity.'
+  // },
   {
     heading: 'Accuracy of Information',
     text: 'Providing false or misleading information, or withholding correct information, may disqualify the child from admission or education.'
@@ -67,11 +67,11 @@ const AdmissionPolicy = () => {
   return (
     <div className="admission-page">
       <Banner
-        title="About Us"
+        title="Attendance Policy"
         image={require('../assets/parents-guide-img.jpg')}
         breadcrumbs={[
           { label: 'HOME', link: '/home' },
-          { label: 'About Us', link: '/About Us' }
+          { label: 'Attendance Policy', link: '/Attendance Policy' }
         ]}
       />
 

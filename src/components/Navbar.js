@@ -126,7 +126,7 @@ useEffect(() => {
                 </button>
                 <ul className={`dropdown-menu ${openDropdown === "about" ? "show" : ""}`}>
                   <li><a href="/about">About Us</a></li>
-                  <li><a href="/ParentsGuideLines">Parents Guidelines</a></li>
+                  <li><a href="/ParentsGuideLines">Parents/Students Guidelines</a></li>
                   <li><a href="/dressCode">Dress Code</a></li>
                   <li><a href="/feeStructure">Fee Structure</a></li>
                 </ul>
@@ -140,6 +140,7 @@ useEffect(() => {
                   <li><a href="/Curriculum">Curriculum</a></li>
                   <li><a href="/AcademicsCalendar">Academics Calendar</a></li>
                   <li><a href="/ExaminationScheme">Examination Scheme</a></li>
+                <li><a href="/AbsencePolicy">Absence Policy</a></li>
                 </ul>
               </li>
 
@@ -159,21 +160,21 @@ onClick={() => setOpenDropdown(openDropdown === "admission" ? null : "admission"
               >
                 <button className="drop-btn">Admission</button>
                 <ul className={`dropdown-menu ${openDropdown === "admission" ? "show" : ""}`}>
-                  <li><a href="/AdmissionPolicy">Admission Policy</a></li>
+                  <li><a href="/AdmissionPolicy">Attendance policy Policy</a></li>
                   <li><a href="/TcVerification">TC Verification</a></li>
                 </ul>
               </li>
 
-              <li className="dropdown"
+              {/* <li className="dropdown"
              onClick={() => setOpenDropdown(openDropdown === "policy" ? null : "policy")}
               >
                 <button className="drop-btn">School Policy</button>
                 <ul className={`dropdown-menu ${openDropdown === "policy" ? "show" : ""}`}>
                   <li><a href="/GeneralPolicy">General Policy</a></li>
-                  <li><a href="/AbsencePolicy">Absence Policy</a></li>
+                 
                   <li><a href="/Punishment">Punishment Policy</a></li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="dropdown"
 onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosure")}
@@ -188,7 +189,7 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
             </ul>
           </nav>
         </div>
-            
+            {/* mobile - layout */}
         <aside className={`side-menu ${menuOpen ? "open" : ""}`} aria-hidden={!menuOpen}>
           
           <ul className="side-nav-links">
@@ -201,7 +202,7 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
               {mobileAboutOpen && (
                 <ul className="side-dropdown-menu">
                   <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
-                  <li><a href="/ParentsGuideLines" onClick={toggleMenu}>Parents Guidelines</a></li>
+                  <li><a href="/ParentsGuideLines" onClick={toggleMenu}>Parents/Students Guidelines</a></li>
                   <li><a href="/dressCode" onClick={toggleMenu}>Dress Code</a></li>
                   <li><a href="/feeStructure" onClick={toggleMenu}>Fee Structure</a></li>
                 </ul>
@@ -217,6 +218,7 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
                   <li><a href="/Curriculum" onClick={toggleMenu}>Curriculum</a></li>
                   <li><a href="/AcademicsCalendar" onClick={toggleMenu}>Academics Calendar</a></li>
                   <li><a href="/ExaminationScheme" onClick={toggleMenu}>Examination Scheme</a></li>
+                 <li><a href="/AbsencePolicy" onClick={toggleMenu}>Absence Policy</a></li>
                 </ul>
               )}
             </li>
@@ -245,18 +247,18 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
               )}
             </li>
 
-            <li className="side-dropdown">
+            {/* <li className="side-dropdown">
               <button onClick={() => setMobilePolicyOpen(!mobilePolicyOpen)} className="side-toggle">
                 School Policy {mobilePolicyOpen ? <FaChevronUp /> : <FaChevronDown />}
               </button>
               {mobilePolicyOpen && (
                 <ul className="side-dropdown-menu">
                   <li><a href="/GeneralPolicy" onClick={toggleMenu}>General Policy</a></li>
-                  <li><a href="/AbsencePolicy" onClick={toggleMenu}>Absence Policy</a></li>
+                
                   <li><a href="/Punishment" onClick={toggleMenu}>Punishment Policy</a></li>
                 </ul>
               )}
-            </li>
+            </li> */}
 
             <li className="side-dropdown">
               <button onClick={() => setMobileDisclosureOpen(!mobileDisclosureOpen)} className="side-toggle">

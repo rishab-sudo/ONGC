@@ -38,7 +38,7 @@ const Trustees = () => {
       <div className="d-flex flex-column justify-content-center align-item-center text-center mb-5">
         <p className='page-heading trust-heading'>Our Management</p>
         <p className="page-text" style={{ marginTop:"-12px" }}>
-          ONGC is led by our distinguished Trustees, guiding and strategizing 
+          ONGC Foundation is led by our distinguished Trustees, guiding and strategizing 
           to ensure continuous excellence in education.
         </p>
       </div>

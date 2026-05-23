@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Banner from "../components/Banner";
-import ScrolLinks from "../components/ScrolLinks";
+// import ScrolLinks from "../components/ScrolLinks";
 // import PolicyCards from "../components/PolicyCards";
 // import QuerySection from "../components/QuerySection";
 import "./About.css";
@@ -62,12 +62,12 @@ const About = () => {
           { label: "About Us", link: "/About Us" },
         ]}
       />
-      <ScrolLinks />
+      {/* <ScrolLinks /> */}
      {/* ===== Section 1 ===== */}
       <Container fluid className="about-fluid">
         <Container className="about-container1">
           <div className="about-content-section1">
-            <p className="page-heading about-heading">About ONGC Community</p>
+            <p className="page-heading about-heading">About ONGC Community School</p>
             <p className="page-text about-text">
               <span className="highlight">“Making Tomorrow Brighter”</span> is
               the motto of

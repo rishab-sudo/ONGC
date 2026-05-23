@@ -28,7 +28,7 @@ const CampusSection = () => {
         >
           <h2 className="campus-heading page-heading">Our Campus</h2>
           <p className="campus-subheading page-text">
-            <span style={{ fontWeight: 600 }}>ONGC</span> CS epitomises vibrancy and freshness,
+            <span style={{ fontWeight: 600 }}>ONGC Community School </span>epitomises vibrancy and freshness,
             dovetailing much of the ethos of the new post-independence India into its educational
             program and philosophy.
           </p>
