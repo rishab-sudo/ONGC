@@ -52,11 +52,11 @@ const ParentsGuideLines = () => {
   return (
     <>
       <Banner
-        title="Parents Guidelines"
+        title="Parents/ STUDENTS Guidelines"
         image={require("../assets/parents-guide-img.jpg")}
         breadcrumbs={[
           { label: "HOME", link: "/home" },
-          { label: "PARENTS GUIDELINES", link: "/ParentsGuideLines" },
+          { label: "PARENTS/STUDENTS GUIDELINES", link: "/ParentsGuideLines" },
         ]}
       />
 
@@ -67,7 +67,7 @@ const ParentsGuideLines = () => {
 
               <div className='d-flex justify-content-center align-items-center'>
                 <p className='page-heading'>
-                  Parent-School Communication & Guidelines
+                  Parents-Students Communication & Guidelines
                 </p>
               </div>
 
