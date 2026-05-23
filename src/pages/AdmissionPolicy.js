@@ -67,11 +67,11 @@ const AdmissionPolicy = () => {
   return (
     <div className="admission-page">
       <Banner
-        title="Attendance Policy"
+        title="Admission Policy"
         image={require('../assets/parents-guide-img.jpg')}
         breadcrumbs={[
           { label: 'HOME', link: '/home' },
-          { label: 'Attendance Policy', link: '/Attendance Policy' }
+          { label: 'Admission Policy', link: '/Admission Policy' }
         ]}
       />
 

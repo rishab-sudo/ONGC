@@ -11,11 +11,11 @@ const AbsencePolicy = () => {
   return (
     <>
       <Banner
-        title="Absence Policy"
+        title="Attendance Policy"
         image={require("../assets/parents-guide-img.jpg")}
         breadcrumbs={[
           { label: "HOME", link: "/home" },
-          { label: "Absence Policy", link: "/AbsencePolicy" },
+          { label: "Attendance Policy", link: "/Attendance Policy" },
         ]}
       />
 
@@ -25,13 +25,13 @@ const AbsencePolicy = () => {
             <div className="absence-policy-box">
               <div className="d-flex justify-content-center align-items-center">
                 <p className="page-heading">
-                  Absence & Attendance Policy
+                 Attendance Policy
                 </p>
               </div>
 
               <ul className="attendance-list">
                 {absencePoints.map((point, index) => (
-                  <li className="page-heading" key={index}>{point}</li>
+                  <li style={{fontSize:"1.2rem",textAlign:"center",fontWeight:"600"}}className="" key={index}>{point}</li>
                 ))}
               </ul>
             </div>

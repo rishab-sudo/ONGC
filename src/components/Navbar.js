@@ -140,7 +140,7 @@ useEffect(() => {
                   <li><a href="/Curriculum">Curriculum</a></li>
                   <li><a href="/AcademicsCalendar">Academics Calendar</a></li>
                   <li><a href="/ExaminationScheme">Examination Scheme</a></li>
-                <li><a href="/AbsencePolicy">Absence Policy</a></li>
+                <li><a href="/AbsencePolicy">Attendance Policy</a></li>
                 </ul>
               </li>
 
@@ -160,7 +160,7 @@ onClick={() => setOpenDropdown(openDropdown === "admission" ? null : "admission"
               >
                 <button className="drop-btn">Admission</button>
                 <ul className={`dropdown-menu ${openDropdown === "admission" ? "show" : ""}`}>
-                  <li><a href="/AdmissionPolicy">Attendance policy Policy</a></li>
+                  <li><a href="/AdmissionPolicy">Admission Policy</a></li>
                   <li><a href="/TcVerification">TC Verification</a></li>
                 </ul>
               </li>
