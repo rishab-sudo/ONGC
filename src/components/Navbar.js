@@ -20,7 +20,7 @@ const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileAcademicsOpen, setMobileAcademicsOpen] = useState(false);
   const [mobileStudentLifeOpen, setMobileStudentLifeOpen] = useState(false);
   const [mobileAdmissionOpen, setMobileAdmissionOpen] = useState(false);
-  const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
+  // const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
   const [mobileDisclosureOpen, setMobileDisclosureOpen] = useState(false);
 
   const toggleMenu = () => {
