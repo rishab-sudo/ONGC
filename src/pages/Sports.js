@@ -64,7 +64,7 @@ const Sports = () => {
               <td>-</td>
               <td>-</td>
               <td>Kabaddi / Kho-Kho</td>
-              <td>ONGCCS</td>
+              <td>ONGC</td>
             </tr>
 
             <tr>
@@ -75,7 +75,7 @@ const Sports = () => {
               <td>-</td>
               <td>Chess</td>
               <td>-</td>
-              <td>ONGCCS</td>
+              <td>ONGC</td>
             </tr>
 
             <tr>
@@ -86,7 +86,7 @@ const Sports = () => {
               <td>Soccer</td>
               <td>Soccer</td>
               <td>-</td>
-              <td>ONGCCS</td>
+              <td>ONGC</td>
             </tr>
 
             <tr>
@@ -108,7 +108,7 @@ const Sports = () => {
               <td>Cricket</td>
               <td>Cricket</td>
               <td>-</td>
-              <td>ONGCCS</td>
+              <td>ONGC</td>
             </tr>
 
             <tr>
@@ -128,7 +128,7 @@ const Sports = () => {
               <td colSpan="3">Athletic Meet</td>
               <td>-</td>
               <td>Athletic Meet</td>
-              <td>ONGCCS / SEI</td>
+              <td>ONGC / SEI</td>
             </tr>
 
             <tr>

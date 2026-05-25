@@ -86,7 +86,7 @@ const About = () => {
             </p>
 
             <p className="page-text about-text">
-              <span className="highlight">ONGC CS</span> epitomises
+              <span className="highlight">ONGC Community School</span> epitomises
               <span className="highlight"> vibrancy and freshness</span>,
               dovetailing much of the
               <span className="highlight">
