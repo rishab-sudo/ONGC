@@ -26,49 +26,83 @@
   margin-bottom: 40px;
 }
 
+/* TABLE */
 .ongc-table {
   width: 100%;
-  border-collapse: collapse;
   min-width: 100%;
   background: #fff;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   overflow: hidden;
   margin-top: 1.5rem;
+
+  /* OUTER BORDER ALL 4 SIDES */
+  border: 2px solid #902724;
 }
 
+/* TABLE HEAD */
 .ongc-table th {
-/* background: linear-gradient(135deg, #902724 0%, #000 100%); */
- background-color: #902724;
-color: #fff;
+  background-color: #902724;
+  color: #fff;
   padding: 14px 12px;
   text-align: left;
   font-weight: 600;
   font-size: 18px;
+
+  /* INNER BORDERS */
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #902724;
 }
 
+/* REMOVE LAST HEADER RIGHT BORDER */
+.ongc-table th:last-child {
+  border-right: none;
+}
+
+/* TABLE DATA */
 .ongc-table td {
   padding: 12px 10px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+
+  /* INNER BORDERS */
+  border-right: 1px solid #902724;
+  border-bottom: 1px solid #902724;
+
   font-size: 16px;
   font-weight: 500;
   color: #333;
 }
 
+/* REMOVE LAST COLUMN RIGHT BORDER */
+.ongc-table td:last-child {
+  border-right: none;
+}
+
+/* REMOVE LAST ROW BOTTOM BORDER */
+.ongc-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* EVEN ROW */
 .ongc-table tr:nth-child(even) {
   background-color: #fafafa;
 }
 
+/* HOVER EFFECT */
 .ongc-table tr:hover {
   background-color: #fff8f0;
 }
 
+/* PDF ICON */
 .pdf-icon {
   color: #902724;
   font-size: 20px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
 .pdf-icon:hover {
@@ -76,6 +110,7 @@ color: #fff;
   color: #c02b28;
 }
 
+/* DOWNLOAD BUTTON */
 .download-btn {
   background: #902724;
   color: #fff;
@@ -83,20 +118,34 @@ color: #fff;
   border-radius: 6px;
   text-decoration: none;
   transition: 0.3s;
+  border: none;
 }
 
 .download-btn:hover {
   background: #c02b28;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
   .ongc-table-heading {
     font-size: 20px;
   }
+
   .ongc-table-container {
     padding: 20px;
   }
+
   .ongc-table {
     min-width: 700px;
+  }
+
+  .ongc-table th {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  .ongc-table td {
+    font-size: 14px;
+    padding: 10px 8px;
   }
 }
