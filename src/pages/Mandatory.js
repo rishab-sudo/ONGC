@@ -8,9 +8,10 @@ const pdfFiles = {
   affiliation: require("../assets/doc/Affiliation-2027-1.pdf"),
   society: require("../assets/doc/2.pdf"),
   noc: require("../assets/doc/3.pdf"),
-    building : require("../assets/doc/Building-Safety-Certificate-.pdf"),
+    building : require("../assets/doc/Building Safety Certificate26.pdf"),
   deo: require("../assets/doc/8.pdf"),
-  water: require("../assets/doc/6.pdf"),
+  water: require("../assets/doc/Water PHED26.pdf"),
+   sanitise: require("../assets/doc/Sanitasion26.pdf"),
     calendar: require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
 rte:require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
   fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
@@ -194,6 +195,16 @@ const Mandatory = () => {
         </td>
         <td>
           <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.water)} />
+        </td>
+      </tr>
+
+          <tr>
+        <td>9</td>
+        <td>
+      Proforma regarding safe Drinking Water and Sanitary Condition Certificate
+        </td>
+        <td>
+          <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.sanitise)} />
         </td>
       </tr>
     </tbody>

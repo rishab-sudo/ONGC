@@ -7,17 +7,42 @@ const trustData = [
   {
     img: require("../assets/trustees/trust1 (1).jpeg"),
     title: "Leadership & Vision",
-    text: "Our trustees bring decades of leadership shaping the future of education.",
+    text: `Our trustees bring decades of leadership 
+shaping the future of education. 
+They inspire innovation, integrity, 
+and excellence in every initiative.`,
   },
   {
     img: require("../assets/trustees/trust2 (1).jpeg"),
     title: "Commitment to Excellence",
-    text: "We focus on quality education and holistic growth of students.",
+    text: `We focus on quality education 
+and holistic growth of students. 
+Our mission is to nurture talent, 
+confidence, and lifelong learning.`,
   },
   {
     img: require("../assets/trustees/trust3 (1).jpeg"),
     title: "Strong Foundation",
-    text: "Guiding values and mission ensure the best environment for learners.",
+    text: `Guiding values and mission ensure 
+the best environment for learners. 
+We build character, discipline, 
+and academic strength for success.`,
+  },
+  {
+    img: require("../assets/trustees/trusty4.jpeg"),
+title: "Empowering Young Minds",
+    text: `Every decision is focused on 
+student growth and well-being. 
+We encourage creativity, leadership, 
+and meaningful learning experiences.`,
+  },
+  {
+   img: require("../assets/trustees/trust5.jpeg"),
+    title: "Community & Values",
+    text: `Our institution promotes unity, 
+respect, and social responsibility. 
+Together we create a supportive 
+and inspiring educational community.`,
   },
 ];
 

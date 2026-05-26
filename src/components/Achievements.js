@@ -14,11 +14,11 @@ const Achievements = () => {
       title: "Proven Excellence",
       text: "Consistent district toppers and outstanding CBSE results",
     },
-    // {
-    //   img: require("../assets/campus/achv1.jpg"),
-    //   title: "Consistent Achievements",
-    //   text: "Students placed in leading schools and institutions",
-    // },
+    {
+      img: require("../assets/campus/achv22.jpeg"),
+      title: "Consistent Achievements",
+      text: "Students placed in leading schools and institutions",
+    },
     {
       img: require("../assets/campus/achv2.jpg"),
       title: "Winning Legacy",
@@ -39,11 +39,7 @@ const Achievements = () => {
       title: "Winning Legacy",
       text: "Winners in District-level sports events",
     },
-    // {
-    //   img: require("../assets/campus/achv1.jpg"),
-    //   title: "Shining Records",
-    //   text: "Quality education & community recognition",
-    // },
+
   ];
 
   return (

@@ -168,7 +168,7 @@ const Gallery = () => {
       />
 
       {renderGallery("Co-Curricular Activities", coCurricularImages, "co-curricular")}
-      {renderGallery("College Fest", festImages, "fest")}
+      {renderGallery("School Fest", festImages, "fest")}
     </>
   );
 };
