@@ -1,6 +1,7 @@
 // AdmissionPolicy.jsx
 import React from 'react'
 import Banner from '../components/Banner'
+import QuerySection from "../components/QuerySection"
 import './AdmissionPolicy.css'
 import { Container } from 'react-bootstrap'
 
@@ -94,6 +95,7 @@ const AdmissionPolicy = () => {
 
         </div>
       </Container>
+          <QuerySection/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Banner from "../components/Banner";
 import "./ParentsGuideLines.css";
-import QuerySection from '../components/QuerySection';
+
 
 const leftPoints = [
   "Ensure your child completes his/her work on routine basis.",
@@ -117,7 +117,7 @@ const ParentsGuideLines = () => {
         </Container>
       </Container>
 
-      <QuerySection />
+  
     </>
   );
 };

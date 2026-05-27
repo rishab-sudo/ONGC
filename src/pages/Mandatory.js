@@ -17,9 +17,9 @@ rte:require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
   fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
   fees: require("../assets/doc/FEE-STRUCTURE-2025-26.jpeg"),
     smc: require("../assets/doc/smc-9.pdf"),
-    pgt:require("../assets/doc/staff-Teachers-Detail-1.pdf"),
-    tgt:require("../assets/doc/staff-Teachers-Detail-1.pdf"),
-        prt:require("../assets/doc/staff-Teachers-Detail-1.pdf"),
+    pgt:require("../assets/doc/Teachers.pdf"),
+    tgt:require("../assets/doc/Teachers.pdf"),
+        prt:require("../assets/doc/Teachers.pdf"),
 };
 
 const Mandatory = () => {
@@ -360,14 +360,14 @@ const Mandatory = () => {
       <tr>
         <td>4</td>
         <td>Total No. of Teachers</td>
-        <td>52</td>
+        <td>49</td>
         <td>–</td>
       </tr>
 
       <tr>
         <td></td>
         <td>• PGT</td>
-        <td>15</td>
+        <td>13</td>
         <td>
           <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.pgt)} />
         </td>
@@ -376,7 +376,7 @@ const Mandatory = () => {
       <tr>
         <td></td>
         <td>• TGT</td>
-        <td>18</td>
+        <td>16</td>
         <td>
           <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.tgt)} />
         </td>
@@ -385,7 +385,7 @@ const Mandatory = () => {
       <tr>
         <td></td>
         <td>• PRT</td>
-        <td>17</td>
+        <td>13</td>
         <td>
           <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.prt)} />
         </td>
@@ -400,17 +400,27 @@ const Mandatory = () => {
 
       <tr>
         <td>6</td>
-        <td>Details of Special Educator</td>
+        <td>SPECIAL EDUCATOR</td>
         <td>1</td>
         <td>Kaushal Kishore</td>
       </tr>
 
-      <tr>
+   <tr>
         <td>7</td>
-        <td>Details of Counsellor & Wellness Teacher</td>
-        <td></td>
-        <td></td>
+        <td>CAREER COUNSELLOR</td>
+        <td>1</td>
+        <td>SHAFQUAT NUMA</td>
       </tr>
+
+         <tr>
+        <td>8</td>
+        <td>COUNSELING & WELLNESS TEACHER</td>
+        <td>1</td>
+        <td>ANJALI SHUKLA</td>
+      </tr>
+
+ 
+ 
     </tbody>
   </table>
 </Container>
