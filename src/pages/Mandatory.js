@@ -492,7 +492,7 @@ const Mandatory = () => {
           <span>YouTube </span>
           <FaYoutube
             className="pdf-icon"
-            onClick={() => window.open("https://www.youtube.com/watch?v=3RWPGzQ4QC0", "_blank")}
+            onClick={() => window.open("https://www.youtube.com/@ONGCCommunitySchool", "_blank")}
           />
         </td>
       </tr>
