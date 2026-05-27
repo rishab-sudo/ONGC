@@ -111,7 +111,7 @@ useEffect(() => {
 
   {/* NAVIGATION BAR */}
      <div>
-      <header className="navigation-bar" role="banner">
+      <header className="navigation-bar " role="banner">
         <div className="nav-inner">
           
          <nav className="nav-links-wrap" aria-label="Primary">

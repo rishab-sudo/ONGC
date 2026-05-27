@@ -15,7 +15,7 @@ const pdfFiles = {
     calendar: require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
 rte:require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
   fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
-  fees: require("../assets/doc/FEE-STRUCTURE-2025-26.jpeg"),
+  fees: require("../assets/doc/FEE STRUCTURE 2026-27.pdf"),
     smc: require("../assets/doc/smc-9.pdf"),
     pgt:require("../assets/doc/Teachers.pdf"),
     tgt:require("../assets/doc/Teachers.pdf"),
@@ -400,23 +400,23 @@ const Mandatory = () => {
 
       <tr>
         <td>6</td>
-        <td>SPECIAL EDUCATOR</td>
+        <td>Special Educator </td>
         <td>1</td>
         <td>Kaushal Kishore</td>
       </tr>
 
    <tr>
         <td>7</td>
-        <td>CAREER COUNSELLOR</td>
+        <td>Career Counsellor </td>
         <td>1</td>
-        <td>SHAFQUAT NUMA</td>
+        <td>Shafquot Numa</td>
       </tr>
 
          <tr>
         <td>8</td>
-        <td>COUNSELING & WELLNESS TEACHER</td>
+        <td>CCounseling & Wellness Teacher</td>
         <td>1</td>
-        <td>ANJALI SHUKLA</td>
+        <td>Anjali Shukla</td>
       </tr>
 
  
