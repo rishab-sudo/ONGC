@@ -414,7 +414,7 @@ const Mandatory = () => {
 
          <tr>
         <td>8</td>
-        <td>CCounseling & Wellness Teacher</td>
+        <td>Counseling & Wellness Teacher</td>
         <td>1</td>
         <td>Anjali Shukla</td>
       </tr>

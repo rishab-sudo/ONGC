@@ -1,4 +1,7 @@
-/* Container + header */
+/* =========================
+   CONTAINER
+========================= */
+
 .fee-table-container {
   padding: 0px;
   background: #fff;
@@ -8,7 +11,10 @@
   text-align: center;
 }
 
-/* Logo container */
+/* =========================
+   LOGO
+========================= */
+
 .fee-top-div {
   display: flex;
   justify-content: center;
@@ -16,7 +22,10 @@
   margin-bottom: 1.5rem;
 }
 
-/* Heading style — same as curriculum heading */
+/* =========================
+   TITLE
+========================= */
+
 .table-title {
   text-align: center;
   color: #902724;
@@ -27,7 +36,6 @@
   margin-top: 2rem;
 }
 
-/* Underline below heading — same gradient */
 .table-title::after {
   content: "";
   display: block;
@@ -38,65 +46,91 @@
   border-radius: 2px;
 }
 
-/* Responsive wrapper (optional) */
+/* =========================
+   TABLE WRAPPER
+========================= */
+
 .fee-table-scroll {
   overflow-x: auto;
   margin-bottom: 40px;
 }
 
-/* Table base */
+/* =========================
+   TABLE
+========================= */
+
 .custom-fee-table {
   margin-top: 2rem;
   width: 100%;
-  border-collapse: collapse;
   min-width: 800px;
+  border-collapse: collapse;
   background: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid #902724;
+
+  /* SAME BORDER ON ALL 4 SIDES */
+  border: 1px solid #902724;
 }
 
-/* Table heading */
+/* =========================
+   HEADER
+========================= */
+
 .custom-fee-table thead th {
-/* background: linear-gradient(90deg, #902724, #000); */
-/* background: linear-gradient(135deg, #902724 0%, #000 100%); */
   background-color: #902724;
   color: #fff;
   padding: 14px 12px;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
-  border: none;
+
+  /* SAME BORDER AS ROWS/COLUMNS */
+  border: 1px solid #902724;
 }
 
-/* Table rows */
-.custom-fee-table td {
+/* =========================
+   BODY CELLS
+========================= */
+
+.custom-fee-table tbody td {
   padding: 12px 10px;
   text-align: center;
-  border-bottom: 1px solid #eee;
   font-size: 15px;
   font-weight: 600;
   color: #333;
+
+  /* SAME BORDER EVERYWHERE */
+  border: 1px solid #902724;
 }
 
-/* Alternate row color (light grey) */
+/* =========================
+   ALTERNATE ROW COLOR
+========================= */
+
 .custom-fee-table tbody tr:nth-child(even) td {
   background-color: #fafafa !important;
 }
 
-/* Hover effect (cream) */
+/* =========================
+   HOVER EFFECT
+========================= */
+
 .custom-fee-table tbody tr:hover td {
   background-color: #fff8f0 !important;
   transition: background-color 0.25s ease;
 }
 
-/* Prevent header from changing color on hover */
+/* =========================
+   HEADER HOVER FIX
+========================= */
+
 .custom-fee-table thead tr:hover th {
   background-color: #902724 !important;
 }
 
-/* Responsive tweaks */
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
   .fee-table-container {
     padding: 20px;
