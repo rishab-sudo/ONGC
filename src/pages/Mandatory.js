@@ -12,7 +12,7 @@ const pdfFiles = {
   deo: require("../assets/doc/8.pdf"),
   water: require("../assets/doc/Water PHED26.pdf"),
    sanitise: require("../assets/doc/Sanitasion26.pdf"),
-    calendar: require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
+    calendar: require("../assets/doc/academics-Calendar.pdf"),
 rte:require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
   fire: require("../assets/doc/Fire-Certificate-ONGC-Community-School-6.pdf"),
   fees: require("../assets/doc/FEE STRUCTURE 2026-27.pdf"),

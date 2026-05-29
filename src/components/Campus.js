@@ -11,6 +11,9 @@ const topImages = [
   { img: require("../assets/campus/campus3.jpeg"), city: "" },
   { img: require("../assets/campus/campus2.jpeg"), city: "" },
   { img: require("../assets/campus/campus1.jpeg"), city: "" },
+    { img: require("../assets/campus/christmas cele.jpeg"), city: "" },
+      { img: require("../assets/campus/co curr.jpeg"), city: "" },
+        { img: require("../assets/campus/taekwondo.jpeg"), city: "" },
 ];
 
 const CampusSection = () => {
