@@ -7,7 +7,7 @@ const DemoBanner = () => {
       <div className="banner-media-wrapper">
         <video
           className="banner-video"
-          src={require("../assets/video/ONGC VideoForWebSite.mp4")}
+          src={require("../assets/video/ONGC Website Video.mp4")}
           autoPlay
           muted
           loop
