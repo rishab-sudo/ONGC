@@ -20,6 +20,8 @@ rte:require("../assets/doc/Academic-Calendar-2025-2026.pdf"),
     pgt:require("../assets/doc/Teachers.pdf"),
     tgt:require("../assets/doc/Teachers.pdf"),
         prt:require("../assets/doc/Teachers.pdf"),
+         pta:require("../assets/doc/LIST OF PTA MEMBERS -ONGC.pdf"),
+        
 };
 
 const Mandatory = () => {
@@ -226,8 +228,8 @@ const Mandatory = () => {
               <tr><td>1</td><td>Fee Structure of the School</td><td><FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.fees)} /></td></tr>
               <tr><td>2</td><td>Annual Academic Calendar</td><td><FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.calendar)} /></td></tr>
               <tr><td>3</td><td>List of School Management Committee (SMC)</td><td><FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.smc)} /></td></tr>
-              <tr><td>4</td><td>List of Parents Teachers Association (PTA) Members</td><td>✔</td></tr>
-              <tr><td>5</td><td>Last Three-Year Result of the Board Examination</td><td>✔</td></tr>
+              <tr><td>4</td><td>List of Parents Teachers Association (PTA) Members</td><td><FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.pta)} /></td></tr>
+              <tr><td>5</td><td>Last Three-Year Result of the Board Examination</td><td>Yes</td></tr>
             </tbody>
           </table>
         </Container>
@@ -394,8 +396,8 @@ const Mandatory = () => {
       <tr>
         <td>5</td>
         <td>Teachers Section Ratio</td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>1.5/section</td>
       </tr>
 
       <tr>
@@ -446,13 +448,13 @@ const Mandatory = () => {
       <tr>
         <td>2</td>
         <td>No. and Size of the Classroom (in sqr mtr)</td>
-        <td>34 and 26×20 (in sq. ft)</td>
+        <td>50 and 26×20 (in sq. ft)</td>
       </tr>
 
       <tr>
         <td>3</td>
         <td>No. and Size of Laboratories including Computer Labs (in sqr mtr)</td>
-        <td>066 and 40×32 (in sq. ft)</td>
+        <td>6 and 40×32 (in sq. ft)</td>
       </tr>
 
       <tr>
