@@ -7,7 +7,7 @@ import "./Mandatory.css";
 const pdfFiles = {
   affiliation: require("../assets/doc/Affiliation-2027-1.pdf"),
   society: require("../assets/doc/2.pdf"),
-  noc: require("../assets/doc/3.pdf"),
+  noc: require("../assets/doc/NOC Upto Class VIII.pdf"),
     building : require("../assets/doc/Building Safety Certificate26.pdf"),
   deo: require("../assets/doc/8.pdf"),
   water: require("../assets/doc/Water PHED26.pdf"),
@@ -51,7 +51,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Information</th>
         <th>Details</th>
       </tr>
@@ -105,7 +105,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Documents / Information</th>
         <th>View Documents</th>
       </tr>
@@ -151,7 +151,7 @@ const Mandatory = () => {
           renewal if applicable
         </td>
         <td>
-          <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles)} /> 
+          <FaFilePdf className="pdf-icon" onClick={() => handleShowPDF(pdfFiles.noc)} /> 
         </td>
       </tr>
 
@@ -219,7 +219,7 @@ const Mandatory = () => {
           <table className="ongc-table">
             <thead>
               <tr>
-                <th>Sl No.</th>
+                <th>S.No.</th>
                 <th>Documents / Information</th>
                 <th>View Documents</th>
               </tr>
@@ -240,7 +240,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Year</th>
         <th>No. of Registered Students</th>
         <th>No. of Students Passed</th>
@@ -285,7 +285,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Year</th>
         <th>No. of Registered Students</th>
         <th>No. of Students Passed</th>
@@ -330,7 +330,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Information</th>
         <th>Total</th>
         <th>Details / Documents</th>
@@ -397,7 +397,7 @@ const Mandatory = () => {
         <td>5</td>
         <td>Teachers Section Ratio</td>
         <td>-</td>
-        <td>1.5/section</td>
+        <td>1.5 Teachers/Section</td>
       </tr>
 
       <tr>
@@ -433,7 +433,7 @@ const Mandatory = () => {
   <table className="ongc-table">
     <thead>
       <tr>
-        <th>Sl No.</th>
+        <th>S.No.</th>
         <th>Information</th>
         <th>Details</th>
       </tr>
