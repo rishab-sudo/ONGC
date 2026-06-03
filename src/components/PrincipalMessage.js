@@ -46,22 +46,18 @@ Together, let us build a future where our children shine with curiosity, creativ
           </motion.div>
 
           {/* RIGHT VIDEO — SLIDE FROM RIGHT */}
-          <motion.div 
-            className="col-md-6 text-center mt-4 mt-md-0"
-            initial={{ x: 120, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <video 
-              className="principal-video"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={require("../assets/video/videoplayback (1).mp4")} type="video/mp4" />
-            </video>
-          </motion.div>
+     <motion.div
+  className="col-md-6 text-center mt-4 mt-md-0"
+  initial={{ x: 120, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  <img
+    src={require("../assets/video/principl.jpg.jpeg")}
+    alt="Principal"
+    className="principal-image"
+  />
+</motion.div>
 
         </div>
       </div>

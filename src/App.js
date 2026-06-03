@@ -25,6 +25,8 @@ import Punishment from "./pages/Punishment";
 import Gallery from "./pages/Gallery";
 import AbsencePolicy from "./pages/AbsencePolicy";
 import TcVerification from "./pages/TcVerification"
+import Enquiry from "./pages/Enquiry"
+
 import Sports from './pages/Sports';
 // import { BsArrowUpShort } from "react-icons/bs";
 
@@ -145,7 +147,8 @@ const scrollToTop = () => {
            <Route path="/ExaminationScheme" element={<ExaminationScheme />} />
           <Route path="/Curriculum" element={<Curriculum />} />
           <Route path="/AcademicsCalendar" element={<AcademicsCalendar />} />
-          <Route path="/AdmissionPolicy" element={<AdmissionPolicy />} />
+                    <Route path="/AdmissionPolicy" element={<AdmissionPolicy />} />
+          <Route path="/enquiry" element={<Enquiry />} />
           <Route path="/Activities" element={<Activities />} />
                     <Route path="/sports" element={<Sports />} />
           <Route path="/Mandatory" element={<Mandatory />} />

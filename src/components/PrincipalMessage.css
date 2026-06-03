@@ -37,15 +37,13 @@
 }
 
 /* VIDEO RIGHT SIDE */
-.principal-video {
-  width: 90%;
+.principal-image {
+  width: 100%;
+  max-width: 500px;
   height: auto;
-  max-height: 350px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
   object-fit: cover;
 }
-
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 

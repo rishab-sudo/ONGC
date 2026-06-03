@@ -35,14 +35,14 @@ const Fee = () => {
       />
 
       <Container className="fee-table-container">
-        <div className="fee-top-div">
+        {/* <div className="fee-top-div">
           <img
             src={require("../assets/ongc-logo1.jpg")}
             alt="School Logo"
           />
-        </div>
+        </div> */}
 
-        <h2 className="table-title">
+        <h2 className="table-title mt-5">
           Academic Session Fee Structure 2026-27
         </h2>
 

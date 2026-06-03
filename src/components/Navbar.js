@@ -162,6 +162,7 @@ onClick={() => setOpenDropdown(openDropdown === "admission" ? null : "admission"
                 <ul className={`dropdown-menu ${openDropdown === "admission" ? "show" : ""}`}>
                   <li><a href="/AdmissionPolicy">Admission Policy</a></li>
                   <li><a href="/TcVerification">TC Verification</a></li>
+                <li><a href="/enquiry">Enquiry</a></li>
                 </ul>
               </li>
 
@@ -243,6 +244,7 @@ onClick={() => setOpenDropdown(openDropdown === "disclosure" ? null : "disclosur
                 <ul className="side-dropdown-menu">
                   <li><a href="/AdmissionPolicy" onClick={toggleMenu}>Admission Policy</a></li>
                   <li><a href="/TcVerification" onClick={toggleMenu}>TC Verification</a></li>
+                    <li><a href="/enquiry">Enquiry</a></li>
                 </ul>
               )}
             </li>
