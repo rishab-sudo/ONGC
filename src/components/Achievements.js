@@ -22,7 +22,7 @@ const Achievements = () => {
     {
       img: require("../assets/campus/achv2.jpg"),
       title: "Winning Legacy",
-      text: "Winners in District-level sports events",
+      text: "Our young Athletes for stellar performance in the CBSE / Cluster / National / Regional & District sports events",
     },
     {
       img: require("../assets/campus/achv3.jpg"),
