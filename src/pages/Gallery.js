@@ -24,6 +24,12 @@ const Gallery = () => {
     require("../assets/gallery/sports/co-12.jpg"),
     require("../assets/gallery/sports/co-13.jpg"),
     require("../assets/gallery/sports/co-14.jpg"),
+        require("../assets/gallery/sports/co-15.jpeg"),
+                   require("../assets/gallery/sports/co-16.jpeg"),
+        require("../assets/gallery/sports/co-17.jpeg"),
+                           require("../assets/gallery/sports/co-18.jpeg"),
+                               require("../assets/gallery/sports/co-19.jpeg"),
+                                require("../assets/gallery/sports/co-20.jpeg"),
   ];
 
   const festImages = [
